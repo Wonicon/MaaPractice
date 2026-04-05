@@ -1,0 +1,58 @@
+{
+    "interface_version": 2,
+    "name": "MaaTechcronoss",
+    "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "contact": "",
+    "license": "",
+    "welcome": "首次使用！欢迎使用 MAA!",
+    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
+    "version": "v0.0.2",
+    "controller": [
+        {
+            "name": "桌面端",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "テクロノス",
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "FANZA",
+            "path": [
+                "./resource"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "远征收菜",
+            "label": "$远征收菜",
+            "entry": "点击城镇",
+            "resource": [
+                "FANZA"
+            ]
+        },
+        {
+            "name": "邻票强化",
+            "label": "$邻票强化",
+            "entry": "点击任务",
+            "resource": [
+                "FANZA"
+            ]
+        },
+        {
+            "name": "免费石头",
+            "label": "$免费石头",
+            "entry": "Entry_freeStone",
+            "resource": [
+                "FANZA"
+            ]
+        }
+    ],
+    "option": {}
+}
