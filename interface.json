@@ -9,11 +9,22 @@
     "version": "v0.0.2",
     "controller": [
         {
-            "name": "桌面端",
+            "name": "铁扣",
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
                 "window_regex": "テクロノス",
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        },
+        {
+            "name": "抹布",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "マブラブ・ガールズガーデン",
                 "screencap": "FramePool",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
@@ -49,6 +60,14 @@
             "name": "免费石头",
             "label": "$免费石头",
             "entry": "Entry_freeStone",
+            "resource": [
+                "FANZA"
+            ]
+        },
+        {
+            "name": "MAZE",
+            "label": "$免费石头",
+            "entry": "mgg_maze_prepare",
             "resource": [
                 "FANZA"
             ]
