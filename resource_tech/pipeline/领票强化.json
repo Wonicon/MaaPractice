@@ -4,11 +4,11 @@
             "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource\\pipeline\\领票强化.json",
             "filename": "领票强化",
             "isModifiedExternally": false,
-            "lastSyncTime": 1775402788569,
+            "lastSyncTime": 1775820370836,
             "prefix": "",
             "savedViewport": {
-                "x": -743,
-                "y": -779,
+                "x": -846,
+                "y": -1253,
                 "zoom": 0.8
             },
             "version": "v1.4.0"
@@ -28,6 +28,102 @@
             "param": {
                 "template": [
                     "tech_home.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "FS 关闭窗口": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1367,
+                "y": 1796
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    1215,
+                    92,
+                    17,
+                    25
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "FS 关闭窗口",
+            "FS 返回主页"
+        ],
+        "post_delay": 500,
+        "recognition": {
+            "param": {
+                "roi": [
+                    529,
+                    51,
+                    219,
+                    92
+                ],
+                "template": [
+                    "tech_shop_title.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "FS 结束任务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1983,
+                "y": 1980
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "StopTask"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "tech_tickets.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "FS 返回主页": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1677,
+                "y": 1913
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    150,
+                    652,
+                    73,
+                    32
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "FS 返回主页",
+            "FS 结束任务"
+        ],
+        "post_delay": 500,
+        "recognition": {
+            "param": {
+                "roi": [
+                    81,
+                    621,
+                    222,
+                    89
+                ],
+                "template": [
+                    "tech_shop_go_home.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -112,8 +208,8 @@
     "FS04 买": {
         "$__mpe_code": {
             "position": {
-                "x": 1388,
-                "y": 1234
+                "x": 1405,
+                "y": 1215
             }
         },
         "action": {
@@ -135,8 +231,8 @@
     "FS05 OK": {
         "$__mpe_code": {
             "position": {
-                "x": 1709,
-                "y": 1397
+                "x": 1370,
+                "y": 1469
             }
         },
         "action": {
@@ -144,7 +240,7 @@
             "type": "Click"
         },
         "next": [
-            "FS06 回首页"
+            "FS 关闭窗口"
         ],
         "recognition": {
             "param": {
@@ -155,23 +251,11 @@
             "type": "TemplateMatch"
         }
     },
-    "FS06 回首页": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2007,
-                "y": 1442
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        }
-    },
     "入场券不足": {
         "$__mpe_code": {
             "position": {
-                "x": 3324,
-                "y": 1078
+                "x": 3243,
+                "y": 1098
             }
         },
         "action": {
@@ -224,7 +308,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 3852,
-                "y": 1067
+                "y": 1001
             }
         },
         "action": {
@@ -313,15 +397,16 @@
     "强化任务中转": {
         "$__mpe_code": {
             "position": {
-                "x": 1528,
-                "y": 878
+                "x": 1522,
+                "y": 776
             }
         },
         "next": [
             "点击等级",
             "点击好感",
             "点击上限解放",
-            "点击技能"
+            "点击技能",
+            "强化返回主页"
         ],
         "recognition": {
             "param": {
@@ -332,11 +417,41 @@
             "type": "TemplateMatch"
         }
     },
+    "强化返回主页": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1919,
+                "y": 1576
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "max_hit": 1,
+        "next": [
+            "结束强化"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    2,
+                    574,
+                    168,
+                    141
+                ],
+                "template": [
+                    "tech_quest_go_home.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
     "点击上限解放": {
         "$__mpe_code": {
             "position": {
-                "x": 1999,
-                "y": 843
+                "x": 1916,
+                "y": 936
             }
         },
         "action": {
@@ -389,8 +504,8 @@
     "点击好感": {
         "$__mpe_code": {
             "position": {
-                "x": 2249,
-                "y": 526
+                "x": 1933,
+                "y": 694
             }
         },
         "action": {
@@ -420,8 +535,8 @@
     "点击强化任务": {
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 258
+                "x": 1923,
+                "y": 236
             }
         },
         "action": {
@@ -467,8 +582,8 @@
     "点击技能": {
         "$__mpe_code": {
             "position": {
-                "x": 1790,
-                "y": 1037
+                "x": 1907,
+                "y": 1250
             }
         },
         "action": {
@@ -498,8 +613,8 @@
     "点击等级": {
         "$__mpe_code": {
             "position": {
-                "x": 1934,
-                "y": 488
+                "x": 1949,
+                "y": 416
             }
         },
         "action": {
@@ -529,8 +644,8 @@
     "点击返回": {
         "$__mpe_code": {
             "position": {
-                "x": 4172,
-                "y": 1185
+                "x": 3977,
+                "y": 1320
             }
         },
         "action": {
@@ -609,11 +724,23 @@
             "type": "TemplateMatch"
         }
     },
+    "结束强化": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2275,
+                "y": 1641
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "StopTask"
+        }
+    },
     "选择通过的任务": {
         "$__mpe_code": {
             "position": {
-                "x": 2292,
-                "y": 898
+                "x": 2302,
+                "y": 893
             }
         },
         "action": {
@@ -684,8 +811,8 @@
     "领票回家": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 12
+                "x": 42,
+                "y": -69
             }
         },
         "action": {
@@ -707,8 +834,8 @@
     "领票确认home": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 200
+                "x": 52,
+                "y": 249
             }
         },
         "next": [

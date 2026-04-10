@@ -106,6 +106,7 @@
             },
             "type": "TemplateMatch"
         },
+        "pre_delay": 3000,
         "repeat": 2,
         "repeat_delay": 500
     },
@@ -189,6 +190,7 @@
         "next": [
             "MGG MAZE 前总线"
         ],
+        "post_delay": 2000,
         "recognition": {
             "param": {
                 "roi": [
@@ -780,6 +782,7 @@
             "MGG MAZE 探索",
             "mgg_maze_prepare"
         ],
+        "post_delay": 2000,
         "recognition": {
             "param": {
                 "template": [

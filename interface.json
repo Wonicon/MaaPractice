@@ -9,22 +9,11 @@
     "version": "v0.0.2",
     "controller": [
         {
-            "name": "铁扣",
+            "name": "DMM Game Player",
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "テクロノス",
-                "screencap": "FramePool",
-                "mouse": "LegacyEvent",
-                "keyboard": "LegacyEvent"
-            }
-        },
-        {
-            "name": "抹布",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "マブラブ・ガールズガーデン",
+                "window_regex": "テクロノス|マブラヴ",
                 "screencap": "FramePool",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
@@ -33,9 +22,15 @@
     ],
     "resource": [
         {
-            "name": "FANZA",
+            "name": "MGG",
             "path": [
-                "./resource"
+                "./resource_mgg"
+            ]
+        },
+        {
+            "name": "Techcronoss",
+            "path": [
+                "./resource_tech"
             ]
         }
     ],
@@ -43,17 +38,17 @@
         {
             "name": "远征收菜",
             "label": "$远征收菜",
-            "entry": "点击城镇",
+            "entry": "E 远征 点击城镇",
             "resource": [
-                "FANZA"
+                "Techcronoss"
             ]
         },
         {
-            "name": "邻票强化",
-            "label": "$邻票强化",
-            "entry": "点击任务",
+            "name": "领票强化",
+            "label": "$领票强化",
+            "entry": "领票确认home",
             "resource": [
-                "FANZA"
+                "TechcronossMGG"
             ]
         },
         {
@@ -61,7 +56,31 @@
             "label": "$免费石头",
             "entry": "Entry_freeStone",
             "resource": [
-                "FANZA"
+                "Techcronoss"
+            ]
+        },
+        {
+            "name": "E 采掘 点击",
+            "label": "$免费石头",
+            "entry": "E 采掘 点击",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "E 免费石",
+            "label": "$免费石头",
+            "entry": "E 免费石",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "E 课外活动 任务",
+            "label": "$免费石头",
+            "entry": "E 课外活动 任务",
+            "resource": [
+                "MGG"
             ]
         },
         {
@@ -69,7 +88,7 @@
             "label": "$免费石头",
             "entry": "mgg_maze_prepare",
             "resource": [
-                "FANZA"
+                "MGG"
             ]
         }
     ],

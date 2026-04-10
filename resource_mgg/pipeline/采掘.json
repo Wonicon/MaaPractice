@@ -1,0 +1,876 @@
+{
+    "$__mpe_config_采掘": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\采掘.json",
+            "lastSyncTime": 1775825465469,
+            "savedViewport": {
+                "x": 116,
+                "y": -442,
+                "zoom": 0.7
+            },
+            "filename": "采掘",
+            "version": "v1.4.1"
+        }
+    },
+    "E 采掘 点击": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    961,
+                    506,
+                    59,
+                    46
+                ]
+            }
+        },
+        "post_delay": 800,
+        "next": [
+            "采掘弹窗",
+            "E 采掘 点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 60
+            }
+        }
+    },
+    "采掘弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "dig_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    939,
+                    558,
+                    63,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "采掘确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 58
+            }
+        }
+    },
+    "采掘确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    455,
+                    0,
+                    381,
+                    119
+                ],
+                "template": [
+                    "dig_confirm_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    616,
+                    640,
+                    73,
+                    13
+                ]
+            }
+        },
+        "next": [
+            "采掘弹窗 点击时短"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 42
+            }
+        }
+    },
+    "采掘弹窗 点击时短": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "dig_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    776,
+                    550,
+                    86,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "时短确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 58
+            }
+        }
+    },
+    "时短确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    455,
+                    0,
+                    381,
+                    119
+                ],
+                "template": [
+                    "dig_quick_confirm.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    733,
+                    636,
+                    71,
+                    17
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "时短产物确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 12
+            }
+        }
+    },
+    "时短产物确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    455,
+                    0,
+                    381,
+                    119
+                ],
+                "template": [
+                    "dig_quick_result_confirm_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    601,
+                    637,
+                    113,
+                    21
+                ]
+            }
+        },
+        "next": [
+            "采掘弹窗关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 43
+            }
+        }
+    },
+    "采掘弹窗关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "dig_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1055,
+                    46,
+                    19,
+                    33
+                ]
+            }
+        },
+        "next": [
+            "采掘任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 58
+            }
+        }
+    },
+    "采掘任务结束": {
+        "pre_delay": 0,
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        },
+        "post_delay": 0,
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 61
+            }
+        }
+    },
+    "E 免费石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "商店入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 344
+            }
+        }
+    },
+    "商店入口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_popup_scene.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    527,
+                    371,
+                    124,
+                    57
+                ]
+            }
+        },
+        "next": [
+            "礼包"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 349
+            }
+        }
+    },
+    "礼包": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_sale_pack.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费",
+            "每周免费"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 368
+            }
+        }
+    },
+    "每日免费": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    270,
+                    434,
+                    189,
+                    48
+                ],
+                "expected": [
+                    "無料"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 403
+            }
+        }
+    },
+    "每日免费确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_buy_confirm_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    720,
+                    633,
+                    94,
+                    33
+                ]
+            }
+        },
+        "next": [
+            "每日免费收获确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 390
+            }
+        }
+    },
+    "每日免费收获确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "finish_buy.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    597,
+                    637,
+                    111,
+                    25
+                ]
+            }
+        },
+        "next": [
+            "每周免费"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 392
+            }
+        }
+    },
+    "每周免费": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_pack_weekly.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费_副本9",
+            "每月免费"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 375
+            }
+        }
+    },
+    "每日免费_副本9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    270,
+                    434,
+                    189,
+                    48
+                ],
+                "expected": [
+                    "無料"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费确认_副本10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 403
+            }
+        }
+    },
+    "每日免费确认_副本10": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_buy_confirm_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    720,
+                    633,
+                    94,
+                    33
+                ]
+            }
+        },
+        "next": [
+            "每日免费收获确认_副本11"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 390
+            }
+        }
+    },
+    "每日免费收获确认_副本11": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "finish_buy.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    597,
+                    637,
+                    111,
+                    25
+                ]
+            }
+        },
+        "next": [
+            "每月免费"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 385
+            }
+        }
+    },
+    "每月免费": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_monthly.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费_副本9_副本13",
+            "每日免费结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3212,
+                "y": 376
+            }
+        }
+    },
+    "每日免费_副本9_副本13": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    270,
+                    434,
+                    189,
+                    48
+                ],
+                "expected": [
+                    "無料"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费确认_副本10_副本14"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3532,
+                "y": 339
+            }
+        }
+    },
+    "每日免费确认_副本10_副本14": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_buy_confirm_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    720,
+                    633,
+                    94,
+                    33
+                ]
+            }
+        },
+        "next": [
+            "每日免费收获确认_副本11_副本15"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3852,
+                "y": 326
+            }
+        }
+    },
+    "每日免费收获确认_副本11_副本15": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "finish_buy.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    597,
+                    637,
+                    111,
+                    25
+                ]
+            }
+        },
+        "next": [
+            "每日免费结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4172,
+                "y": 328
+            }
+        }
+    },
+    "每日免费结束": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "确认主页",
+            "每日免费结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1600,
+                "y": 905
+            }
+        }
+    },
+    "确认主页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    731,
+                    3,
+                    90,
+                    71
+                ],
+                "template": [
+                    "home_stone_mark.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4812,
+                "y": 353
+            }
+        }
+    },
+    "E 课外活动 任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "课外活动"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -19,
+                "y": 691
+            }
+        }
+    },
+    "课外活动": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "out_school_act.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "[JumpBack]课外活动收菜",
+            "[JumpBack]课外活动出发",
+            "课外活动关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 320,
+                "y": 697
+            }
+        }
+    },
+    "课外活动收菜": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    771,
+                    610,
+                    243,
+                    75
+                ],
+                "template": [
+                    "activity_accept.png"
+                ],
+                "method": 10001
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "课外活动收菜确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 647,
+                "y": 691
+            }
+        }
+    },
+    "课外活动收菜确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "$__mpe_code": {
+            "position": {
+                "x": 1014,
+                "y": 728
+            }
+        }
+    },
+    "课外活动出发": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    532,
+                    609,
+                    246,
+                    78
+                ],
+                "template": [
+                    "activity_go.png"
+                ],
+                "method": 10001
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "课外活动出发确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 649,
+                "y": 1018
+            }
+        }
+    },
+    "课外活动出发确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "$__mpe_code": {
+            "position": {
+                "x": 1035,
+                "y": 1045
+            }
+        }
+    },
+    "课外活动关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 800,
+        "next": [
+            "每日免费结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 1350
+            }
+        }
+    }
+}

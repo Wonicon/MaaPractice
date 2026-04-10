@@ -4,21 +4,21 @@
             "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource\\pipeline\\my_task.json",
             "filename": "远征收菜",
             "isModifiedExternally": false,
-            "lastSyncTime": 1775385868931,
+            "lastSyncTime": 1775821027827,
             "prefix": "",
             "savedViewport": {
-                "x": 499,
-                "y": 155,
-                "zoom": 0.57
+                "x": -616,
+                "y": 339,
+                "zoom": 0.8
             },
             "version": "v1.4.0"
         }
     },
-    "全部接收": {
+    "E 远征 点击城镇": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 541
+                "x": -25,
+                "y": 18
             }
         },
         "action": {
@@ -26,11 +26,35 @@
             "type": "Click"
         },
         "next": [
-            "确认"
+            "点击远征",
+            "E 远征 点击城镇"
         ],
-        "on_error": [
-            "点击远征"
+        "post_delay": 700,
+        "recognition": {
+            "param": {
+                "template": [
+                    "tec_town.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "全部接收": {
+        "$__mpe_code": {
+            "position": {
+                "x": 648,
+                "y": 26
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "确认",
+            "全部接收"
         ],
+        "post_delay": 700,
         "recognition": {
             "param": {
                 "template": [
@@ -43,8 +67,8 @@
     "再度远征": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 286
+                "x": 1282,
+                "y": 19
             }
         },
         "action": {
@@ -53,9 +77,6 @@
         },
         "next": [
             "确认远征中"
-        ],
-        "on_error": [
-            "确认"
         ],
         "recognition": {
             "param": {
@@ -66,34 +87,11 @@
             "type": "TemplateMatch"
         }
     },
-    "点击城镇": {
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 794
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "点击远征"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "tec_town.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "点击远征": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 606
+                "x": 305,
+                "y": 22
             }
         },
         "action": {
@@ -101,10 +99,8 @@
             "type": "Click"
         },
         "next": [
-            "全部接收"
-        ],
-        "on_error": [
-            "点击城镇"
+            "全部接收",
+            "点击远征"
         ],
         "recognition": {
             "param": {
@@ -118,8 +114,8 @@
     "确认": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 333
+                "x": 972,
+                "y": 22
             }
         },
         "action": {
@@ -129,9 +125,7 @@
         "next": [
             "再度远征"
         ],
-        "on_error": [
-            "全部接收"
-        ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "template": [
@@ -144,13 +138,14 @@
     "确认home": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 25
+                "x": 2235,
+                "y": 36
             }
         },
-        "on_error": [
-            "返回主页"
-        ],
+        "action": {
+            "param": {},
+            "type": "StopTask"
+        },
         "recognition": {
             "param": {
                 "template": [
@@ -163,15 +158,12 @@
     "确认远征中": {
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 73
+                "x": 1601,
+                "y": 28
             }
         },
         "next": [
             "返回主页"
-        ],
-        "on_error": [
-            "再度远征"
         ],
         "recognition": {
             "param": {
@@ -185,7 +177,7 @@
     "返回主页": {
         "$__mpe_code": {
             "position": {
-                "x": 332,
+                "x": 1920,
                 "y": 12
             }
         },
@@ -194,11 +186,10 @@
             "type": "Click"
         },
         "next": [
-            "确认home"
+            "确认home",
+            "返回主页"
         ],
-        "on_error": [
-            "确认远征中"
-        ],
+        "post_delay": 700,
         "recognition": {
             "param": {
                 "template": [
