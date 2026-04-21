@@ -41,7 +41,6 @@
     "task": [
         {
             "name": "远征收菜",
-            "label": "$远征收菜",
             "entry": "E 远征 点击城镇",
             "resource": [
                 "Techcronoss"
@@ -49,7 +48,6 @@
         },
         {
             "name": "领票强化",
-            "label": "$领票强化",
             "entry": "领票确认home",
             "resource": [
                 "Techcronoss"
@@ -57,39 +55,41 @@
         },
         {
             "name": "免费石头",
-            "label": "$免费石头",
             "entry": "Entry_freeStone",
             "resource": [
                 "Techcronoss"
             ]
         },
         {
-            "name": "E 采掘 点击",
-            "label": "$免费石头",
+            "name": "采掘",
             "entry": "E 采掘 点击",
             "resource": [
                 "MGG"
             ]
         },
         {
-            "name": "E 免费石",
-            "label": "$免费石头",
+            "name": "免费石",
             "entry": "E 免费石",
             "resource": [
                 "MGG"
             ]
         },
         {
-            "name": "E 课外活动 任务",
-            "label": "$免费石头",
+            "name": "课外活动",
             "entry": "E 课外活动 任务",
             "resource": [
                 "MGG"
             ]
         },
         {
+            "name": "演习",
+            "entry": "start_quest_exercise",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
             "name": "MAZE",
-            "label": "$免费石头",
             "entry": "mgg_maze_prepare",
             "resource": [
                 "MGG"
