@@ -17,8 +17,19 @@
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "テクロノス|マブラヴ",
+                "window_regex": "テクロノス|マブラヴ|邪神戦記ルルイエ少女隊X",
                 "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        },
+        {
+            "name": "邪神戦記ルルイエ少女隊X",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "邪神戦記ルルイエ少女隊X",
+                "screencap": "PrintWindow",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
             }
@@ -29,6 +40,12 @@
             "name": "MGG",
             "path": [
                 "./resource_mgg"
+            ]
+        },
+        {
+            "name": "邪神戦記ルルイエ少女隊X",
+            "path": [
+                "./resource_rlyeh"
             ]
         },
         {
@@ -93,6 +110,34 @@
             "entry": "mgg_maze_prepare",
             "resource": [
                 "MGG"
+            ]
+        },
+        {
+            "name": "主线收菜",
+            "entry": "Task主线",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "残响",
+            "entry": "Task残响",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "祭坛",
+            "entry": "Task祭坛",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "竞技场",
+            "entry": "Task竞技场",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
             ]
         }
     ],
