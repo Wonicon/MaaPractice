@@ -1,0 +1,133 @@
+{
+    "$__mpe_config_angel.json": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1776520792035,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource\\pipeline\\angel.json",
+            "savedViewport": {
+                "x": -618,
+                "y": -197,
+                "zoom": 0.54
+            },
+            "filename": "angel.json",
+            "version": "v1.4.1"
+        }
+    },
+    "新任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776519221112.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2371,
+                "y": 75
+            }
+        }
+    },
+    "次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "次.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2370,
+                "y": 312
+            }
+        }
+    },
+    "Start": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]新任务",
+            "[JumpBack]次",
+            "[JumpBack]战斗开始",
+            "[JumpBack]战斗中",
+            "[JumpBack]战斗结算"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2049,
+                "y": 217
+            }
+        }
+    },
+    "战斗开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "战斗开始.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2363,
+                "y": 540
+            }
+        }
+    },
+    "战斗中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "战斗_MENU.png"
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2366,
+                "y": 733
+            }
+        }
+    },
+    "战斗结算": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "战斗结算.png",
+                    "弹窗OK.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2354,
+                "y": 1002
+            }
+        }
+    }
+}
