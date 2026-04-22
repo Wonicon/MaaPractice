@@ -1,0 +1,1664 @@
+{
+    "$__mpe_config_新建Pipeline2": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1776779508495,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_rlyeh\\pipeline\\shoujotai.json",
+            "savedViewport": {
+                "x": -3259,
+                "y": -1465,
+                "zoom": 1.5
+            },
+            "filename": "新建Pipeline2",
+            "version": "v1.4.1"
+        }
+    },
+    "Task主线": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    223,
+                    655,
+                    167,
+                    59
+                ],
+                "template": [
+                    "template_1776696001539.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线收菜弹出",
+            "主线收菜",
+            "Task主线"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -73,
+                "y": 1669
+            }
+        }
+    },
+    "Task残响": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_spot.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "残响剧场",
+            "Task残响"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1402
+            }
+        }
+    },
+    "Task祭坛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_spot.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛",
+            "Task祭坛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 44
+            }
+        }
+    },
+    "Task竞技场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_spot.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "竞技场",
+            "Task竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -203,
+                "y": 2252
+            }
+        }
+    },
+    "主线快速战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696112847.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线快速战斗2",
+            "主线快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 2135
+            }
+        }
+    },
+    "主线快速战斗2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696162428.png"
+                ]
+            }
+        },
+        "next": [
+            "主线快速战斗不免费",
+            "主线快速战斗免费"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1165,
+                "y": 1688
+            }
+        }
+    },
+    "主线快速战斗不免费": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    558,
+                    397,
+                    70,
+                    51
+                ],
+                "expected": [
+                    "30"
+                ]
+            }
+        },
+        "next": [
+            "主线快速战斗关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1843,
+                "y": 1966
+            }
+        }
+    },
+    "主线快速战斗免费": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    554,
+                    393,
+                    70,
+                    60
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线快速战斗执行"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1478,
+                "y": 1689
+            }
+        }
+    },
+    "主线快速战斗关闭": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    513,
+                    151,
+                    251,
+                    100
+                ],
+                "expected": [
+                    "高速バトル"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    493,
+                    493,
+                    114,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "主线快速战斗关闭",
+            "主线战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2445,
+                "y": 1856
+            }
+        }
+    },
+    "主线快速战斗执行": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696162428.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线报酬弹窗",
+            "主线快速战斗不免费",
+            "主线快速战斗执行"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1833,
+                "y": 1644
+            }
+        }
+    },
+    "主线战斗": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1022,
+                    533,
+                    147,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "主线战斗挑战",
+            "主线战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2852,
+                "y": 1770
+            }
+        }
+    },
+    "主线战斗Loading": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    902,
+                    550,
+                    376,
+                    163
+                ],
+                "expected": [
+                    "Loading"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4420,
+                "y": 1828
+            }
+        }
+    },
+    "主线战斗_编队界面": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    832,
+                    582,
+                    187,
+                    75
+                ],
+                "lower": [
+                    [
+                        105,
+                        39,
+                        51
+                    ]
+                ],
+                "upper": [
+                    [
+                        188,
+                        80,
+                        102
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    23,
+                    251,
+                    8,
+                    122
+                ]
+            }
+        },
+        "next": [
+            "返回spot",
+            "主线战斗_编队界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5079,
+                "y": 1125
+            }
+        }
+    },
+    "主线战斗中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1173,
+                    5,
+                    103,
+                    117
+                ],
+                "template": [
+                    "template_1776693600445.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4427,
+                "y": 1568
+            }
+        }
+    },
+    "主线战斗挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    832,
+                    582,
+                    187,
+                    75
+                ],
+                "expected": [
+                    "挑戦"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]主线战斗中",
+            "主线战斗返回",
+            "[JumpBack]主线战斗Loading",
+            "主线战斗挑战",
+            "剧情"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3485,
+                "y": 1771
+            }
+        }
+    },
+    "主线战斗返回": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1015,
+                    598,
+                    176,
+                    76
+                ],
+                "expected": [
+                    "戻る",
+                    "戻"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线战斗_编队界面",
+            "主线战斗返回",
+            "返回spot",
+            "[JumpBack]返回Loading"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4663,
+                "y": 1361
+            }
+        }
+    },
+    "主线报酬弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696327267.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    477,
+                    48,
+                    300,
+                    46
+                ]
+            }
+        },
+        "next": [
+            "主线快速战斗关闭",
+            "主线报酬弹窗",
+            "主线战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2148,
+                "y": 1619
+            }
+        }
+    },
+    "主线收菜": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    79,
+                    523,
+                    76,
+                    56
+                ]
+            }
+        },
+        "next": [
+            "主线收菜有货",
+            "主线收菜无货",
+            "主线收菜"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 255,
+                "y": 2006
+            }
+        }
+    },
+    "主线收菜有货": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696070719.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "主线收菜报酬弹窗",
+            "主线收菜有货"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 641,
+                "y": 1929
+            }
+        }
+    },
+    "主线收菜弹出": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696070719.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "next": [
+            "主线收菜弹出报酬弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 329,
+                "y": 1622
+            }
+        }
+    },
+    "主线收菜弹出报酬弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696327267.png"
+                ],
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    477,
+                    48,
+                    300,
+                    46
+                ]
+            }
+        },
+        "repeat": 10,
+        "$__mpe_code": {
+            "position": {
+                "x": 679,
+                "y": 1623
+            }
+        }
+    },
+    "主线收菜报酬弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696327267.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    477,
+                    48,
+                    300,
+                    46
+                ]
+            }
+        },
+        "next": [
+            "主线收菜报酬弹窗",
+            "主线快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1003,
+                "y": 1935
+            }
+        }
+    },
+    "剧情": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1080,
+                    435,
+                    149,
+                    279
+                ],
+                "expected": [
+                    "AUTO"
+                ]
+            }
+        },
+        "next": [
+            "展开跳过"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4486,
+                "y": 2018
+            }
+        }
+    },
+    "展开跳过": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776704677401.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "跳过"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4798,
+                "y": 2009
+            }
+        }
+    },
+    "开催中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    54,
+                    463,
+                    1074,
+                    167
+                ],
+                "template": [
+                    "开催中.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛挑战用完",
+            "祭坛挑战",
+            "开催中"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 30
+            }
+        }
+    },
+    "战斗中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1175,
+                    6,
+                    103,
+                    132
+                ],
+                "template": [
+                    "template_1776693600445.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2568,
+                "y": 418
+            }
+        }
+    },
+    "战斗中_副本33_副本50": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1157,
+                    5,
+                    122,
+                    73
+                ],
+                "template": [
+                    "template_1776693600445.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1622,
+                "y": 2518
+            }
+        }
+    },
+    "战斗返回": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    861,
+                    561,
+                    290,
+                    135
+                ],
+                "expected": [
+                    "戻",
+                    "戻る"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛挑战",
+            "战斗返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2598,
+                "y": 117
+            }
+        }
+    },
+    "残响剧场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响剧场.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    762,
+                    244,
+                    68,
+                    63
+                ]
+            }
+        },
+        "next": [
+            "残响剧场2",
+            "残响剧场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1380
+            }
+        }
+    },
+    "残响剧场2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776498582773.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    496,
+                    276,
+                    82,
+                    62
+                ]
+            }
+        },
+        "next": [
+            "残响剧场3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 1380
+            }
+        }
+    },
+    "残响剧场3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响clear.png"
+                ],
+                "order_by": "Horizontal",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "残响剧场3",
+            "残响剧场4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 1362
+            }
+        }
+    },
+    "残响剧场4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "残响剧场5",
+            "残响剧场4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 1403
+            }
+        }
+    },
+    "残响剧场5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    416,
+                    232,
+                    438,
+                    94
+                ],
+                "expected": [
+                    "スキップする回数を選択してください。"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    820,
+                    393,
+                    19,
+                    19
+                ]
+            }
+        },
+        "repeat": 5,
+        "next": [
+            "残响剧场6",
+            "残响剧场5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 1360
+            }
+        }
+    },
+    "残响剧场6": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    564,
+                    474,
+                    151,
+                    43
+                ]
+            }
+        },
+        "next": [
+            "残响剧场7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 1422
+            }
+        }
+    },
+    "残响剧场7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "戻る"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "残响剧场8_取消编队",
+            "残响剧场7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1420
+            }
+        }
+    },
+    "残响剧场8_取消编队": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776693478935.png"
+                ],
+                "threshold": [
+                    0.7
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "残响剧场9_退出剧场",
+            "残响剧场8_取消编队"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 1382
+            }
+        }
+    },
+    "残响剧场9_退出剧场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776498921625.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    22,
+                    52,
+                    29,
+                    11
+                ]
+            }
+        },
+        "next": [
+            "残响剧场9_退出剧场",
+            "返回spot"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 1380
+            }
+        }
+    },
+    "确认主页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1184,
+                    538,
+                    68,
+                    95
+                ],
+                "template": [
+                    "template_1776695483667.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4505,
+                "y": 879
+            }
+        }
+    },
+    "确认跳过": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    674,
+                    416,
+                    98,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "主线战斗返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5356,
+                "y": 1823
+            }
+        }
+    },
+    "祭坛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "祭坛.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "开催中",
+            "祭坛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 36
+            }
+        }
+    },
+    "祭坛取消编队": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776438822944.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1183,
+                    63,
+                    32,
+                    36
+                ]
+            }
+        },
+        "next": [
+            "返回spot",
+            "祭坛取消编队"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 1082
+            }
+        }
+    },
+    "祭坛挑战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1003,
+                    297,
+                    266,
+                    106
+                ],
+                "template": [
+                    "挑战.png"
+                ],
+                "threshold": [
+                    0.6
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛跳过",
+            "祭坛挑战2",
+            "祭坛挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1899,
+                "y": 246
+            }
+        }
+    },
+    "祭坛挑战2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    826,
+                    571,
+                    203,
+                    92
+                ],
+                "template": [
+                    "template_1776437714167.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "战斗返回",
+            "[JumpBack]战斗中"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2251,
+                "y": 348
+            }
+        }
+    },
+    "祭坛挑战用完": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1019,
+                    293,
+                    236,
+                    97
+                ],
+                "expected": [
+                    "挑戦回数：0/3",
+                    "挑戦回数:0/3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "返回spot"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2877,
+                "y": 6
+            }
+        }
+    },
+    "祭坛最大跳过次数": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776438553778.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    808,
+                    487,
+                    30,
+                    25
+                ]
+            }
+        },
+        "repeat": 4,
+        "next": [
+            "祭坛跳过执行",
+            "祭坛最大跳过次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 721
+            }
+        }
+    },
+    "祭坛结果返回": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    748,
+                    560,
+                    493,
+                    159
+                ],
+                "expected": [
+                    "戻る",
+                    "戻"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛结果返回",
+            "祭坛取消编队"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 1099
+            }
+        }
+    },
+    "祭坛跳过": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "祭坛跳过",
+            "祭坛最大跳过次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 705
+            }
+        }
+    },
+    "祭坛跳过执行": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    661,
+                    554,
+                    135,
+                    33
+                ]
+            }
+        },
+        "next": [
+            "祭坛结果返回",
+            "祭坛最大跳过次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1082
+            }
+        }
+    },
+    "竞技场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776700890096.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "竞技场内部",
+            "竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 140,
+                "y": 2334
+            }
+        }
+    },
+    "竞技场内部": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776700960919.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    912,
+                    102,
+                    101,
+                    21
+                ]
+            }
+        },
+        "repeat": 4,
+        "next": [
+            "竞技场没次数",
+            "竞技场找对手"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 287,
+                "y": 2512
+            }
+        }
+    },
+    "竞技场出击": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    1064,
+                    625,
+                    190,
+                    82
+                ],
+                "lower": [
+                    [
+                        104,
+                        37,
+                        49
+                    ]
+                ],
+                "upper": [
+                    [
+                        145,
+                        53,
+                        66
+                    ]
+                ],
+                "count": 100
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 60000,
+        "next": [
+            "[JumpBack]战斗中_副本33_副本50",
+            "竞技场继续找对手"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1133,
+                "y": 2702
+            }
+        }
+    },
+    "竞技场找对手": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    1058,
+                    128,
+                    155,
+                    477
+                ],
+                "lower": [
+                    [
+                        41,
+                        77,
+                        85
+                    ]
+                ],
+                "upper": [
+                    [
+                        73,
+                        106,
+                        119
+                    ]
+                ],
+                "count": 100
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "竞技场出击",
+            "竞技场找对手"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 744,
+                "y": 2725
+            }
+        }
+    },
+    "竞技场没次数": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    326,
+                    146,
+                    63,
+                    79
+                ],
+                "lower": [
+                    [
+                        155,
+                        57,
+                        53
+                    ]
+                ],
+                "upper": [
+                    [
+                        255,
+                        76,
+                        69
+                    ]
+                ],
+                "count": 10
+            }
+        },
+        "next": [
+            "返回spot"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2228,
+                "y": 2450
+            }
+        }
+    },
+    "竞技场继续找对手": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    801,
+                    579,
+                    208,
+                    103
+                ],
+                "expected": [
+                    "対戦相手選択"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 60000,
+        "next": [
+            "竞技场继续找对手",
+            "竞技场没次数",
+            "竞技场找对手"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1550,
+                "y": 3044
+            }
+        }
+    },
+    "跳过": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1118,
+                    217,
+                    97,
+                    105
+                ],
+                "expected": [
+                    "スキップ",
+                    "スキッア"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "跳过",
+            "确认跳过"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5173,
+                "y": 2017
+            }
+        }
+    },
+    "返回Loading": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "Loading"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5071,
+                "y": 1447
+            }
+        }
+    },
+    "返回spot": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "确认主页",
+            "返回spot"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4223,
+                "y": 1029
+            }
+        }
+    },
+    "主线收菜无货": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    486,
+                    381,
+                    316,
+                    75
+                ],
+                "expected": [
+                    "アイテムを獲得していません"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    617,
+                    492,
+                    70,
+                    6
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "主线收菜无货",
+            "主线收菜有货",
+            "主线快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 664,
+                "y": 2231
+            }
+        }
+    }
+}
