@@ -2,16 +2,16 @@
     "$__mpe_config_领票强化": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776093219244,
+            "lastSyncTime": 1776914516793,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_tech\\pipeline\\领票强化.json",
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\领票强化.json",
             "savedViewport": {
-                "x": -537,
-                "y": -347,
-                "zoom": 0.72
+                "x": -1397,
+                "y": -606,
+                "zoom": 0.81
             },
             "filename": "领票强化",
-            "version": "v1.4.1"
+            "version": "v1.4.2"
         }
     },
     "Entry_freeStone": {
@@ -81,8 +81,7 @@
             }
         },
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
@@ -139,8 +138,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "FS02 点商品"
@@ -162,8 +160,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "FS03 点石头"
@@ -215,8 +212,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "FS05 OK"
@@ -238,8 +234,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "FS 关闭窗口"
@@ -291,8 +286,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "点击任务"
@@ -418,8 +412,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1506,
-                "y": 687
+                "x": 1545,
+                "y": 808
             }
         }
     },
@@ -439,8 +433,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "结束强化",
@@ -494,8 +487,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "点击强化任务"
@@ -548,8 +540,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "强化任务中转"
@@ -571,8 +562,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "确认强化跳过",
@@ -715,8 +705,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "领票OK"
@@ -744,8 +733,7 @@
             }
         },
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
@@ -793,8 +781,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "确认领票"
@@ -816,8 +803,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭领票"
@@ -839,8 +825,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "领票确认home"
