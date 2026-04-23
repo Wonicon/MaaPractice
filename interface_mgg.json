@@ -1,0 +1,64 @@
+{
+    "controller": [
+        {
+            "name": "DMM Game Player",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "テクロノス|マブラヴ|邪神戦記ルルイエ少女隊X",
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        },
+        {
+            "name": "安卓端",
+            "type": "Adb"
+        }
+    ],
+    "resource": [
+        {
+            "name": "MGG",
+            "path": [
+                "./resource_mgg"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "采掘",
+            "entry": "E 采掘 点击",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "免费石",
+            "entry": "E 免费石",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "课外活动",
+            "entry": "E 课外活动 任务",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "演习",
+            "entry": "start_quest_exercise",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "MAZE",
+            "entry": "mgg_maze_prepare",
+            "resource": [
+                "MGG"
+            ]
+        }
+    ]
+}

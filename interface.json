@@ -7,139 +7,84 @@
     "welcome": "首次使用！欢迎使用 MAA!",
     "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
     "version": "v0.0.2",
-    "controller": [
+    "resource": [
         {
-            "name": "安卓端",
-            "type": "Adb"
+            "name": "MGG",
+            "controller": [
+                "抹布",
+                "安卓端"
+            ],
+            "path": [
+                "./resource",
+                "./resource_mgg"
+            ]
         },
         {
-            "name": "DMM Game Player",
+            "name": "邪神戦記ルルイエ少女隊X",
+            "controller": [
+                "邪神",
+                "安卓端"
+            ],
+            "path": [
+                "./resource",
+                "./resource_rlyeh"
+            ]
+        },
+        {
+            "name": "Techcronoss",
+            "controller": [
+                "铁扣大乱斗",
+                "安卓端"
+            ],
+            "path": [
+                "./resource",
+                "./resource_tech"
+            ]
+        }
+    ],
+    "controller": [
+        {
+            "name": "抹布",
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "テクロノス|マブラヴ|邪神戦記ルルイエ少女隊X",
+                "window_regex": "^マブラヴ・ガールズガーデンX$",
                 "screencap": "FramePool",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
             }
         },
         {
-            "name": "邪神戦記ルルイエ少女隊X",
+            "name": "铁扣大乱斗",
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "邪神戦記ルルイエ少女隊X",
-                "screencap": "PrintWindow",
+                "window_regex": "^テクロノスX$",
+                "screencap": "FramePool",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
             }
+        },
+        {
+            "name": "邪神",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "^邪神戦記ルルイエ少女隊X$",
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        },
+        {
+            "name": "安卓端",
+            "type": "Adb"
         }
     ],
-    "resource": [
-        {
-            "name": "MGG",
-            "path": [
-                "./resource_mgg"
-            ]
-        },
-        {
-            "name": "邪神戦記ルルイエ少女隊X",
-            "path": [
-                "./resource_rlyeh"
-            ]
-        },
-        {
-            "name": "Techcronoss",
-            "path": [
-                "./resource_tech"
-            ]
-        }
-    ],
-    "task": [
-        {
-            "name": "远征收菜",
-            "entry": "E 远征 点击城镇",
-            "resource": [
-                "Techcronoss"
-            ]
-        },
-        {
-            "name": "领票强化",
-            "entry": "领票确认home",
-            "resource": [
-                "Techcronoss"
-            ]
-        },
-        {
-            "name": "免费石头",
-            "entry": "Entry_freeStone",
-            "resource": [
-                "Techcronoss"
-            ]
-        },
-        {
-            "name": "采掘",
-            "entry": "E 采掘 点击",
-            "resource": [
-                "MGG"
-            ]
-        },
-        {
-            "name": "免费石",
-            "entry": "E 免费石",
-            "resource": [
-                "MGG"
-            ]
-        },
-        {
-            "name": "课外活动",
-            "entry": "E 课外活动 任务",
-            "resource": [
-                "MGG"
-            ]
-        },
-        {
-            "name": "演习",
-            "entry": "start_quest_exercise",
-            "resource": [
-                "MGG"
-            ]
-        },
-        {
-            "name": "MAZE",
-            "entry": "mgg_maze_prepare",
-            "resource": [
-                "MGG"
-            ]
-        },
-        {
-            "name": "主线收菜",
-            "entry": "Task主线",
-            "resource": [
-                "邪神戦記ルルイエ少女隊X"
-            ]
-        },
-        {
-            "name": "残响",
-            "entry": "Task残响",
-            "resource": [
-                "邪神戦記ルルイエ少女隊X"
-            ]
-        },
-        {
-            "name": "祭坛",
-            "entry": "Task祭坛",
-            "resource": [
-                "邪神戦記ルルイエ少女隊X"
-            ]
-        },
-        {
-            "name": "竞技场",
-            "entry": "Task竞技场",
-            "resource": [
-                "邪神戦記ルルイエ少女隊X"
-            ]
-        }
-    ],
-    "option": {}
+    "task": [],
+    "import": [
+        "./interface_rlyeh.json",
+        "./interface_mgg.json",
+        "./interface_tech.json"
+    ]
 }

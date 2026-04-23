@@ -1,0 +1,33 @@
+{
+    "resource": [
+        {
+            "name": "Techcronoss",
+            "path": [
+                "./resource_tech"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "远征收菜",
+            "entry": "E 远征 点击城镇",
+            "resource": [
+                "Techcronoss"
+            ]
+        },
+        {
+            "name": "领票强化",
+            "entry": "领票确认home",
+            "resource": [
+                "Techcronoss"
+            ]
+        },
+        {
+            "name": "免费石头",
+            "entry": "Entry_freeStone",
+            "resource": [
+                "Techcronoss"
+            ]
+        }
+    ]
+}

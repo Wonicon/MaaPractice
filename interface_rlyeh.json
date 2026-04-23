@@ -1,0 +1,67 @@
+{
+    "controller": [
+        {
+            "name": "邪神戦記ルルイエ少女隊X",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "邪神戦記ルルイエ少女隊X",
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "邪神戦記ルルイエ少女隊X",
+            "path": [
+                "./resource_rlyeh"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "登录",
+            "entry": "Login",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "主线收菜",
+            "entry": "Task主线",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "残响",
+            "entry": "Task残响",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "祭坛",
+            "entry": "Task祭坛",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "竞技场",
+            "entry": "Task竞技场",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "领取日常奖励",
+            "entry": "Mission",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        }
+    ]
+}
