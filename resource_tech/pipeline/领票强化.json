@@ -638,7 +638,8 @@
             }
         },
         "next": [
-            "选择通过的任务"
+            "选择通过的任务",
+            "[JumpBack]点击等级_副本1"
         ],
         "$__mpe_code": {
             "position": {
@@ -760,14 +761,17 @@
                 "template": [
                     "tech_quest_reinforce_passed.png"
                 ],
+                "threshold": 0.85,
                 "order_by": "Horizontal",
                 "index": -2
             }
         },
+        "pre_wait_freezes": 0,
+        "pre_delay": 0,
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
             "增加次数",
             "选择通过的任务"
@@ -865,6 +869,34 @@
             "position": {
                 "x": 52,
                 "y": 249
+            }
+        }
+    },
+    "点击等级_副本1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_quest_reinforce_level.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    233,
+                    365,
+                    54,
+                    43
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2482,
+                "y": 363
             }
         }
     }
