@@ -1,0 +1,117 @@
+{
+    "$__mpe_config_login": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1776903948088,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\login.json",
+            "savedViewport": {
+                "x": -3134,
+                "y": -582,
+                "zoom": 0.87
+            },
+            "filename": "login",
+            "version": "v1.4.2"
+        }
+    },
+    "click_login_bonus": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "DAY1",
+                    "DA8",
+                    "DAY10",
+                    "DAY20"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "click_login_bonus"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4365,
+                "y": 966
+            }
+        }
+    },
+    "check_title_logo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    512,
+                    274,
+                    303,
+                    90
+                ]
+            }
+        },
+        "next": [
+            "click_login_bonus"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3988,
+                "y": 855
+            }
+        }
+    },
+    "check_title_text": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "ID:タップで表示",
+                    "ID:タプで表示"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    480,
+                    311,
+                    433,
+                    105
+                ]
+            }
+        },
+        "next": [
+            "click_login_bonus"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3985,
+                "y": 1149
+            }
+        }
+    },
+    "login_title": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "check_title_logo",
+            "check_title_text"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3654,
+                "y": 951
+            }
+        }
+    }
+}
