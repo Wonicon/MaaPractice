@@ -24,6 +24,9 @@
             "[JumpBack]战斗中",
             "[JumpBack]战斗结算"
         ],
+        "focus": {
+            "Node.Recognition.Succeeded": "开始任务调度"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 2049,
@@ -41,6 +44,9 @@
             }
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "等待战斗结束"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 2366,
@@ -59,6 +65,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "点击战斗开始"
         },
         "$__mpe_code": {
             "position": {
@@ -81,6 +90,9 @@
             "type": "Click"
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "点击战斗结算"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 2354,
@@ -99,6 +111,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "点击新任务"
         },
         "$__mpe_code": {
             "position": {
@@ -125,6 +140,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "点击下一步"
         },
         "$__mpe_code": {
             "position": {
