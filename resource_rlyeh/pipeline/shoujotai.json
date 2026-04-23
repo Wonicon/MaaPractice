@@ -2,16 +2,16 @@
     "$__mpe_config_新建Pipeline2": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776779508495,
+            "lastSyncTime": 1776958651608,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_rlyeh\\pipeline\\shoujotai.json",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_rlyeh\\pipeline\\shoujotai.json",
             "savedViewport": {
-                "x": -3259,
-                "y": -1465,
-                "zoom": 1.5
+                "x": -769,
+                "y": 255,
+                "zoom": 0.8
             },
             "filename": "新建Pipeline2",
-            "version": "v1.4.1"
+            "version": "v1.4.2"
         }
     },
     "Task主线": {
@@ -30,8 +30,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "主线收菜弹出",
@@ -55,8 +54,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "残响剧场",
@@ -79,8 +77,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛",
@@ -103,8 +100,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "竞技场",
@@ -127,8 +123,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "主线快速战斗2",
@@ -202,8 +197,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "主线快速战斗执行"
@@ -262,8 +256,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "主线报酬弹窗",
@@ -408,8 +401,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]主线战斗中",
@@ -442,8 +434,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "主线战斗_编队界面",
@@ -502,6 +493,9 @@
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "点绿球收菜"
+        },
         "next": [
             "主线收菜有货",
             "主线收菜无货",
@@ -509,32 +503,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 255,
-                "y": 2006
-            }
-        }
-    },
-    "主线收菜有货": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "template_1776696070719.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "next": [
-            "主线收菜报酬弹窗",
-            "主线收菜有货"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 641,
-                "y": 1929
+                "x": 257,
+                "y": 2082
             }
         }
     },
@@ -548,17 +518,19 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "自动弹出收菜"
+        },
         "next": [
             "主线收菜弹出报酬弹窗"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 329,
-                "y": 1622
+                "x": 288,
+                "y": 1709
             }
         }
     },
@@ -586,10 +558,13 @@
             }
         },
         "repeat": 10,
+        "next": [
+            "主线快速战斗"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 679,
-                "y": 1623
+                "x": 654,
+                "y": 1653
             }
         }
     },
@@ -619,8 +594,70 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1003,
-                "y": 1935
+                "x": 897,
+                "y": 2008
+            }
+        }
+    },
+    "主线收菜无货": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    486,
+                    381,
+                    316,
+                    75
+                ],
+                "expected": [
+                    "アイテムを獲得していません"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    617,
+                    492,
+                    70,
+                    6
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "主线收菜无货",
+            "主线收菜有货",
+            "主线快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 664,
+                "y": 2231
+            }
+        }
+    },
+    "主线收菜有货": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776696070719.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "主线收菜报酬弹窗",
+            "主线收菜有货"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 656,
+                "y": 1990
             }
         }
     },
@@ -659,8 +696,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "跳过"
@@ -672,15 +708,15 @@
             }
         }
     },
-    "开催中": {
+    "SelectOpenBoss": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    54,
-                    463,
-                    1074,
-                    167
+                    16,
+                    330,
+                    1223,
+                    306
                 ],
                 "template": [
                     "开催中.png"
@@ -688,13 +724,12 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛挑战用完",
             "祭坛挑战",
-            "开催中"
+            "SelectOpenBoss"
         ],
         "$__mpe_code": {
             "position": {
@@ -764,8 +799,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛挑战",
@@ -851,8 +885,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "残响剧场3",
@@ -875,8 +908,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "残响剧场5",
@@ -959,8 +991,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "残响剧场8_取消编队",
@@ -986,8 +1017,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "残响剧场9_退出剧场",
@@ -1047,8 +1077,7 @@
             }
         },
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
@@ -1089,11 +1118,10 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
-            "开催中",
+            "SelectOpenBoss",
             "祭坛"
         ],
         "$__mpe_code": {
@@ -1153,8 +1181,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛跳过",
@@ -1184,8 +1211,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "战斗返回",
@@ -1215,8 +1241,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "返回spot"
@@ -1280,8 +1305,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛结果返回",
@@ -1304,8 +1328,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "祭坛跳过",
@@ -1351,8 +1374,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "竞技场内部",
@@ -1425,8 +1447,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 60000,
         "next": [
@@ -1468,8 +1489,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "竞技场出击",
@@ -1535,8 +1555,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 60000,
         "next": [
@@ -1568,8 +1587,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "跳过",
@@ -1608,8 +1626,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "确认主页",
@@ -1619,45 +1636,6 @@
             "position": {
                 "x": 4223,
                 "y": 1029
-            }
-        }
-    },
-    "主线收菜无货": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    486,
-                    381,
-                    316,
-                    75
-                ],
-                "expected": [
-                    "アイテムを獲得していません"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    617,
-                    492,
-                    70,
-                    6
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "主线收菜无货",
-            "主线收菜有货",
-            "主线快速战斗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 664,
-                "y": 2231
             }
         }
     }
