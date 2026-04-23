@@ -452,3 +452,17 @@ tools/ImageCropper/**/*.png
 
 config
 debug
+
+resource*/model
+
+MFA*.json
+
+.*/
+
+DependencySetup_*
+
+libs/
+
+appsettings.json
+
+*.zip

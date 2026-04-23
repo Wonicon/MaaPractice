@@ -2,16 +2,16 @@
     "$__mpe_config_采掘": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776106119385,
+            "lastSyncTime": 1776904492063,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\采掘.json",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\采掘.json",
             "savedViewport": {
-                "x": -2710,
-                "y": -18,
-                "zoom": 0.74
+                "x": -578,
+                "y": 272,
+                "zoom": 0.66
             },
             "filename": "采掘",
-            "version": "v1.4.1"
+            "version": "v1.4.2"
         }
     },
     "E 免费石": {
@@ -24,8 +24,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -48,8 +47,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -180,7 +178,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "时短产物确认"
+            "时短产物确认",
+            "指挥官升级1_副本2"
         ],
         "$__mpe_code": {
             "position": {
@@ -199,8 +198,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费_副本9",
@@ -229,8 +227,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费确认"
@@ -258,8 +255,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费确认_副本10"
@@ -287,8 +283,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费确认_副本10_副本14"
@@ -490,8 +485,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "确认主页",
@@ -514,8 +508,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费_副本9_副本13",
@@ -544,8 +537,7 @@
             }
         },
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
@@ -564,8 +556,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "每日免费",
@@ -588,8 +579,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -614,8 +604,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -646,8 +635,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -670,8 +658,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "$__mpe_code": {
@@ -699,8 +686,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "next": [
@@ -723,8 +709,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 800,
         "$__mpe_code": {
@@ -737,8 +722,7 @@
     "采掘任务结束": {
         "pre_delay": 0,
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "post_delay": 0,
         "$__mpe_code": {
@@ -771,12 +755,13 @@
         "post_delay": 800,
         "next": [
             "采掘确认",
-            "采掘弹窗"
+            "采掘弹窗",
+            "指挥官升级1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 58
+                "x": 314,
+                "y": -6
             }
         }
     },
@@ -805,8 +790,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 58
+                "x": 977,
+                "y": 113
             }
         }
     },
@@ -873,8 +858,54 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 42
+                "x": 687,
+                "y": 48
+            }
+        }
+    },
+    "指挥官升级1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "levelup.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "指挥官升级1",
+            "采掘确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 623,
+                "y": -237
+            }
+        }
+    },
+    "指挥官升级1_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "levelup.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "指挥官升级1_副本2",
+            "时短产物确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1549,
+                "y": -232
             }
         }
     }
