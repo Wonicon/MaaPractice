@@ -2,56 +2,16 @@
     "$__mpe_config_angel.json": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776520792035,
+            "lastSyncTime": 1776905167023,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource\\pipeline\\angel.json",
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_angelr\\pipeline\\angel.json",
             "savedViewport": {
-                "x": -618,
-                "y": -197,
-                "zoom": 0.54
+                "x": -767,
+                "y": -107,
+                "zoom": 0.66
             },
             "filename": "angel.json",
-            "version": "v1.4.1"
-        }
-    },
-    "新任务": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "template_1776519221112.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2371,
-                "y": 75
-            }
-        }
-    },
-    "次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "次.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2370,
-                "y": 312
-            }
+            "version": "v1.4.2"
         }
     },
     "Start": {
@@ -68,26 +28,6 @@
             "position": {
                 "x": 2049,
                 "y": 217
-            }
-        }
-    },
-    "战斗开始": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "战斗开始.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2363,
-                "y": 540
             }
         }
     },
@@ -108,6 +48,25 @@
             }
         }
     },
+    "战斗开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "战斗开始.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2363,
+                "y": 540
+            }
+        }
+    },
     "战斗结算": {
         "recognition": {
             "type": "TemplateMatch",
@@ -119,14 +78,58 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 1000,
         "$__mpe_code": {
             "position": {
                 "x": 2354,
                 "y": 1002
+            }
+        }
+    },
+    "新任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776519221112.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2371,
+                "y": 75
+            }
+        }
+    },
+    "次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "expected": [
+                    "次",
+                    "次へ"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2370,
+                "y": 312
             }
         }
     }
