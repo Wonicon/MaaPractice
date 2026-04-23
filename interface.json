@@ -31,6 +31,17 @@
             ]
         },
         {
+            "name": "天使连接",
+            "controller": [
+                "天使",
+                "安卓端"
+            ],
+            "path": [
+                "./resource",
+                "./resource_angelr"
+            ]
+        },
+        {
             "name": "Techcronoss",
             "controller": [
                 "铁扣大乱斗",
@@ -71,7 +82,18 @@
             "win32": {
                 "class_regex": ".*",
                 "window_regex": "^邪神戦記ルルイエ少女隊X$",
-                "screencap": "FramePool",
+                "screencap": "PrintWindow",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
+            }
+        },
+        {
+            "name": "天使",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "^エンジェリックリンク",
+                "screencap": "PrintWindow",
                 "mouse": "LegacyEvent",
                 "keyboard": "LegacyEvent"
             }
@@ -85,6 +107,7 @@
     "import": [
         "./interface_rlyeh.json",
         "./interface_mgg.json",
+        "./interface_angelr.json",
         "./interface_tech.json"
     ]
 }
