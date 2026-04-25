@@ -82,7 +82,8 @@
             "param": {
                 "template": [
                     "战斗结算.png",
-                    "弹窗OK.png"
+                    "弹窗OK.png",
+                    "you_win_in_maze.png"
                 ]
             }
         },
