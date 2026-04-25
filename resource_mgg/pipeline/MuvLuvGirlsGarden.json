@@ -2,16 +2,16 @@
     "$__mpe_config_MuvLuvGirlsGarden": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776782929926,
+            "lastSyncTime": 1777111840114,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\MuvLuvGirlsGarden.json",
             "savedViewport": {
-                "x": 35,
-                "y": -1149,
-                "zoom": 0.61
+                "x": 410,
+                "y": -2289,
+                "zoom": 0.72
             },
             "filename": "MuvLuvGirlsGarden",
-            "version": "v1.4.1"
+            "version": "v1.4.2"
         }
     },
     "$__mpe_anchor_NextBuy_MuvLuvGirlsGarden": {
@@ -225,8 +225,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "next": [
@@ -237,6 +236,45 @@
             "position": {
                 "x": 990,
                 "y": 2240
+            }
+        }
+    },
+    "MGG MAZE 误入抽卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    15,
+                    0,
+                    225,
+                    75
+                ],
+                "expected": [
+                    "ガチヤ"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    30,
+                    16,
+                    52,
+                    36
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "mgg_maze_prepare",
+            "MGG MAZE 误入抽卡",
+            "MGG MAZE 探索"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1023,
+                "y": 2568
             }
         }
     },
@@ -256,8 +294,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -286,17 +323,13 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
-        "next": [
-            "新建节点3_副本8"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1307,
-                "y": 2885
+                "x": 1175,
+                "y": 2820
             }
         }
     },
@@ -330,13 +363,10 @@
             }
         },
         "post_delay": 3000,
-        "next": [
-            "新建节点3_副本8"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1315,
-                "y": 3211
+                "x": 1164,
+                "y": 3137
             }
         }
     },
@@ -350,8 +380,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE 后总线"
@@ -379,8 +408,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE 后总线"
@@ -389,35 +417,6 @@
             "position": {
                 "x": 1612,
                 "y": 2860
-            }
-        }
-    },
-    "MGG 继续_副本7": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1027,
-                    606,
-                    244,
-                    105
-                ],
-                "template": [
-                    "mgg_maze_next.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "next": [
-            "exercise_click_to_remove_popup"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1339,
-                "y": 3494
             }
         }
     },
@@ -469,8 +468,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE BUY xbar1"
@@ -502,8 +500,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE BUY xbar1"
@@ -561,8 +558,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE BUY xbar1"
@@ -865,8 +861,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 500,
         "next": [
@@ -898,23 +893,21 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_wait_freezes": 500,
         "next": [
-            "新建节点3",
+            "演习战斗前中转",
             "exercise_click_battle"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 824,
-                "y": 2940
+                "x": 412,
+                "y": 2961
             }
         }
     },
     "exercise_click_prepare": {
-        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -929,86 +922,17 @@
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
-        "post_wait_freezes": 500,
         "next": [
-            "exercise_click_battle",
-            "exercise_click_prepare",
-            "exercise_go_home"
+            "exercise_click_battle"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 395,
-                "y": 3016
-            }
-        }
-    },
-    "exercise_click_to_remove_popup": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    597,
-                    22,
-                    276,
-                    29
-                ]
-            }
-        },
-        "repeat": 6,
-        "next": [
-            "exercise_click_prepare"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1806,
-                "y": 3588
-            }
-        }
-    },
-    "exercise_go_home": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "本日あと0回"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    431,
-                    657,
-                    30,
-                    24
-                ]
-            }
-        },
-        "repeat": 5,
-        "next": [
-            "exercise_stop"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 678,
-                "y": 3501
-            }
-        }
-    },
-    "exercise_stop": {
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1065,
-                "y": 3799
+                "x": -37,
+                "y": 3077
             }
         }
     },
@@ -1111,7 +1035,6 @@
         }
     },
     "quest_click_exercise": {
-        "max_hit": 1,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1121,47 +1044,22 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
-        "post_wait_freezes": 500,
+        "post_delay": 500,
         "next": [
-            "quest_click_exercise_副本10",
-            "exercise_click_prepare"
+            "演习无剩余次数",
+            "[JumpBack]演习 popup result",
+            "[JumpBack]exercise_click_prepare"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -119,
-                "y": 3029
+                "x": -476,
+                "y": 3310
             }
         }
     },
-    "quest_click_exercise_副本10": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "template_1776270141907.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "post_wait_freezes": 500,
-        "next": [
-            "quest_click_exercise_副本10",
-            "exercise_click_prepare"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 121,
-                "y": 3373
-            }
-        }
-    },
-    "start_quest_exercise": {
+    "E 演习": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1171,42 +1069,224 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
-        "post_wait_freezes": 500,
         "next": [
             "quest_click_exercise",
-            "start_quest_exercise"
+            "E 演习"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -697,
-                "y": 3033
+                "x": -783,
+                "y": 3115
             }
         }
     },
-    "新建节点3": {
-        "next": [
-            "MGG MAZE 跳过战斗_副本4",
-            "MGG 战斗中_副本5",
-            "MGG 继续_副本7"
-        ],
+    "新建节点5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    7,
+                    5,
+                    436,
+                    119
+                ],
+                "expected": [
+                    "戦術演習"
+                ]
+            }
+        },
         "$__mpe_code": {
             "position": {
-                "x": 1023,
-                "y": 3410
+                "x": 1500,
+                "y": 3339
             }
         }
     },
-    "新建节点3_副本8": {
+    "演习 popup result": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    161,
+                    87,
+                    990,
+                    263
+                ],
+                "expected": [
+                    "前回ランク確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    520,
+                    49,
+                    278,
+                    56
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -60,
+                "y": 2823
+            }
+        }
+    },
+    "演习战斗前中转": {
+        "pre_delay": 0,
+        "post_delay": 0,
         "next": [
-            "新建节点3"
+            "[JumpBack]MGG MAZE 跳过战斗_副本4",
+            "[JumpBack]MGG 战斗中_副本5",
+            "演习战斗点继续"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1645,
-                "y": 3300
+                "x": 745,
+                "y": 3067
+            }
+        }
+    },
+    "演习战斗点继续": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1027,
+                    606,
+                    244,
+                    105
+                ],
+                "template": [
+                    "mgg_maze_next.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "[JumpBack]演习战斗点继续_重试",
+            "新建节点5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1117,
+                "y": 3419
+            }
+        }
+    },
+    "演习战斗点继续_重试": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1027,
+                    606,
+                    244,
+                    105
+                ],
+                "template": [
+                    "mgg_maze_next.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1490,
+                "y": 3578
+            }
+        }
+    },
+    "演习无剩余次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "本日あと0回"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "演习返回首页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -38,
+                "y": 3500
+            }
+        }
+    },
+    "演习确认首页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "present.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 602,
+                "y": 3694
+            }
+        }
+    },
+    "演习返回首页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "演习确认首页",
+            "[JumpBack]演习返回首页_重试"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 229,
+                "y": 3774
+            }
+        }
+    },
+    "演习返回首页_重试": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 610,
+                "y": 3994
             }
         }
     },
@@ -1226,8 +1306,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "MGG MAZE 后总线"
@@ -1255,8 +1334,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "选择路线",
@@ -1266,45 +1344,6 @@
             "position": {
                 "x": 1612,
                 "y": 2385
-            }
-        }
-    },
-    "MGG MAZE 误入抽卡": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    15,
-                    0,
-                    225,
-                    75
-                ],
-                "expected": [
-                    "ガチヤ"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    30,
-                    16,
-                    52,
-                    36
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "next": [
-            "mgg_maze_prepare",
-            "MGG MAZE 误入抽卡",
-            "MGG MAZE 探索"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1023,
-                "y": 2568
             }
         }
     }
