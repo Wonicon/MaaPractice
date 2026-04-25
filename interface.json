@@ -94,8 +94,8 @@
                 "class_regex": ".*",
                 "window_regex": "^エンジェリックリンク",
                 "screencap": "PrintWindow",
-                "mouse": "LegacyEvent",
-                "keyboard": "LegacyEvent"
+                "mouse": "SendMessage",
+                "keyboard": "SendMessage"
             }
         },
         {
