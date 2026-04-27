@@ -48,7 +48,28 @@
         },
         {
             "name": "演习",
-            "entry": "start_quest_exercise",
+            "entry": "E 演习",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "登录",
+            "entry": "login_title",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "领邮件",
+            "entry": "present点击礼物",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "前往迷宫",
+            "entry": "EnterGoMaze",
             "resource": [
                 "MGG"
             ]

@@ -2,16 +2,16 @@
     "$__mpe_config_MuvLuvGirlsGarden": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1777111840114,
+            "lastSyncTime": 1777307184339,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\MuvLuvGirlsGarden.json",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\MuvLuvGirlsGarden.json",
             "savedViewport": {
-                "x": 410,
-                "y": -2289,
-                "zoom": 0.72
+                "x": 239,
+                "y": -2056,
+                "zoom": 0.65
             },
             "filename": "MuvLuvGirlsGarden",
-            "version": "v1.4.2"
+            "version": "v1.4.3"
         }
     },
     "$__mpe_anchor_NextBuy_MuvLuvGirlsGarden": {
@@ -19,6 +19,29 @@
             "position": {
                 "x": 3532,
                 "y": 1010
+            }
+        }
+    },
+    "E 演习": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1776271976991.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "quest_click_exercise",
+            "E 演习"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -783,
+                "y": 3115
             }
         }
     },
@@ -1059,29 +1082,6 @@
             }
         }
     },
-    "E 演习": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "template_1776271976991.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "quest_click_exercise",
-            "E 演习"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -783,
-                "y": 3115
-            }
-        }
-    },
     "新建节点5": {
         "recognition": {
             "type": "OCR",
@@ -1099,8 +1099,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1500,
-                "y": 3339
+                "x": 1488,
+                "y": 3377
             }
         }
     },
@@ -1203,8 +1203,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1490,
-                "y": 3578
+                "x": 1580,
+                "y": 3687
             }
         }
     },
@@ -1229,25 +1229,6 @@
             }
         }
     },
-    "演习确认首页": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "present.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 602,
-                "y": 3694
-            }
-        }
-    },
     "演习返回首页": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1261,32 +1242,13 @@
             "type": "Click"
         },
         "next": [
-            "演习确认首页",
+            "login_判断首页",
             "[JumpBack]演习返回首页_重试"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 229,
                 "y": 3774
-            }
-        }
-    },
-    "演习返回首页_重试": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "home.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 610,
-                "y": 3994
             }
         }
     },
@@ -1344,6 +1306,36 @@
             "position": {
                 "x": 1612,
                 "y": 2385
+            }
+        }
+    },
+    "$__mpe_external_login_判断首页_MuvLuvGirlsGarden": {
+        "$__mpe_code": {
+            "position": {
+                "x": 625,
+                "y": 3662
+            }
+        }
+    },
+    "演习返回首页_重试": {
+        "recognition": {
+            "type": "TemplateMatch"
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    442,
+                    664,
+                    19,
+                    6
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 555,
+                "y": 3896
             }
         }
     }

@@ -1,0 +1,199 @@
+{
+    "$__mpe_config_新建Pipeline4": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\present.json",
+            "lastSyncTime": 1777306793012,
+            "savedViewport": {
+                "x": -3659,
+                "y": -769,
+                "zoom": 0.75
+            },
+            "filename": "新建Pipeline4",
+            "version": "v1.4.3"
+        }
+    },
+    "$__mpe_external_login_判断首页_新建Pipeline4": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6757,
+                "y": 1727
+            }
+        }
+    },
+    "present点击礼物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1156,
+                    100,
+                    122,
+                    132
+                ],
+                "template": [
+                    "home_present.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1227,
+                    163,
+                    3,
+                    5
+                ]
+            }
+        },
+        "next": [
+            "present点击世界",
+            "present点击礼物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5007,
+                "y": 1197
+            }
+        }
+    },
+    "present点击世界": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    414,
+                    132
+                ],
+                "expected": [
+                    "プレゼントBOX"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    62,
+                    353,
+                    44,
+                    19
+                ]
+            }
+        },
+        "next": [
+            "present点击一起收取_色彩",
+            "present确认清空"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5373,
+                "y": 1171
+            }
+        }
+    },
+    "present点击一起收取_色彩": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "method": 40,
+                "lower": [
+                    [
+                        167,
+                        208,
+                        252
+                    ]
+                ],
+                "upper": [
+                    [
+                        167,
+                        208,
+                        253
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "present确认结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5714,
+                "y": 1202
+            }
+        }
+    },
+    "present确认结果": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    479,
+                    558,
+                    341,
+                    159
+                ],
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "present确认结果",
+            "present确认清空"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6075,
+                "y": 1352
+            }
+        }
+    },
+    "present确认清空": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    404,
+                    396,
+                    612,
+                    125
+                ],
+                "expected": [
+                    "受取可能なプレゼントがありません"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    39,
+                    28,
+                    27,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "present确认清空",
+            "login_判断首页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6344,
+                "y": 1536
+            }
+        }
+    }
+}
