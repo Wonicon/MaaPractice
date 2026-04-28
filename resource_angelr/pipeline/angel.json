@@ -107,7 +107,9 @@
             "param": {
                 "template": [
                     "template_1776519221112.png"
-                ]
+                ],
+                "order_by": "Vertical",
+                "index": 0
             }
         },
         "action": {
