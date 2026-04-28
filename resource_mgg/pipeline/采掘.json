@@ -2,13 +2,13 @@
     "$__mpe_config_采掘": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1777307330118,
+            "lastSyncTime": 1777384352619,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\采掘.json",
             "savedViewport": {
-                "x": -1057,
-                "y": 240,
-                "zoom": 0.75
+                "x": -1339,
+                "y": -286,
+                "zoom": 0.53
             },
             "filename": "采掘",
             "version": "v1.4.3"
@@ -427,7 +427,7 @@
             }
         },
         "next": [
-            "每日免费结束"
+            "login_判断首页"
         ],
         "$__mpe_code": {
             "position": {
@@ -526,29 +526,6 @@
             }
         }
     },
-    "每日免费结束": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "home.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "确认主页",
-            "每日免费结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1600,
-                "y": 905
-            }
-        }
-    },
     "每月免费": {
         "recognition": {
             "type": "TemplateMatch",
@@ -563,37 +540,12 @@
         },
         "next": [
             "每日免费_副本9_副本13",
-            "每日免费结束"
+            "login_判断首页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3152,
-                "y": 424
-            }
-        }
-    },
-    "确认主页": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    701,
-                    6,
-                    89,
-                    60
-                ],
-                "template": [
-                    "home_stone_mark.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3098,
-                "y": 735
+                "x": 3134,
+                "y": 442
             }
         }
     },
@@ -659,12 +611,13 @@
         },
         "post_delay": 800,
         "next": [
-            "每日免费结束"
+            "课外活动关闭",
+            "login_判断首页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 1350
+                "x": 3367,
+                "y": 1137
             }
         }
     },
@@ -847,6 +800,31 @@
             }
         }
     },
+    "采掘弹窗 避免付费时短": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    618,
+                    509,
+                    252,
+                    98
+                ],
+                "expected": [
+                    "50"
+                ]
+            }
+        },
+        "next": [
+            "采掘弹窗关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1011,
+                "y": -81
+            }
+        }
+    },
     "采掘弹窗关闭": {
         "recognition": {
             "type": "TemplateMatch",
@@ -919,28 +897,11 @@
             }
         }
     },
-    "采掘弹窗 避免付费时短": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    618,
-                    509,
-                    252,
-                    98
-                ],
-                "expected": [
-                    "50"
-                ]
-            }
-        },
-        "next": [
-            "采掘弹窗关闭"
-        ],
+    "$__mpe_external_login_判断首页_采掘": {
         "$__mpe_code": {
             "position": {
-                "x": 1011,
-                "y": -81
+                "x": 3890,
+                "y": 970
             }
         }
     }

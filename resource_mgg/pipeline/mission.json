@@ -1,0 +1,149 @@
+{
+    "$__mpe_config_mission": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\mission.json",
+            "lastSyncTime": 1777393155537,
+            "isModifiedExternally": false,
+            "savedViewport": {
+                "x": -1131,
+                "y": -137,
+                "zoom": 0.57
+            },
+            "filename": "mission",
+            "version": "v1.4.3"
+        }
+    },
+    "EnterMission": {
+        "next": [
+            "click_mission"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1659,
+                "y": 593
+            }
+        }
+    },
+    "click_mission": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "click_mission",
+            "before_accept_mission_rewards"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1940,
+                "y": 449
+            }
+        }
+    },
+    "click_accept_all_mission": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "accept_all.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "click_mission_rewards_ok",
+            "click_right_top_go_home"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2476,
+                "y": 814
+            }
+        }
+    },
+    "click_mission_rewards_ok": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "click_to_weekly",
+            "click_right_top_go_home"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2829,
+                "y": 703
+            }
+        }
+    },
+    "click_to_weekly": {
+        "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    55,
+                    341,
+                    44,
+                    36
+                ]
+            }
+        },
+        "next": [
+            "before_accept_mission_rewards"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3219,
+                "y": 493
+            }
+        }
+    },
+    "before_accept_mission_rewards": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "click_accept_all_mission",
+            "click_to_weekly",
+            "click_right_top_go_home"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2087,
+                "y": 810
+            }
+        }
+    },
+    "$__mpe_external_click_right_top_go_home_mission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2987,
+                "y": 1253
+            }
+        }
+    }
+}
