@@ -2,12 +2,12 @@
     "$__mpe_config_新建Pipeline3": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1777305119288,
+            "lastSyncTime": 1777383809595,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\login.json",
             "savedViewport": {
-                "x": -1476,
-                "y": -262,
+                "x": -1827,
+                "y": -237,
                 "zoom": 0.49
             },
             "filename": "新建Pipeline3",
@@ -35,13 +35,13 @@
             }
         },
         "next": [
-            "click_login_bonus",
-            "check_title_logo"
+            "check_title_logo",
+            "login_title_post"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3942,
-                "y": 843
+                "x": 3920,
+                "y": 845
             }
         }
     },
@@ -67,13 +67,13 @@
             }
         },
         "next": [
-            "click_login_bonus",
-            "check_title_text"
+            "check_title_text",
+            "login_title_post"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3936,
-                "y": 1098
+                "x": 3916,
+                "y": 1084
             }
         }
     },
@@ -81,11 +81,15 @@
         "recognition": {
             "type": "OCR",
             "param": {
+                "roi": [
+                    192,
+                    67,
+                    890,
+                    578
+                ],
                 "expected": [
-                    "DAY1",
-                    "DA8",
-                    "DAY10",
-                    "DAY20"
+                    "DAY",
+                    "DA"
                 ]
             }
         },
@@ -95,13 +99,10 @@
         "focus": {
             "Node.Recognition.Succeeded": "点击登录奖励"
         },
-        "next": [
-            "click_login_bonus"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 4347,
-                "y": 973
+                "x": 4689,
+                "y": 651
             }
         }
     },
@@ -127,7 +128,11 @@
                 "template": [
                     "home_7days.png"
                 ],
-                "green_mask": true
+                "green_mask": true,
+                "method": 10001,
+                "threshold": [
+                    0.95
+                ]
             }
         },
         "focus": {
@@ -135,8 +140,94 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 3942,
-                "y": 1317
+                "x": 4689,
+                "y": 1549
+            }
+        }
+    },
+    "login任意点击清除通知": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    775,
+                    247,
+                    69,
+                    85
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4728,
+                "y": 1482
+            }
+        }
+    },
+    "login_title_post": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "login_判断首页",
+            "[JumpBack]点击下一个通知",
+            "[JumpBack]点击关闭通知",
+            "[JumpBack]click_login_bonus",
+            "[JumpBack]login任意点击清除通知"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4257,
+                "y": 928
+            }
+        }
+    },
+    "点击下一个通知": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    190,
+                    529,
+                    870,
+                    139
+                ],
+                "expected": [
+                    "次へ"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4692,
+                "y": 950
+            }
+        }
+    },
+    "点击关闭通知": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    190,
+                    529,
+                    870,
+                    139
+                ],
+                "expected": [
+                    "閉じる"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4760,
+                "y": 1258
             }
         }
     }

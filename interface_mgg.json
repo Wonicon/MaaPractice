@@ -54,7 +54,7 @@
             ]
         },
         {
-            "name": "登录",
+            "name": "MGG登录",
             "entry": "login_title",
             "resource": [
                 "MGG"
@@ -75,8 +75,15 @@
             ]
         },
         {
-            "name": "MAZE",
-            "entry": "mgg_maze_prepare",
+            "name": "CIRCLE",
+            "entry": "EnterCircle",
+            "resource": [
+                "MGG"
+            ]
+        },
+        {
+            "name": "MISSION",
+            "entry": "EnterMission",
             "resource": [
                 "MGG"
             ]
