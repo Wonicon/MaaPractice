@@ -466,3 +466,6 @@ libs/
 appsettings.json
 
 *.zip
+
+cache/
+maafw/

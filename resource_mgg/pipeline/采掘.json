@@ -2,16 +2,24 @@
     "$__mpe_config_采掘": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1777384352619,
+            "lastSyncTime": 1777406219311,
             "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\采掘.json",
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\采掘.json",
             "savedViewport": {
-                "x": -1339,
-                "y": -286,
+                "x": -1343,
+                "y": -234,
                 "zoom": 0.53
             },
             "filename": "采掘",
             "version": "v1.4.3"
+        }
+    },
+    "$__mpe_external_login_判断首页_采掘": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4130,
+                "y": 1144
+            }
         }
     },
     "E 免费石": {
@@ -111,8 +119,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 300,
-                "y": 363
+                "x": 286,
+                "y": 383
             }
         }
     },
@@ -257,8 +265,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1918,
-                "y": 341
+                "x": 1849,
+                "y": 356
             }
         }
     },
@@ -285,8 +293,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 938,
-                "y": 475
+                "x": 918,
+                "y": 493
             }
         }
     },
@@ -313,8 +321,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2217,
-                "y": 507
+                "x": 2215,
+                "y": 512
             }
         }
     },
@@ -341,8 +349,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3486,
-                "y": 363
+                "x": 3501,
+                "y": 304
             }
         }
     },
@@ -371,8 +379,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1597,
-                "y": 490
+                "x": 1517,
+                "y": 505
             }
         }
     },
@@ -427,12 +435,12 @@
             }
         },
         "next": [
-            "login_判断首页"
+            "click_top_right_go_home"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4148,
-                "y": 340
+                "x": 4146,
+                "y": 376
             }
         }
     },
@@ -461,8 +469,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1254,
-                "y": 464
+                "x": 1227,
+                "y": 489
             }
         }
     },
@@ -521,8 +529,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3846,
-                "y": 323
+                "x": 3828,
+                "y": 302
             }
         }
     },
@@ -540,7 +548,7 @@
         },
         "next": [
             "每日免费_副本9_副本13",
-            "login_判断首页"
+            "click_top_right_go_home"
         ],
         "$__mpe_code": {
             "position": {
@@ -567,8 +575,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 609,
-                "y": 356
+                "x": 533,
+                "y": 398
             }
         }
     },
@@ -592,8 +600,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 320,
-                "y": 697
+                "x": 260,
+                "y": 720
             }
         }
     },
@@ -612,12 +620,12 @@
         "post_delay": 800,
         "next": [
             "课外活动关闭",
-            "login_判断首页"
+            "click_top_right_go_home"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3367,
-                "y": 1137
+                "x": 3287,
+                "y": 1351
             }
         }
     },
@@ -647,8 +655,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 649,
-                "y": 1018
+                "x": 539,
+                "y": 1066
             }
         }
     },
@@ -698,8 +706,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 647,
-                "y": 691
+                "x": 591,
+                "y": 689
             }
         }
     },
@@ -718,8 +726,8 @@
         "post_delay": 800,
         "$__mpe_code": {
             "position": {
-                "x": 1014,
-                "y": 728
+                "x": 934,
+                "y": 687
             }
         }
     },
@@ -897,11 +905,26 @@
             }
         }
     },
-    "$__mpe_external_login_判断首页_采掘": {
+    "click_top_right_go_home": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "top_right_go_home_light'.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "login_判断首页",
+            "click_top_right_go_home"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 3890,
-                "y": 970
+                "x": 3772,
+                "y": 867
             }
         }
     }
