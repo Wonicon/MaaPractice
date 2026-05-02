@@ -2,21 +2,24 @@
     "$__mpe_config_angel.json": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1776905167023,
+            "lastSyncTime": 1777648026317,
             "isModifiedExternally": false,
             "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_angelr\\pipeline\\angel.json",
             "savedViewport": {
-                "x": -767,
-                "y": -107,
-                "zoom": 0.66
+                "x": -2205,
+                "y": -654,
+                "zoom": 1.06
             },
             "filename": "angel.json",
-            "version": "v1.4.2"
+            "version": "v1.4.3"
         }
     },
     "Start": {
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "开始任务调度"
+        },
         "next": [
             "[JumpBack]新任务",
             "[JumpBack]次",
@@ -24,9 +27,6 @@
             "[JumpBack]战斗中",
             "[JumpBack]战斗结算"
         ],
-        "focus": {
-            "Node.Recognition.Succeeded": "开始任务调度"
-        },
         "$__mpe_code": {
             "position": {
                 "x": 2049,
@@ -43,14 +43,14 @@
                 ]
             }
         },
-        "post_delay": 500,
+        "post_delay": 100,
         "focus": {
             "Node.Recognition.Succeeded": "等待战斗结束"
         },
         "$__mpe_code": {
             "position": {
-                "x": 2366,
-                "y": 733
+                "x": 2387,
+                "y": 578
             }
         }
     },
@@ -71,8 +71,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2363,
-                "y": 540
+                "x": 2379,
+                "y": 335
             }
         }
     },
@@ -90,14 +90,13 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 500,
         "focus": {
             "Node.Recognition.Succeeded": "点击战斗结算"
         },
         "$__mpe_code": {
             "position": {
-                "x": 2354,
-                "y": 1002
+                "x": 2409,
+                "y": 865
             }
         }
     },
@@ -107,6 +106,9 @@
             "param": {
                 "template": [
                     "template_1776519221112.png"
+                ],
+                "threshold": [
+                    0.85
                 ],
                 "order_by": "Vertical",
                 "index": 0
@@ -120,37 +122,38 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2371,
-                "y": 75
+                "x": 2381,
+                "y": -88
             }
         }
     },
     "次": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "expected": [
-                    "次",
-                    "次へ"
+                "template": [
+                    "次.png"
                 ]
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    20,
+                    20,
+                    -20,
+                    -20
+                ]
+            }
         },
         "focus": {
             "Node.Recognition.Succeeded": "点击下一步"
         },
         "$__mpe_code": {
             "position": {
-                "x": 2370,
-                "y": 312
+                "x": 2518,
+                "y": 123
             }
         }
     }
