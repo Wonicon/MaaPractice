@@ -28,6 +28,20 @@
             "resource": [
                 "Techcronoss"
             ]
+        },
+        {
+            "name": "团本",
+            "entry": "E团本",
+            "resource": [
+                "Techcronoss"
+            ]
+        },
+        {
+            "name": "日常任务",
+            "entry": "E日常任务",
+            "resource": [
+                "Techcronoss"
+            ]
         }
     ]
 }

@@ -1,0 +1,308 @@
+{
+    "$__mpe_config_raid": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\raid.json",
+            "lastSyncTime": 1777695276588,
+            "savedViewport": {
+                "x": -1976,
+                "y": -523,
+                "zoom": 0.99
+            },
+            "filename": "raid",
+            "version": "v1.5.0"
+        }
+    },
+    "E团本": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "RaidClickQuest"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 97,
+                "y": 183
+            }
+        }
+    },
+    "RaidClickQuest": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_quest.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "RaidClickQuest",
+            "RaidClickRaid"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 404,
+                "y": 151
+            }
+        }
+    },
+    "RaidClickRaid": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest_raid.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "RaidClickRaid",
+            "RaidClickElement"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 748,
+                "y": 204
+            }
+        }
+    },
+    "RaidClickElement": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    54,
+                    536,
+                    106
+                ],
+                "template": [
+                    "element_flower.png",
+                    "element_snow.png",
+                    "element_moon.png",
+                    "element_sun.png"
+                ],
+                "threshold": [
+                    0.9
+                ],
+                "order_by": "Random"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "RaidSelectRecomend12000"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1111,
+                "y": 183
+            }
+        }
+    },
+    "RaidSelectRecomend12000": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    9,
+                    152,
+                    303,
+                    539
+                ],
+                "template": [
+                    "raid_recomend_12000.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]RaidAddCost",
+            "RaidClickChallenge"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1519,
+                "y": 297
+            }
+        }
+    },
+    "RaidClickChallenge": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "raid_challenge.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "RaidClickChallenge",
+            "RaidClickMatch"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1808,
+                "y": 559
+            }
+        }
+    },
+    "RaidGoHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "raid_go_home.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "RaidGoHome",
+            "确认home"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2300,
+                "y": 950
+            }
+        }
+    },
+    "$__mpe_external_确认home_raid": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2773,
+                "y": 922
+            }
+        }
+    },
+    "RaidAddCost": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1106,
+                    603,
+                    101,
+                    63
+                ],
+                "template": [
+                    "raid_cost_20.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "inverse": true,
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1224,
+                    624,
+                    24,
+                    21
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1840,
+                "y": -66
+            }
+        }
+    },
+    "RaidClickMatch": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "raid_match.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "RaidClickMatch",
+            "[JumpBack]RaidRoomWait",
+            "[JumpBack]RaidBattleWait",
+            "RaidGoHome"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1983,
+                "y": 786
+            }
+        }
+    },
+    "RaidRoomWait": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "raid_room_stamp.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2288,
+                "y": 265
+            }
+        }
+    },
+    "RaidBattleWait": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "raid_battle_stamp.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2302,
+                "y": 573
+            }
+        }
+    }
+}

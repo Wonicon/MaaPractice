@@ -1,0 +1,199 @@
+{
+    "$__mpe_config_远征收菜": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1777692698325,
+            "isModifiedExternally": false,
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\daily.json",
+            "savedViewport": {
+                "x": -363,
+                "y": 201,
+                "zoom": 0.57
+            },
+            "filename": "远征收菜",
+            "version": "v1.5.0"
+        }
+    },
+    "E 远征 点击城镇": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tec_town.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 700,
+        "next": [
+            "点击远征",
+            "E 远征 点击城镇"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 61
+            }
+        }
+    },
+    "全部接收": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tec_expedition_accept_all.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 700,
+        "next": [
+            "确认",
+            "全部接收"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 95
+            }
+        }
+    },
+    "再度远征": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_expedition_again.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认远征中"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 122
+            }
+        }
+    },
+    "点击远征": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tec_expedition.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "全部接收",
+            "点击远征",
+            "返回主页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 81
+            }
+        }
+    },
+    "确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_popup_expedition_accept_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "再度远征"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 95
+            }
+        }
+    },
+    "确认home": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 76
+            }
+        }
+    },
+    "确认远征中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_expedition_working.png"
+                ]
+            }
+        },
+        "next": [
+            "返回主页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 124
+            }
+        }
+    },
+    "返回主页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_expedition_home.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 700,
+        "next": [
+            "确认home",
+            "返回主页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 22
+            }
+        }
+    }
+}

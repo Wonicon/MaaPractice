@@ -1,0 +1,202 @@
+{
+    "$__mpe_config_mission": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\mission.json",
+            "lastSyncTime": 1777696399720,
+            "savedViewport": {
+                "x": -1208,
+                "y": 127,
+                "zoom": 0.86
+            },
+            "filename": "mission",
+            "version": "v1.5.0"
+        }
+    },
+    "E日常任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_mission.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "E日常任务",
+            "MissionDailyAcceptAll",
+            "MissionClickWeekly"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 22
+            }
+        }
+    },
+    "MissionDailyAcceptAll": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission_accept_all.png"
+                ],
+                "method": 5,
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "MissionDailyAcceptAll",
+            "MissionDailyRewardsOK"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 81
+            }
+        }
+    },
+    "MissionDailyRewardsOK": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_quest_reinforce_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionDailyRewardsOK",
+            "MissionClickWeekly"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 136
+            }
+        }
+    },
+    "MissionClickWeekly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission_weekly.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionWeeklyAcceptAll",
+            "MissionClose"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 96
+            }
+        }
+    },
+    "MissionWeeklyAcceptAll": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission_accept_all.png"
+                ],
+                "method": 5,
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "MissionWeeklyAcceptAll",
+            "MissionWeeklyRewardsOK"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 73
+            }
+        }
+    },
+    "MissionWeeklyRewardsOK": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "tech_quest_reinforce_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionClose"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 136
+            }
+        }
+    },
+    "MissionClose": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    79,
+                    214,
+                    40,
+                    62
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "确认home",
+            "MissionClose"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 99
+            }
+        }
+    },
+    "$__mpe_external_确认home_mission": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 168
+            }
+        }
+    }
+}
