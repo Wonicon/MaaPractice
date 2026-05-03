@@ -1,27 +1,4 @@
 {
-    "$__mpe_config_circle": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1777395251559,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\circle.json",
-            "savedViewport": {
-                "x": 528,
-                "y": 64,
-                "zoom": 0.7
-            },
-            "filename": "circle",
-            "version": "v1.4.3"
-        }
-    },
-    "$__mpe_external_login_判断首页_circle": {
-        "$__mpe_code": {
-            "position": {
-                "x": 734,
-                "y": 1424
-            }
-        }
-    },
     "EnterCircle": {
         "recognition": {
             "type": "TemplateMatch",
@@ -54,13 +31,7 @@
         "next": [
             "check_circle",
             "EnterCircle"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -191,
-                "y": 220
-            }
-        }
+        ]
     },
     "back_from_gacha": {
         "recognition": {
@@ -73,12 +44,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3130,
-                "y": 1208
-            }
         }
     },
     "check_circle": {
@@ -101,13 +66,7 @@
         },
         "next": [
             "click_circle_mission"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 214,
-                "y": 266
-            }
-        }
+        ]
     },
     "check_no_accept": {
         "recognition": {
@@ -127,13 +86,7 @@
         "inverse": false,
         "next": [
             "click_accept_all_circle"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1020,
-                "y": 589
-            }
-        }
+        ]
     },
     "circle_close_any_popup": {
         "recognition": {
@@ -148,12 +101,6 @@
         "pre_delay": 0,
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 982,
-                "y": -53
-            }
         }
     },
     "circle_close_any_popup_副本27": {
@@ -179,13 +126,7 @@
         "next": [
             "新建节点39",
             "circle_close_any_popup_副本27"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2795,
-                "y": 839
-            }
-        }
+        ]
     },
     "circle_exchange": {
         "max_hit": 1,
@@ -203,13 +144,7 @@
         },
         "next": [
             "新建节点35"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1031,
-                "y": 866
-            }
-        }
+        ]
     },
     "circle_gacha": {
         "max_hit": 1,
@@ -228,13 +163,7 @@
         },
         "next": [
             "新建节点35_副本28"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1022,
-                "y": 1107
-            }
-        }
+        ]
     },
     "click_accept_all_circle": {
         "max_hit": 2,
@@ -255,12 +184,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1338,
-                "y": 561
-            }
         }
     },
     "click_away_gache_ani": {
@@ -275,13 +198,7 @@
                 ]
             }
         },
-        "repeat": 5,
-        "$__mpe_code": {
-            "position": {
-                "x": 2485,
-                "y": 1124
-            }
-        }
+        "repeat": 5
     },
     "click_circle_mission": {
         "max_hit": 2,
@@ -312,13 +229,7 @@
             "[JumpBack]click_circle_mission_副本26",
             "[JumpBack]click_circle_weekly_mission",
             "click_right_top_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 582,
-                "y": 218
-            }
-        }
+        ]
     },
     "click_circle_mission_副本26": {
         "recognition": {
@@ -339,13 +250,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 982,
-                "y": 233
-            }
-        }
+        "post_delay": 2000
     },
     "click_circle_weekly_mission": {
         "max_hit": 1,
@@ -358,12 +263,6 @@
                     75,
                     24
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1008,
-                "y": 1340
             }
         }
     },
@@ -388,13 +287,7 @@
         "next": [
             "login_判断首页",
             "click_right_top_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 365,
-                "y": 1259
-            }
-        }
+        ]
     },
     "confirm_circle_gache": {
         "recognition": {
@@ -417,16 +310,10 @@
             }
         },
         "next": [
+            "go_gacha_top",
             "[JumpBack]click_away_gache_ani",
-            "[JumpBack]skip_gacha_result",
-            "go_gacha_top"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2133,
-                "y": 1175
-            }
-        }
+            "[JumpBack]skip_gacha_result"
+        ]
     },
     "go_gacha_top": {
         "recognition": {
@@ -442,13 +329,7 @@
         },
         "next": [
             "back_from_gacha"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2782,
-                "y": 1185
-            }
-        }
+        ]
     },
     "skip_gacha_result": {
         "recognition": {
@@ -467,12 +348,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2486,
-                "y": 1347
-            }
         }
     },
     "新建节点35": {
@@ -493,13 +368,7 @@
         "next": [
             "新建节点35",
             "新建节点36"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1354,
-                "y": 840
-            }
-        }
+        ]
     },
     "新建节点35_副本28": {
         "recognition": {
@@ -519,13 +388,7 @@
         "next": [
             "新建节点35_副本28",
             "新建节点40"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1360,
-                "y": 1150
-            }
-        }
+        ]
     },
     "新建节点36": {
         "recognition": {
@@ -550,13 +413,7 @@
         "next": [
             "新建节点36",
             "新建节点37"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1686,
-                "y": 859
-            }
-        }
+        ]
     },
     "新建节点37": {
         "recognition": {
@@ -578,13 +435,7 @@
         },
         "next": [
             "新建节点38"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2074,
-                "y": 899
-            }
-        }
+        ]
     },
     "新建节点38": {
         "recognition": {
@@ -606,13 +457,7 @@
         },
         "next": [
             "circle_close_any_popup_副本27"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2460,
-                "y": 887
-            }
-        }
+        ]
     },
     "新建节点39": {
         "recognition": {
@@ -634,12 +479,6 @@
                     36
                 ]
             }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3160,
-                "y": 801
-            }
         }
     },
     "新建节点40": {
@@ -657,12 +496,6 @@
         "next": [
             "confirm_circle_gache",
             "新建节点40"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1780,
-                "y": 1181
-            }
-        }
+        ]
     }
 }

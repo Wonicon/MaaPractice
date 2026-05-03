@@ -1,30 +1,94 @@
 {
-    "StartDaily": {
-        "next": [
-            "DailyEnterQuest"
-        ]
-    },
-    "DailyEnterQuest": {
+    "BackToQuest": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": [
-                    "home_quest.png"
+                "roi": [
+                    4,
+                    3,
+                    117,
+                    73
                 ],
-                "threshold": [
-                    0.9
+                "template": [
+                    "back.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
         "next": [
-            "[JumpBack]ClickQuestBattleRoll",
-            "[JumpBack]ClickQuestBattleRoll_副本3",
-            "GoHome",
-            "DailyEnterQuest"
+            "ConfirmQuestScene",
+            "BackToQuest"
+        ]
+    },
+    "CheckHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    873,
+                    488,
+                    403,
+                    146
+                ],
+                "template": [
+                    "home_label.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.8
+                ]
+            }
+        }
+    },
+    "ClickBattleRollReward": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "rewards.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    553,
+                    560,
+                    209,
+                    27
+                ]
+            }
+        },
+        "next": [
+            "BackToQuest",
+            "ClickBattleRollReward"
+        ]
+    },
+    "ClickExerciseRewards": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "rewards.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    553,
+                    560,
+                    209,
+                    27
+                ]
+            }
+        },
+        "next": [
+            "BackToQuest"
         ]
     },
     "ClickQuestBattleRoll": {
@@ -47,6 +111,191 @@
             "SkipBattleRoll",
             "[JumpBack]RetryClickQuestBattleRoll",
             "BackToQuest"
+        ]
+    },
+    "ClickQuestExercise": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest_exercise.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]ClickQuestExercise_Retry",
+            "SkipExercise",
+            "BackToQuest"
+        ]
+    },
+    "ClickQuestExercise_Retry": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest_exercise.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "ConfirmBattleRollSkip": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "skip_confirm.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    713,
+                    550,
+                    117,
+                    51
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "ClickBattleRollReward",
+            "ConfirmBattleRollSkip"
+        ]
+    },
+    "ConfirmExerciseSkip": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "skip_confirm.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    713,
+                    550,
+                    117,
+                    51
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "ClickExerciseRewards"
+        ]
+    },
+    "DailyEnterQuest": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_quest.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]ClickQuestBattleRoll",
+            "[JumpBack]ClickQuestExercise",
+            "GoHome",
+            "DailyEnterQuest"
+        ]
+    },
+    "GoHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    9,
+                    580,
+                    222,
+                    138
+                ],
+                "template": [
+                    "home.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "CheckHome",
+            "GoHome"
+        ]
+    },
+    "RetryClickQuestBattleRoll": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest_battle_roll.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "SelectUnlimitQuestType": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    263,
+                    352,
+                    733,
+                    201
+                ],
+                "template": [
+                    "type_fire.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SkipExerciseOk"
         ]
     },
     "SkipBattleRoll": {
@@ -101,28 +350,18 @@
             "SkipBattleRollOk"
         ]
     },
-    "RetryClickQuestBattleRoll": {
+    "SkipExercise": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": [
-                    "quest_battle_roll.png"
+                "roi": [
+                    1014,
+                    226,
+                    190,
+                    70
                 ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
-    },
-    "ConfirmBattleRollSkip": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
                 "template": [
-                    "skip_confirm.png"
+                    "skip_possible.png"
                 ],
                 "threshold": [
                     0.95
@@ -130,103 +369,11 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    713,
-                    550,
-                    117,
-                    51
-                ]
-            }
-        },
-        "post_delay": 3000,
-        "next": [
-            "ClickBattleRollReward",
-            "ConfirmBattleRollSkip"
-        ]
-    },
-    "ClickBattleRollReward": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "rewards.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    553,
-                    560,
-                    209,
-                    27
-                ]
-            }
-        },
-        "next": [
-            "BackToQuest",
-            "ClickBattleRollReward"
-        ]
-    },
-    "BackToQuest": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    4,
-                    3,
-                    117,
-                    73
-                ],
-                "template": [
-                    "back.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
-    },
-    "ClickQuestBattleRoll_副本3": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_exercise.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
             "type": "Click"
         },
         "next": [
-            "[JumpBack]ClickQuestBattleRoll_副本3_副本4",
-            "SkipExercise",
-            "BackToQuest"
+            "SelectUnlimitQuestType"
         ]
-    },
-    "ClickQuestBattleRoll_副本3_副本4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_exercise.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
     },
     "SkipExerciseOk": {
         "recognition": {
@@ -253,95 +400,17 @@
             "ConfirmExerciseSkip"
         ]
     },
-    "ConfirmExerciseSkip": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "skip_confirm.png"
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    713,
-                    550,
-                    117,
-                    51
-                ]
-            }
-        },
-        "post_delay": 3000,
+    "StartDaily": {
         "next": [
-            "ClickExerciseRewards"
+            "DailyEnterQuest"
         ]
     },
-    "ClickExerciseRewards": {
+    "ConfirmQuestScene": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "rewards.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    553,
-                    560,
-                    209,
-                    27
-                ]
-            }
-        },
-        "next": [
-            "BackToQuest"
-        ]
-    },
-    "SkipExercise": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1014,
-                    226,
-                    190,
-                    70
-                ],
-                "template": [
-                    "skip_possible.png"
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "SelectUnlimitQuestType"
-        ]
-    },
-    "SelectUnlimitQuestType": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    263,
-                    352,
-                    733,
-                    201
-                ],
-                "template": [
-                    "type_fire.png"
+                    "quest_exercise.png"
                 ],
                 "threshold": [
                     0.9
@@ -350,55 +419,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "next": [
-            "SkipExerciseOk"
-        ]
-    },
-    "GoHome": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    9,
-                    580,
-                    222,
-                    138
-                ],
-                "template": [
-                    "home.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "CheckHome",
-            "GoHome"
-        ]
-    },
-    "CheckHome": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    873,
-                    488,
-                    403,
-                    146
-                ],
-                "template": [
-                    "home_label.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.8
-                ]
-            }
         }
     }
 }

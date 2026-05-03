@@ -1,22 +1,14 @@
 {
     "present点击一起收取_色彩": {
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
-                "method": 40,
-                "lower": [
-                    [
-                        167,
-                        208,
-                        252
-                    ]
+                "template": [
+                    "accept_all.png"
                 ],
-                "upper": [
-                    [
-                        167,
-                        208,
-                        253
-                    ]
+                "method": 10001,
+                "threshold": [
+                    0.95
                 ]
             }
         },

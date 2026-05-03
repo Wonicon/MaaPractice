@@ -319,7 +319,6 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 3000,
         "next": [
             "MGG MAZE 后总线"
         ]
@@ -333,7 +332,6 @@
                 ]
             }
         },
-        "post_delay": 3000,
         "next": [
             "MGG MAZE 后总线"
         ]
@@ -749,7 +747,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 600,
         "next": [
             "[JumpBack]exercise_click_battle_retry",
             "演习战斗前中转"
@@ -773,7 +771,14 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500
+        "post_wait_freezes": 500,
+        "next": [
+            "exercise_click_battle_retry_pad"
+        ]
+    },
+    "exercise_click_battle_retry_pad": {
+        "pre_delay": 0,
+        "post_delay": 0
     },
     "exercise_click_prepare": {
         "recognition": {
@@ -981,10 +986,13 @@
                 ]
             }
         },
-        "pre_delay": 5,
         "action": {
             "type": "Click"
-        }
+        },
+        "post_delay": 800,
+        "next": [
+            "pad_mgg_maze_prepare_retry"
+        ]
     },
     "quest_click_exercise": {
         "recognition": {
@@ -1209,8 +1217,11 @@
             "type": "Click"
         },
         "next": [
-            "选择路线",
-            "MGG MAZE 后总线"
+            "选择路线"
         ]
+    },
+    "pad_mgg_maze_prepare_retry": {
+        "pre_delay": 0,
+        "post_delay": 0
     }
 }

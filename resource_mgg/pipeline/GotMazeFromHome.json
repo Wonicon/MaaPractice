@@ -1,19 +1,4 @@
 {
-    "$__mpe_config_GotMazeFromHome": {
-        "$__mpe_code": {
-            "prefix": "",
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\GotMazeFromHome.json",
-            "lastSyncTime": 1777308301588,
-            "isModifiedExternally": false,
-            "savedViewport": {
-                "x": 64,
-                "y": -2670,
-                "zoom": 0.86
-            },
-            "filename": "GotMazeFromHome",
-            "version": "v1.4.3"
-        }
-    },
     "EnterGoMaze": {
         "recognition": {
             "type": "TemplateMatch",
@@ -30,13 +15,7 @@
             "GoMaze",
             "GoMaze_OCR",
             "EnterGoMaze"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -839,
-                "y": 3246
-            }
-        }
+        ]
     },
     "GoMaze": {
         "recognition": {
@@ -59,13 +38,16 @@
         "post_delay": 500,
         "next": [
             "GoMazeMerge"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -355,
-                "y": 3201
-            }
-        }
+        ]
+    },
+    "GoMazeMerge": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]GomazeRewardPop",
+            "[JumpBack]SelectNormalArea",
+            "GoMaze识别界面"
+        ]
     },
     "GoMaze_OCR": {
         "recognition": {
@@ -88,65 +70,7 @@
         "post_delay": 500,
         "next": [
             "GoMazeMerge"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -363,
-                "y": 3517
-            }
-        }
-    },
-    "GoMazeMerge": {
-        "pre_delay": 0,
-        "post_delay": 0,
-        "next": [
-            "[JumpBack]GomazeRewardPop",
-            "GoMaze识别界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1,
-                "y": 3415
-            }
-        }
-    },
-    "GomazeRewardPop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "dig_confirm_title.png"
-                ]
-            }
-        },
-        "next": [
-            "GomazeRewardPopOk"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 335,
-                "y": 3325
-            }
-        }
-    },
-    "GomazeRewardPopOk": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "activity_ok.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 667,
-                "y": 3365
-            }
-        }
+        ]
     },
     "GoMaze识别界面": {
         "recognition": {
@@ -165,12 +89,45 @@
         },
         "action": {
             "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 380,
-                "y": 3594
+        }
+    },
+    "GomazeRewardPop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "dig_confirm_title.png"
+                ]
             }
+        },
+        "next": [
+            "GomazeRewardPopOk"
+        ]
+    },
+    "GomazeRewardPopOk": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "SelectNormalArea": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "maze_normal_area.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
         }
     }
 }

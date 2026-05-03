@@ -1,0 +1,130 @@
+{
+    "StartLogin": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "criware.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    410,
+                    194,
+                    473,
+                    239
+                ]
+            }
+        },
+        "next": [
+            "StartLogin",
+            "LoginXbar"
+        ]
+    },
+    "CloseLoginBonusReward": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    462,
+                    179,
+                    376,
+                    89
+                ],
+                "expected": [
+                    "イテムを獲得しました",
+                    "アイテムを獲得しました",
+                    "獲得しました"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "LoginXbar": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]CloseLoginBonusReward",
+            "[JumpBack]CloseLoginBonusPanel",
+            "[JumpBack]CloseFlashSale",
+            "[JumpBack]ConfirmHome",
+            "ConfirmHomeStop"
+        ]
+    },
+    "CloseLoginBonusPanel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    28,
+                    308,
+                    834,
+                    312
+                ],
+                "expected": [
+                    "日目"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "CloseFlashSale": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "flash_sale.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    570,
+                    667,
+                    160,
+                    17
+                ]
+            }
+        }
+    },
+    "ConfirmHome": {
+        "doc": "多次检测，确保无弹窗",
+        "max_hit": 4,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_sign.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "ConfirmHomeDelay"
+        ]
+    },
+    "ConfirmHomeDelay": {
+        "pre_delay": 1000
+    },
+    "ConfirmHomeStop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_sign.png"
+                ],
+                "green_mask": true
+            }
+        }
+    }
+}

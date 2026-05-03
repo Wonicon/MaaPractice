@@ -1,0 +1,58 @@
+{
+    "BuyFree": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "free_sku.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    452,
+                    384,
+                    136,
+                    8
+                ]
+            }
+        }
+    },
+    "StartShop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 800,
+        "next": [
+            "StartShop",
+            "GoToShop"
+        ]
+    },
+    "GoToShop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "kaimono.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "GoToShop",
+            "BuyFree"
+        ]
+    }
+}

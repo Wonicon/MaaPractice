@@ -9,35 +9,42 @@
     ],
     "task": [
         {
-            "name": "远征收菜",
+            "name": "Tech::Login",
+            "entry": "StartLogin",
+            "resource": [
+                "Techcronoss"
+            ]
+        },
+        {
+            "name": "Tech::远征收菜",
             "entry": "E 远征 点击城镇",
             "resource": [
                 "Techcronoss"
             ]
         },
         {
-            "name": "领票强化",
+            "name": "Tech::领票强化",
             "entry": "领票确认home",
             "resource": [
                 "Techcronoss"
             ]
         },
         {
-            "name": "免费石头",
+            "name": "Tech::免费石头",
             "entry": "Entry_freeStone",
             "resource": [
                 "Techcronoss"
             ]
         },
         {
-            "name": "团本",
+            "name": "Tech::团本",
             "entry": "E团本",
             "resource": [
                 "Techcronoss"
             ]
         },
         {
-            "name": "日常任务",
+            "name": "Tech::日常任务",
             "entry": "E日常任务",
             "resource": [
                 "Techcronoss"

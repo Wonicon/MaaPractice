@@ -1,6 +1,20 @@
 {
     "task": [
         {
+            "name": "Login",
+            "entry": "StartLogin",
+            "resource": [
+                "twinkle"
+            ]
+        },
+        {
+            "name": "Shop",
+            "entry": "StartShop",
+            "resource": [
+                "twinkle"
+            ]
+        },
+        {
             "name": "日常任务",
             "entry": "StartDaily",
             "resource": [

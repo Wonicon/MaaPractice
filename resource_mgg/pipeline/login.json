@@ -76,6 +76,10 @@
             "login_home_post_delay"
         ]
     },
+    "login_home_post_delay": {
+        "pre_delay": 0,
+        "post_delay": 2000
+    },
     "login_title": {
         "pre_delay": 0,
         "post_delay": 0,
@@ -89,11 +93,13 @@
         "pre_delay": 0,
         "post_delay": 0,
         "next": [
-            "login_判断首页",
+            "[JumpBack]CloseLoginRewardConfirmWindow",
             "[JumpBack]点击下一个通知",
             "[JumpBack]点击关闭通知",
             "[JumpBack]click_login_bonus",
-            "[JumpBack]login任意点击清除通知"
+            "[JumpBack]login任意点击清除通知",
+            "[JumpBack]login_判断首页_确保",
+            "login_判断首页"
         ]
     },
     "login_判断首页": {
@@ -115,6 +121,7 @@
         }
     },
     "login任意点击清除通知": {
+        "enabled": false,
         "action": {
             "type": "Click",
             "param": {
@@ -174,8 +181,37 @@
             "login_home_post_delay"
         ]
     },
-    "login_home_post_delay": {
-        "pre_delay": 0,
-        "post_delay": 2000
+    "CloseLoginRewardConfirmWindow": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "login_判断首页_确保": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_7days.png"
+                ],
+                "green_mask": true,
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "已经在大厅"
+        }
     }
 }

@@ -1,0 +1,99 @@
+{
+    "CheckLoginHome": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_info.png"
+                ],
+                "method": 10001
+            }
+        },
+        "post_delay": 1000
+    },
+    "CheckLoginHomeStop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home_info.png"
+                ],
+                "method": 10001
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        }
+    },
+    "ClickLoginBonus": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1094,
+                    5,
+                    178,
+                    113
+                ],
+                "template": [
+                    "login_bonus_skip_dark.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "ClickLoginScreen": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    954,
+                    13,
+                    165,
+                    73
+                ],
+                "template": [
+                    "login_data.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    177,
+                    168,
+                    939,
+                    403
+                ]
+            }
+        }
+    },
+    "CloseInfo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000
+    },
+    "StartLogin": {
+        "next": [
+            "[JumpBack]ClickLoginBonus",
+            "[JumpBack]Loading",
+            "[JumpBack]CloseInfo",
+            "[JumpBack]ClickLoginScreen",
+            "[JumpBack]CheckLoginHome",
+            "CheckLoginHomeStop"
+        ]
+    }
+}

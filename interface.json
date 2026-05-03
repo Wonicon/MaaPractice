@@ -115,9 +115,9 @@
             "win32": {
                 "class_regex": ".*",
                 "window_regex": "^twinkle_star",
-                "screencap": "PrintWindow",
-                "mouse": "SendMessage",
-                "keyboard": "SendMessage"
+                "screencap": "FramePool",
+                "mouse": "LegacyEvent",
+                "keyboard": "LegacyEvent"
             }
         },
         {
