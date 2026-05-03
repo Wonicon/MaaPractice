@@ -1,27 +1,4 @@
 {
-    "$__mpe_config_采掘": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1777406219311,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\采掘.json",
-            "savedViewport": {
-                "x": -1343,
-                "y": -234,
-                "zoom": 0.53
-            },
-            "filename": "采掘",
-            "version": "v1.4.3"
-        }
-    },
-    "$__mpe_external_login_判断首页_采掘": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4130,
-                "y": 1144
-            }
-        }
-    },
     "E 免费石": {
         "recognition": {
             "type": "TemplateMatch",
@@ -38,13 +15,7 @@
         "next": [
             "商店入口",
             "E 免费石"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -14,
-                "y": 385
-            }
-        }
+        ]
     },
     "E 课外活动 任务": {
         "recognition": {
@@ -61,13 +32,7 @@
         "post_delay": 800,
         "next": [
             "课外活动"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -19,
-                "y": 691
-            }
-        }
+        ]
     },
     "E 采掘 点击": {
         "action": {
@@ -85,13 +50,28 @@
         "next": [
             "采掘弹窗",
             "E 采掘 点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 60
+        ]
+    },
+    "click_top_right_go_home": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "top_right_go_home_light'.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 600,
+        "next": [
+            "login_判断首页",
+            "click_top_right_go_home"
+        ]
     },
     "商店入口": {
         "recognition": {
@@ -116,13 +96,7 @@
         "next": [
             "礼包",
             "商店入口"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 286,
-                "y": 383
-            }
-        }
+        ]
     },
     "指挥官升级1": {
         "recognition": {
@@ -138,16 +112,6 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "指挥官升级"
-        },
-        "next": [
-            "指挥官升级1",
-            "采掘确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 526,
-                "y": -251
-            }
         }
     },
     "指挥官升级1_副本2": {
@@ -165,13 +129,7 @@
         "next": [
             "指挥官升级1_副本2",
             "时短产物确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1548,
-                "y": -179
-            }
-        }
+        ]
     },
     "时短产物确认": {
         "recognition": {
@@ -201,13 +159,7 @@
         },
         "next": [
             "采掘弹窗关闭"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1625,
-                "y": 78
-            }
-        }
+        ]
     },
     "时短确认": {
         "recognition": {
@@ -239,13 +191,7 @@
         "next": [
             "指挥官升级1_副本2",
             "时短产物确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1306,
-                "y": 16
-            }
-        }
+        ]
     },
     "每周免费": {
         "recognition": {
@@ -262,13 +208,7 @@
         "next": [
             "每日免费_副本9",
             "每月免费"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1849,
-                "y": 356
-            }
-        }
+        ]
     },
     "每日免费": {
         "recognition": {
@@ -290,13 +230,7 @@
         },
         "next": [
             "每日免费确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 918,
-                "y": 493
-            }
-        }
+        ]
     },
     "每日免费_副本9": {
         "recognition": {
@@ -318,13 +252,7 @@
         },
         "next": [
             "每日免费确认_副本10"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2215,
-                "y": 512
-            }
-        }
+        ]
     },
     "每日免费_副本9_副本13": {
         "recognition": {
@@ -346,13 +274,7 @@
         },
         "next": [
             "每日免费确认_副本10_副本14"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3501,
-                "y": 304
-            }
-        }
+        ]
     },
     "每日免费收获确认": {
         "recognition": {
@@ -376,13 +298,7 @@
         },
         "next": [
             "每周免费"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1517,
-                "y": 505
-            }
-        }
+        ]
     },
     "每日免费收获确认_副本11": {
         "recognition": {
@@ -406,13 +322,7 @@
         },
         "next": [
             "每月免费"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2847,
-                "y": 463
-            }
-        }
+        ]
     },
     "每日免费收获确认_副本11_副本15": {
         "recognition": {
@@ -436,13 +346,7 @@
         },
         "next": [
             "click_top_right_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4146,
-                "y": 376
-            }
-        }
+        ]
     },
     "每日免费确认": {
         "recognition": {
@@ -466,13 +370,7 @@
         },
         "next": [
             "每日免费收获确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1227,
-                "y": 489
-            }
-        }
+        ]
     },
     "每日免费确认_副本10": {
         "recognition": {
@@ -496,13 +394,7 @@
         },
         "next": [
             "每日免费收获确认_副本11"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2526,
-                "y": 520
-            }
-        }
+        ]
     },
     "每日免费确认_副本10_副本14": {
         "recognition": {
@@ -526,13 +418,7 @@
         },
         "next": [
             "每日免费收获确认_副本11_副本15"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3828,
-                "y": 302
-            }
-        }
+        ]
     },
     "每月免费": {
         "recognition": {
@@ -549,13 +435,7 @@
         "next": [
             "每日免费_副本9_副本13",
             "click_top_right_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3134,
-                "y": 442
-            }
-        }
+        ]
     },
     "礼包": {
         "recognition": {
@@ -572,13 +452,7 @@
         "next": [
             "每日免费",
             "每周免费"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 533,
-                "y": 398
-            }
-        }
+        ]
     },
     "课外活动": {
         "recognition": {
@@ -597,13 +471,7 @@
             "[JumpBack]课外活动收菜",
             "[JumpBack]课外活动出发",
             "课外活动关闭"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 260,
-                "y": 720
-            }
-        }
+        ]
     },
     "课外活动关闭": {
         "recognition": {
@@ -621,13 +489,7 @@
         "next": [
             "课外活动关闭",
             "click_top_right_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3287,
-                "y": 1351
-            }
-        }
+        ]
     },
     "课外活动出发": {
         "max_hit": 1,
@@ -652,13 +514,7 @@
         "post_delay": 800,
         "next": [
             "课外活动出发确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 539,
-                "y": 1066
-            }
-        }
+        ]
     },
     "课外活动出发确认": {
         "recognition": {
@@ -672,13 +528,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 800,
-        "$__mpe_code": {
-            "position": {
-                "x": 1035,
-                "y": 1045
-            }
-        }
+        "post_delay": 800
     },
     "课外活动收菜": {
         "max_hit": 1,
@@ -703,13 +553,7 @@
         "post_delay": 800,
         "next": [
             "课外活动收菜确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 591,
-                "y": 689
-            }
-        }
+        ]
     },
     "课外活动收菜确认": {
         "recognition": {
@@ -723,26 +567,14 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 800,
-        "$__mpe_code": {
-            "position": {
-                "x": 934,
-                "y": 687
-            }
-        }
+        "post_delay": 800
     },
     "采掘任务结束": {
         "pre_delay": 0,
         "action": {
             "type": "StopTask"
         },
-        "post_delay": 0,
-        "$__mpe_code": {
-            "position": {
-                "x": 2347,
-                "y": 133
-            }
-        }
+        "post_delay": 0
     },
     "采掘弹窗": {
         "recognition": {
@@ -766,16 +598,11 @@
         },
         "post_delay": 800,
         "next": [
-            "指挥官升级1",
             "采掘确认",
-            "采掘弹窗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 11
-            }
-        }
+            "采掘弹窗",
+            "[JumpBack]指挥官升级1",
+            "[JumpBack]FlashSaleAfterDig"
+        ]
     },
     "采掘弹窗 点击时短": {
         "recognition": {
@@ -800,13 +627,7 @@
         "next": [
             "时短确认",
             "采掘弹窗 点击时短"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1041,
-                "y": 179
-            }
-        }
+        ]
     },
     "采掘弹窗 避免付费时短": {
         "recognition": {
@@ -825,13 +646,7 @@
         },
         "next": [
             "采掘弹窗关闭"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1011,
-                "y": -81
-            }
-        }
+        ]
     },
     "采掘弹窗关闭": {
         "recognition": {
@@ -856,13 +671,7 @@
         "next": [
             "采掘弹窗关闭",
             "采掘任务结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1987,
-                "y": 43
-            }
-        }
+        ]
     },
     "采掘确认": {
         "recognition": {
@@ -897,35 +706,30 @@
         "next": [
             "采掘弹窗 避免付费时短",
             "采掘弹窗 点击时短"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 735,
-                "y": 60
-            }
-        }
+        ]
     },
-    "click_top_right_go_home": {
+    "FlashSaleAfterDig": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "top_right_go_home_light'.png"
+                    "flash_sale.png"
                 ]
             }
         },
         "action": {
-            "type": "Click"
-        },
-        "next": [
-            "login_判断首页",
-            "click_top_right_go_home"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3772,
-                "y": 867
+            "type": "Click",
+            "param": {
+                "target": [
+                    1230,
+                    34,
+                    15,
+                    16
+                ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "指挥官升级"
         }
     }
 }

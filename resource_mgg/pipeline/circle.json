@@ -65,7 +65,7 @@
             "type": "Click"
         },
         "next": [
-            "click_circle_mission"
+            "click_circle_mission_副本3"
         ]
     },
     "check_no_accept": {
@@ -166,7 +166,6 @@
         ]
     },
     "click_accept_all_circle": {
-        "max_hit": 2,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -184,7 +183,11 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "post_delay": 5000,
+        "next": [
+            "circle_reward_ani_skip"
+        ]
     },
     "click_away_gache_ani": {
         "action": {
@@ -200,27 +203,9 @@
         },
         "repeat": 5
     },
-    "click_circle_mission": {
-        "max_hit": 2,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    869,
-                    77,
-                    278,
-                    85
-                ],
-                "template": [
-                    "circle_mission.png"
-                ]
-            }
-        },
+    "click_circle_mission_xbar": {
         "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+        "post_delay": 0,
         "next": [
             "[JumpBack]circle_close_any_popup",
             "[JumpBack]check_no_accept",
@@ -358,7 +343,7 @@
                     "挑戦"
                 ],
                 "order_by": "Vertical",
-                "index": 1
+                "index": -1
             }
         },
         "action": {
@@ -496,6 +481,35 @@
         "next": [
             "confirm_circle_gache",
             "新建节点40"
+        ]
+    },
+    "circle_reward_ani_skip": {
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "click_circle_mission_副本3": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    869,
+                    77,
+                    278,
+                    85
+                ],
+                "template": [
+                    "circle_mission.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "click_circle_mission_xbar"
         ]
     }
 }
