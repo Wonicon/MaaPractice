@@ -1,0 +1,247 @@
+{
+    "$__mpe_config_过剧情.json": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\过剧情.json",
+            "lastSyncTime": 1776710148622,
+            "isModifiedExternally": false,
+            "savedViewport": {
+                "x": -1754,
+                "y": -772,
+                "zoom": 0.87
+            },
+            "filename": "过剧情.json",
+            "version": "v1.4.1"
+        }
+    },
+    "in": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "timeout": 200000,
+        "next": [
+            "[JumpBack]播放剧情",
+            "[JumpBack]播放剧情_已快进",
+            "[JumpBack]播放剧情_快进",
+            "[JumpBack]播放剧情报酬_ok",
+            "[JumpBack]剧情任务开始",
+            "[JumpBack]剧情下一个",
+            "[JumpBack]播放剧情_展开工具"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1935,
+                "y": 1041
+            }
+        }
+    },
+    "剧情下一个": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "次へ"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2694,
+                "y": 1862
+            }
+        }
+    },
+    "剧情任务开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "ワエスト開始",
+                    "クエスト開始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2683,
+                "y": 1672
+            }
+        }
+    },
+    "播放剧情": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "シナリオ再生",
+                    "シナリオ",
+                    "再生"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2696,
+                "y": 760
+            }
+        }
+    },
+    "播放剧情_快进": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    656,
+                    12,
+                    596,
+                    76
+                ],
+                "template": [
+                    "story_skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 4000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2721,
+                "y": 1184
+            }
+        }
+    },
+    "播放剧情_已快进": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    788,
+                    9,
+                    485,
+                    70
+                ],
+                "lower": [
+                    [
+                        248,
+                        61,
+                        139
+                    ]
+                ],
+                "upper": [
+                    [
+                        248,
+                        61,
+                        139
+                    ]
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2688,
+                "y": 923
+            }
+        }
+    },
+    "播放剧情报酬_ok": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "activity_ok.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2583,
+                "y": 1506
+            }
+        }
+    },
+    "剧情任务开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "ワエスト開始",
+                    "クエスト開始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2683,
+                "y": 1672
+            }
+        }
+    },
+    "剧情下一个": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "次へ"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2695,
+                "y": 1855
+            }
+        }
+    },
+    "播放剧情_展开工具": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    3,
+                    109,
+                    98
+                ],
+                "template": [
+                    "story_tools.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 4000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2449,
+                "y": 1206
+            }
+        }
+    }
+}

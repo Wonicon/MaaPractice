@@ -469,3 +469,5 @@ appsettings.json
 
 cache/
 maafw/
+
+*.mpe.json

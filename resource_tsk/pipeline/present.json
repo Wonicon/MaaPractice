@@ -1,0 +1,103 @@
+{
+    "InPresentWindow": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    93,
+                    92,
+                    389,
+                    75
+                ],
+                "template": [
+                    "present_window.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]ClickPresentAllRecv",
+            "[JumpBack]PresentClosePop",
+            "[JumpBack]Loading",
+            "CheckHome"
+        ]
+    },
+    "ClickPresentAllRecv": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    632,
+                    565,
+                    301,
+                    95
+                ],
+                "template": [
+                    "present_all_recv.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "PresentClosePop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "Loading": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "loading.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "post_delay": 1000
+    },
+    "StartPresent": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1163,
+                    502,
+                    116,
+                    112
+                ],
+                "template": [
+                    "present.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "InPresentWindow",
+            "StartPresent",
+            "[JumpBack]Loading"
+        ]
+    }
+}

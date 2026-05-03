@@ -1,0 +1,75 @@
+{
+    "StartFreeStone": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1073,
+                    650,
+                    170,
+                    68
+                ],
+                "template": [
+                    "shop.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 400,
+        "next": [
+            "StartFreeStone",
+            "FreeStonePack",
+            "[JumpBack]ClickPackTab"
+        ]
+    },
+    "FreeStonePack": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_pack.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "post_delay": 400
+    },
+    "ClickPackTab": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    72,
+                    282,
+                    116,
+                    29
+                ]
+            }
+        }
+    }
+}

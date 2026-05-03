@@ -1,0 +1,25 @@
+{
+    "task": [
+        {
+            "name": "日常任务",
+            "entry": "StartDaily",
+            "resource": [
+                "twinkle"
+            ]
+        },
+        {
+            "name": "TSK领取日常奖励",
+            "entry": "StartMission",
+            "resource": [
+                "twinkle"
+            ]
+        },
+        {
+            "name": "领取邮件奖励",
+            "entry": "StartPresent",
+            "resource": [
+                "twinkle"
+            ]
+        }
+    ]
+}

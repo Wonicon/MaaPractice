@@ -1,19 +1,4 @@
 {
-    "$__mpe_config_新建Pipeline3": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1777394794569,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_mgg\\pipeline\\login.json",
-            "savedViewport": {
-                "x": -781,
-                "y": -1153,
-                "zoom": 1.15
-            },
-            "filename": "新建Pipeline3",
-            "version": "v1.4.3"
-        }
-    },
     "check_title_logo": {
         "recognition": {
             "type": "TemplateMatch",
@@ -37,13 +22,7 @@
         "next": [
             "check_title_logo",
             "login_title_post"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 1005
-            }
-        }
+        ]
     },
     "check_title_text": {
         "recognition": {
@@ -69,13 +48,7 @@
         "next": [
             "check_title_text",
             "login_title_post"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 745
-            }
-        }
+        ]
     },
     "click_login_bonus": {
         "recognition": {
@@ -99,12 +72,9 @@
         "focus": {
             "Node.Recognition.Succeeded": "点击登录奖励"
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 266
-            }
-        }
+        "next": [
+            "login_home_post_delay"
+        ]
     },
     "login_title": {
         "pre_delay": 0,
@@ -113,13 +83,7 @@
             "check_title_logo",
             "check_title_text",
             "login_判断首页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 1007
-            }
-        }
+        ]
     },
     "login_title_post": {
         "pre_delay": 0,
@@ -130,13 +94,7 @@
             "[JumpBack]点击关闭通知",
             "[JumpBack]click_login_bonus",
             "[JumpBack]login任意点击清除通知"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 765
-            }
-        }
+        ]
     },
     "login_判断首页": {
         "recognition": {
@@ -154,12 +112,6 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "已经在大厅"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 1063
-            }
         }
     },
     "login任意点击清除通知": {
@@ -174,12 +126,9 @@
                 ]
             }
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 576
-            }
-        }
+        "next": [
+            "login_home_post_delay"
+        ]
     },
     "点击下一个通知": {
         "recognition": {
@@ -199,12 +148,9 @@
         "action": {
             "type": "Click"
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 809
-            }
-        }
+        "next": [
+            "login_home_post_delay"
+        ]
     },
     "点击关闭通知": {
         "recognition": {
@@ -224,11 +170,12 @@
         "action": {
             "type": "Click"
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 12
-            }
-        }
+        "next": [
+            "login_home_post_delay"
+        ]
+    },
+    "login_home_post_delay": {
+        "pre_delay": 0,
+        "post_delay": 2000
     }
 }

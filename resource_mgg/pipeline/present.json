@@ -1,27 +1,4 @@
 {
-    "$__mpe_config_新建Pipeline4": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1777384140251,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_mgg\\pipeline\\present.json",
-            "savedViewport": {
-                "x": -4608,
-                "y": -986,
-                "zoom": 0.75
-            },
-            "filename": "新建Pipeline4",
-            "version": "v1.4.3"
-        }
-    },
-    "$__mpe_external_login_判断首页_新建Pipeline4": {
-        "$__mpe_code": {
-            "position": {
-                "x": 6785,
-                "y": 1616
-            }
-        }
-    },
     "present点击一起收取_色彩": {
         "recognition": {
             "type": "ColorMatch",
@@ -48,13 +25,7 @@
         },
         "next": [
             "present确认结果"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5714,
-                "y": 1202
-            }
-        }
+        ]
     },
     "present点击世界": {
         "recognition": {
@@ -85,13 +56,7 @@
         "next": [
             "present点击一起收取_色彩",
             "present确认清空"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5373,
-                "y": 1171
-            }
-        }
+        ]
     },
     "present点击礼物": {
         "recognition": {
@@ -106,7 +71,8 @@
                 "template": [
                     "home_present.png"
                 ],
-                "green_mask": true
+                "green_mask": true,
+                "method": 10001
             }
         },
         "action": {
@@ -123,13 +89,7 @@
         "next": [
             "present点击世界",
             "present点击礼物"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5007,
-                "y": 1197
-            }
-        }
+        ]
     },
     "present确认清空": {
         "recognition": {
@@ -161,13 +121,7 @@
             "present确认清空",
             "login_判断首页",
             "[JumpBack]消除可能的弹窗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6336,
-                "y": 1758
-            }
-        }
+        ]
     },
     "present确认结果": {
         "recognition": {
@@ -190,13 +144,7 @@
         "next": [
             "present确认结果",
             "present确认清空"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6075,
-                "y": 1352
-            }
-        }
+        ]
     },
     "消除可能的弹窗": {
         "recognition": {
@@ -209,12 +157,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 6669,
-                "y": 1874
-            }
         }
     }
 }

@@ -1,152 +1,20 @@
 {
-    "$__mpe_config_新建Pipeline7": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1776957982356,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_rlyeh\\pipeline\\login.json",
-            "savedViewport": {
-                "x": -693,
-                "y": -128,
-                "zoom": 0.53
-            },
-            "filename": "新建Pipeline7",
-            "version": "v1.4.2"
-        }
-    },
-    "SoundConfirmPopup": {
+    "Change2ImportantMail": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": [
-                    "このゲ一ムでは音声が再生されます。"
+                    "重要メール"
                 ]
             }
         },
-        "post_delay": 0,
-        "next": [
-            "SoundConfirmPopup_ClickOK"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 266
-            }
-        }
-    },
-    "Login": {
         "pre_delay": 0,
-        "post_delay": 0,
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "CheckHome",
-            "[JumpBack]ErrorPopup",
-            "[JumpBack]LoginConnecting...",
-            "[JumpBack]TitleScreen",
-            "[JumpBack]SoundConfirmPopup"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 374
-            }
-        }
-    },
-    "SoundConfirmPopup_ClickOK": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "lower": [
-                    [
-                        104,
-                        37,
-                        49
-                    ]
-                ],
-                "upper": [
-                    [
-                        125,
-                        51,
-                        62
-                    ]
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 270
-            }
-        }
-    },
-    "ErrorPopup": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "混雑中のため、時間をおいてログインください"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    679,
-                    406,
-                    98,
-                    11
-                ]
-            }
-        },
-        "post_delay": 0,
-        "$__mpe_code": {
-            "position": {
-                "x": 1287,
-                "y": 417
-            }
-        }
-    },
-    "LoginConnecting...": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "Connecting...",
-                    "Connecting",
-                    "Loading...",
-                    "Loading"
-                ]
-            }
-        },
-        "post_delay": 0,
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 483
-            }
-        }
-    },
-    "TitleScreen": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "tap_to_start.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 12
-            }
-        }
+            "RecvImportant"
+        ]
     },
     "CheckHome": {
         "recognition": {
@@ -166,13 +34,7 @@
         "post_delay": 0,
         "next": [
             "ClickMail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 759
-            }
-        }
+        ]
     },
     "ClickMail": {
         "recognition": {
@@ -200,13 +62,110 @@
             "[JumpBack]ErrorPopup",
             "ClickMailDelay",
             "RecvNormal"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 647,
-                "y": 527
+        ]
+    },
+    "ClickMailDelay": {
+        "pre_delay": 1000,
+        "post_delay": 0,
+        "next": [
+            "RecvNormal",
+            "ClickMail"
+        ]
+    },
+    "CloseMail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    883,
+                    55,
+                    59,
+                    70
+                ],
+                "template": [
+                    "close.png"
+                ]
             }
+        },
+        "action": {
+            "type": "Click"
         }
+    },
+    "ErrorPopup": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "混雑中のため、時間をおいてログインください"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    679,
+                    406,
+                    98,
+                    11
+                ]
+            }
+        },
+        "post_delay": 0
+    },
+    "Login": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "CheckHome",
+            "[JumpBack]ErrorPopup",
+            "[JumpBack]LoginConnecting...",
+            "[JumpBack]TitleScreen",
+            "[JumpBack]SoundConfirmPopup",
+            "[JumpBack]LoginRewardsPopup",
+            "[JumpBack]LoginBonus"
+        ]
+    },
+    "LoginConnecting...": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "Connecting...",
+                    "Connecting",
+                    "Loading...",
+                    "Loading"
+                ]
+            }
+        },
+        "post_delay": 0
+    },
+    "RecvImportant": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "一括受取"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]RecvNormalResult",
+            "RecvImportantDelay"
+        ]
+    },
+    "RecvImportantDelay": {
+        "pre_delay": 1000,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]RecvNormalResult",
+            "CloseMail"
+        ]
     },
     "RecvNormal": {
         "max_hit": 3,
@@ -225,13 +184,15 @@
         "next": [
             "[JumpBack]RecvNormalResult",
             "RecvNormalDelay"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1317,
-                "y": 763
-            }
-        }
+        ]
+    },
+    "RecvNormalDelay": {
+        "pre_delay": 1000,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]RecvNormalResult",
+            "Change2ImportantMail"
+        ]
     },
     "RecvNormalResult": {
         "recognition": {
@@ -253,127 +214,92 @@
                 ]
             }
         },
-        "post_delay": 1000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1917,
-                "y": 396
-            }
-        }
+        "post_delay": 1000
     },
-    "Change2ImportantMail": {
+    "SoundConfirmPopup": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": [
-                    "重要メール"
+                    "音量にはご注意ください"
                 ]
             }
         },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "RecvImportant"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1937,
-                "y": 877
-            }
-        }
-    },
-    "RecvNormalDelay": {
-        "pre_delay": 1000,
         "post_delay": 0,
         "next": [
-            "[JumpBack]RecvNormalResult",
-            "Change2ImportantMail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1638,
-                "y": 876
-            }
-        }
+            "SoundConfirmPopup_ClickOK"
+        ]
     },
-    "ClickMailDelay": {
-        "pre_delay": 1000,
-        "post_delay": 0,
-        "next": [
-            "RecvNormal",
-            "ClickMail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 961,
-                "y": 787
-            }
-        }
-    },
-    "RecvImportant": {
-        "max_hit": 3,
+    "SoundConfirmPopup_ClickOK": {
         "recognition": {
-            "type": "OCR",
+            "type": "ColorMatch",
             "param": {
-                "expected": [
-                    "一括受取"
+                "lower": [
+                    [
+                        104,
+                        37,
+                        49
+                    ]
+                ],
+                "upper": [
+                    [
+                        125,
+                        51,
+                        62
+                    ]
                 ]
             }
         },
-        "pre_delay": 0,
         "action": {
             "type": "Click"
-        },
-        "next": [
-            "[JumpBack]RecvNormalResult",
-            "RecvImportantDelay"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2263,
-                "y": 953
-            }
         }
     },
-    "RecvImportantDelay": {
-        "pre_delay": 1000,
-        "post_delay": 0,
-        "next": [
-            "[JumpBack]RecvNormalResult",
-            "CloseMail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2539,
-                "y": 1065
-            }
-        }
-    },
-    "CloseMail": {
+    "TitleScreen": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    883,
-                    55,
-                    59,
-                    70
-                ],
                 "template": [
-                    "close.png"
+                    "tap_to_start.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "LoginRewardsPopup": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "rewards_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    546,
+                    65,
+                    122,
+                    41
+                ]
+            }
+        }
+    },
+    "LoginBonus": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "日目"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 2891,
-                "y": 1102
-            }
-        }
+        "post_delay": 0
     }
 }

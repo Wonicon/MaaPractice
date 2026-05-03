@@ -1,0 +1,108 @@
+{
+    "StartMission": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "ClickMission"
+        ]
+    },
+    "ClickMission": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]MissionClosePop",
+            "[JumpBack]MissionAllRecv",
+            "[JumpBack]ClickWeekly",
+            "ClickMission",
+            "BackToHome"
+        ]
+    },
+    "MissionAllRecv": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1006,
+                    530,
+                    263,
+                    94
+                ],
+                "template": [
+                    "mission_all_recv.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "MissionClosePop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    523,
+                    606,
+                    235,
+                    67
+                ],
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "ClickWeekly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "weekly.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "BackToHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    5,
+                    5,
+                    75,
+                    68
+                ],
+                "template": [
+                    "back.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "BackToHome",
+            "CheckHome"
+        ]
+    }
+}

@@ -29,6 +29,20 @@
             ]
         },
         {
+            "name": "领取免费石头",
+            "entry": "StartFreeStone",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "发送朋友点数",
+            "entry": "StartFriend",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
             "name": "主线收菜",
             "entry": "Task主线",
             "resource": [
@@ -52,6 +66,13 @@
         {
             "name": "竞技场",
             "entry": "Task竞技场",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "领取邮件",
+            "entry": "ClickMail",
             "resource": [
                 "邪神戦記ルルイエ少女隊X"
             ]

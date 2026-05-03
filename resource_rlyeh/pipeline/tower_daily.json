@@ -1,52 +1,40 @@
 {
-    "$__mpe_config_tower_daily": {
-        "$__mpe_code": {
-            "prefix": "",
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_rlyeh\\pipeline\\tower_daily.json",
-            "lastSyncTime": 1776961050704,
-            "isModifiedExternally": false,
-            "savedViewport": {
-                "x": -3566,
-                "y": 257,
-                "zoom": 0.8
-            },
-            "filename": "tower_daily",
-            "version": "v1.4.2"
-        }
-    },
-    "$__mpe_external_返回spot_tower_daily": {
-        "$__mpe_code": {
-            "position": {
-                "x": 5377,
-                "y": 286
-            }
-        }
-    },
-    "TowerCheckin": {
+    "ClickTower": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    11,
-                    0,
-                    316,
-                    111
+                    514,
+                    219,
+                    220,
+                    312
                 ],
-                "expected": [
-                    "プリズンタワー"
+                "template": [
+                    "tower.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
                 ]
             }
         },
-        "pre_delay": 0,
-        "post_delay": 0,
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "TowerDailyNew",
-            "返回spot"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4947,
-                "y": -161
+            "[JumpBack]ClickTowerLoading",
+            "ClickTower",
+            "TowerCheckin"
+        ]
+    },
+    "ClickTowerLoading": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "Loading",
+                    "Loading..."
+                ]
             }
         }
     },
@@ -65,61 +53,30 @@
         "next": [
             "ClickTower",
             "Tower"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4360,
-                "y": -317
-            }
-        }
+        ]
     },
-    "ClickTower": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    514,
-                    219,
-                    220,
-                    312
-                ],
-                "template": [
-                    "tower.png"
-                ],
-                "method": 3
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]ClickTowerLoading",
-            "ClickTower",
-            "TowerCheckin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4668,
-                "y": -285
-            }
-        }
-    },
-    "ClickTowerLoading": {
+    "TowerCheckin": {
         "recognition": {
             "type": "OCR",
             "param": {
+                "roi": [
+                    11,
+                    0,
+                    316,
+                    111
+                ],
                 "expected": [
-                    "Loading",
-                    "Loading..."
+                    "プリズンタワー",
+                    "プリズン"
                 ]
             }
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 5237,
-                "y": -486
-            }
-        }
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "TowerDailyNew",
+            "返回spot"
+        ]
     },
     "TowerDailyNew": {
         "recognition": {
@@ -165,37 +122,7 @@
         "next": [
             "TowerDailyWindow",
             "TowerDailyNew"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5219,
-                "y": -252
-            }
-        }
-    },
-    "TowerDailyWindow": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "受取る"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "next": [
-            "TowerDailyWindow",
-            "TowerDailyRewards"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5601,
-                "y": -222
-            }
-        }
+        ]
     },
     "TowerDailyRewards": {
         "recognition": {
@@ -220,12 +147,24 @@
         "next": [
             "TowerDailyRewards",
             "返回spot"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5948,
-                "y": -167
+        ]
+    },
+    "TowerDailyWindow": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "受取る"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "TowerDailyWindow",
+            "TowerDailyRewards"
+        ]
     }
 }
