@@ -18,7 +18,29 @@
                     8
                 ]
             }
-        }
+        },
+        "post_delay": 800,
+        "next": [
+            "ClickBuyConfirmOK",
+            "BuyFree"
+        ]
+    },
+    "GoToShop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "kaimono.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "GoToShop",
+            "BuyFree"
+        ]
     },
     "StartShop": {
         "recognition": {
@@ -38,7 +60,33 @@
             "GoToShop"
         ]
     },
-    "GoToShop": {
+    "ClickBuyConfirmOK": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "buy_confirm.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    738,
+                    598,
+                    95,
+                    32
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "CheckInShopAndClickHome",
+            "[JumpBack]ClickGoBack"
+        ]
+    },
+    "CheckInShopAndClickHome": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -48,11 +96,33 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target": [
+                    112,
+                    647,
+                    87,
+                    27
+                ]
+            }
         },
         "next": [
-            "GoToShop",
-            "BuyFree"
+            "[Anchor]CheckHome",
+            "CheckInShopAndClickHome"
         ]
+    },
+    "ClickGoBack": {
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    26,
+                    23,
+                    30,
+                    23
+                ]
+            }
+        }
     }
 }

@@ -1,25 +1,4 @@
 {
-    "controller": [
-        {
-            "name": "邪神戦記ルルイエ少女隊X",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "邪神戦記ルルイエ少女隊X",
-                "screencap": "FramePool",
-                "mouse": "LegacyEvent",
-                "keyboard": "LegacyEvent"
-            }
-        }
-    ],
-    "resource": [
-        {
-            "name": "邪神戦記ルルイエ少女隊X",
-            "path": [
-                "./resource_rlyeh"
-            ]
-        }
-    ],
     "task": [
         {
             "name": "登录",
@@ -59,6 +38,20 @@
         {
             "name": "祭坛",
             "entry": "Task祭坛",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "爬塔每日",
+            "entry": "Tower",
+            "resource": [
+                "邪神戦記ルルイエ少女隊X"
+            ]
+        },
+        {
+            "name": "朋友点",
+            "entry": "StartFriend",
             "resource": [
                 "邪神戦記ルルイエ少女隊X"
             ]

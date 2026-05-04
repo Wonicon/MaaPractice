@@ -49,6 +49,13 @@
             "resource": [
                 "Techcronoss"
             ]
+        },
+        {
+            "name": "Tech::无尽团本",
+            "entry": "EndlessRaid",
+            "resource": [
+                "Techcronoss"
+            ]
         }
     ]
 }

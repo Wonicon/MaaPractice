@@ -17,6 +17,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
             "ConfirmQuestScene",
             "BackToQuest"
@@ -107,10 +108,11 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
             "SkipBattleRoll",
-            "[JumpBack]RetryClickQuestBattleRoll",
-            "BackToQuest"
+            "BackToQuest",
+            "ClickQuestBattleRoll"
         ]
     },
     "ClickQuestExercise": {
@@ -129,27 +131,12 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
-            "[JumpBack]ClickQuestExercise_Retry",
             "SkipExercise",
-            "BackToQuest"
+            "BackToQuest",
+            "ClickQuestExercise"
         ]
-    },
-    "ClickQuestExercise_Retry": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_exercise.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
     },
     "ConfirmBattleRollSkip": {
         "recognition": {
@@ -208,6 +195,19 @@
             "ClickExerciseRewards"
         ]
     },
+    "ConfirmQuestScene": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "quest_exercise.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        }
+    },
     "DailyEnterQuest": {
         "recognition": {
             "type": "TemplateMatch",
@@ -256,22 +256,6 @@
             "CheckHome",
             "GoHome"
         ]
-    },
-    "RetryClickQuestBattleRoll": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_battle_roll.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
     },
     "SelectUnlimitQuestType": {
         "recognition": {
@@ -404,21 +388,5 @@
         "next": [
             "DailyEnterQuest"
         ]
-    },
-    "ConfirmQuestScene": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_exercise.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
     }
 }

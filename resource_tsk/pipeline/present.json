@@ -1,4 +1,27 @@
 {
+    "ClickPresentAllRecv": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    632,
+                    565,
+                    301,
+                    95
+                ],
+                "template": [
+                    "present_all_recv.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
     "InPresentWindow": {
         "recognition": {
             "type": "TemplateMatch",
@@ -24,28 +47,17 @@
             "CheckHome"
         ]
     },
-    "ClickPresentAllRecv": {
+    "Loading": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    632,
-                    565,
-                    301,
-                    95
-                ],
                 "template": [
-                    "present_all_recv.png"
+                    "loading.png"
                 ],
-                "method": 10001,
-                "threshold": [
-                    0.95
-                ]
+                "green_mask": true
             }
         },
-        "action": {
-            "type": "Click"
-        }
+        "post_delay": 1000
     },
     "PresentClosePop": {
         "recognition": {
@@ -60,18 +72,6 @@
             "type": "Click"
         }
     },
-    "Loading": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "loading.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "post_delay": 1000
-    },
     "StartPresent": {
         "recognition": {
             "type": "TemplateMatch",
@@ -85,7 +85,7 @@
                 "template": [
                     "present.png"
                 ],
-                "method": 10001,
+                "method": 5,
                 "threshold": [
                     0.9
                 ]
