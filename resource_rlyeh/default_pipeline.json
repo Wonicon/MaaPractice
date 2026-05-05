@@ -1,11 +1,10 @@
 {
     "Default": {
-        "post_delay": 200,
-        "post_wait_freezes": 300,
+        "pre_delay": 0,
+        "post_delay": 800,
+        "pre_wait_freezes": 0,
+        "post_wait_freezes": 0,
         "timeout": 60000
     },
-    "TemplateMatch": {
-        "recognition": "TemplateMatch",
-        "threshold": 0.6
-    }
+    "on_error": {}
 }
