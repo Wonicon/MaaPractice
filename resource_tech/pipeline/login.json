@@ -20,8 +20,8 @@
             }
         },
         "next": [
-            "StartLogin",
-            "LoginXbar"
+            "LoginXbar",
+            "StartLogin"
         ]
     },
     "CloseLoginBonusReward": {
