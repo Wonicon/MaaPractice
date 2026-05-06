@@ -16,8 +16,8 @@
             "type": "Click"
         },
         "next": [
-            "FriendAllSend",
-            "FrirendClose"
+            "FrirendClose",
+            "FriendAllSend"
         ]
     },
     "StartFriend": {
@@ -41,9 +41,9 @@
         },
         "post_delay": 400,
         "next": [
-            "StartFriend",
             "FriendAllSend",
-            "FrirendClose"
+            "FrirendClose",
+            "StartFriend"
         ]
     },
     "FrirendClose": {

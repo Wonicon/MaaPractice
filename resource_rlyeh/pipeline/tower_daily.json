@@ -23,8 +23,8 @@
         },
         "next": [
             "[JumpBack]ClickTowerLoading",
-            "ClickTower",
-            "TowerCheckin"
+            "TowerCheckin",
+            "ClickTower"
         ]
     },
     "ClickTowerLoading": {
@@ -145,8 +145,8 @@
             }
         },
         "next": [
-            "TowerDailyRewards",
-            "返回spot"
+            "返回spot",
+            "TowerDailyRewards"
         ]
     },
     "TowerDailyWindow": {
@@ -163,8 +163,8 @@
         },
         "post_delay": 1000,
         "next": [
-            "TowerDailyWindow",
-            "TowerDailyRewards"
+            "TowerDailyRewards",
+            "TowerDailyWindow"
         ]
     }
 }

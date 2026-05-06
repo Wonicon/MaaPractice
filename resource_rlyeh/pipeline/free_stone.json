@@ -21,9 +21,9 @@
         "pre_delay": 0,
         "post_delay": 400,
         "next": [
-            "StartFreeStone",
             "FreeStonePack",
-            "[JumpBack]ClickPackTab"
+            "[JumpBack]ClickPackTab",
+            "StartFreeStone"
         ]
     },
     "FreeStonePack": {
@@ -57,7 +57,10 @@
                 ]
             }
         },
-        "post_delay": 400
+        "post_delay": 400,
+        "next": [
+            "FreeStonePack"
+        ]
     },
     "ClickPackTab": {
         "action": {

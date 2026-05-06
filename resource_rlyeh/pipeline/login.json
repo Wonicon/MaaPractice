@@ -13,7 +13,8 @@
             "type": "Click"
         },
         "next": [
-            "RecvImportant"
+            "RecvImportant",
+            "Change2ImportantMail"
         ]
     },
     "CheckHome": {
@@ -61,7 +62,8 @@
         "next": [
             "[JumpBack]ErrorPopup",
             "ClickMailDelay",
-            "RecvNormal"
+            "RecvNormal",
+            "ClickMail"
         ]
     },
     "ClickMailDelay": {
@@ -89,7 +91,10 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "next": [
+            "CloseMail"
+        ]
     },
     "ErrorPopup": {
         "recognition": {
@@ -156,7 +161,8 @@
         },
         "next": [
             "[JumpBack]RecvNormalResult",
-            "RecvImportantDelay"
+            "RecvImportantDelay",
+            "RecvImportant"
         ]
     },
     "RecvImportantDelay": {
@@ -183,7 +189,8 @@
         },
         "next": [
             "[JumpBack]RecvNormalResult",
-            "RecvNormalDelay"
+            "RecvNormalDelay",
+            "RecvNormal"
         ]
     },
     "RecvNormalDelay": {
@@ -252,7 +259,10 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "next": [
+            "SoundConfirmPopup_ClickOK"
+        ]
     },
     "TitleScreen": {
         "recognition": {
