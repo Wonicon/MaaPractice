@@ -44,7 +44,10 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "next": [
+            "back_from_gacha"
+        ]
     },
     "check_circle": {
         "recognition": {
@@ -65,7 +68,8 @@
             "type": "Click"
         },
         "next": [
-            "click_circle_mission_副本3"
+            "click_circle_mission_副本3",
+            "check_circle"
         ]
     },
     "check_no_accept": {
@@ -186,7 +190,8 @@
         },
         "post_delay": 5000,
         "next": [
-            "circle_reward_ani_skip"
+            "circle_reward_ani_skip",
+            "click_accept_all_circle"
         ]
     },
     "click_away_gache_ani": {
@@ -297,7 +302,8 @@
         "next": [
             "go_gacha_top",
             "[JumpBack]click_away_gache_ani",
-            "[JumpBack]skip_gacha_result"
+            "[JumpBack]skip_gacha_result",
+            "confirm_circle_gache"
         ]
     },
     "go_gacha_top": {
@@ -313,7 +319,8 @@
             "type": "Click"
         },
         "next": [
-            "back_from_gacha"
+            "back_from_gacha",
+            "go_gacha_top"
         ]
     },
     "skip_gacha_result": {
@@ -351,8 +358,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "新建节点35",
-            "新建节点36"
+            "新建节点36",
+            "新建节点35"
         ]
     },
     "新建节点35_副本28": {
@@ -371,8 +378,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "新建节点35_副本28",
-            "新建节点40"
+            "新建节点40",
+            "新建节点35_副本28"
         ]
     },
     "新建节点36": {
@@ -396,8 +403,8 @@
             }
         },
         "next": [
-            "新建节点36",
-            "新建节点37"
+            "新建节点37",
+            "新建节点36"
         ]
     },
     "新建节点37": {
@@ -419,7 +426,8 @@
             "type": "Click"
         },
         "next": [
-            "新建节点38"
+            "新建节点38",
+            "新建节点37"
         ]
     },
     "新建节点38": {
@@ -441,7 +449,8 @@
             "type": "Click"
         },
         "next": [
-            "circle_close_any_popup_副本27"
+            "circle_close_any_popup_副本27",
+            "新建节点38"
         ]
     },
     "新建节点39": {
@@ -464,7 +473,10 @@
                     36
                 ]
             }
-        }
+        },
+        "next": [
+            "新建节点39"
+        ]
     },
     "新建节点40": {
         "recognition": {
@@ -509,7 +521,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "click_circle_mission_xbar"
+            "click_circle_mission_xbar",
+            "click_circle_mission_副本3"
         ]
     }
 }

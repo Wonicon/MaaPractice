@@ -20,8 +20,8 @@
             }
         },
         "next": [
-            "check_title_logo",
-            "login_title_post"
+            "login_title_post",
+            "check_title_logo"
         ]
     },
     "check_title_text": {
@@ -46,8 +46,8 @@
             }
         },
         "next": [
-            "check_title_text",
-            "login_title_post"
+            "login_title_post",
+            "check_title_text"
         ]
     },
     "click_login_bonus": {

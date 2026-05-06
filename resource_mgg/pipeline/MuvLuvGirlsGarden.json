@@ -75,7 +75,8 @@
             }
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "MGG E 选择事件"
         ]
     },
     "MGG E 选择遗物": {
@@ -99,7 +100,8 @@
             }
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "MGG E 选择遗物"
         ]
     },
     "MGG MAZE BUY xbar0": {
@@ -180,7 +182,8 @@
         "post_delay": 2000,
         "next": [
             "login_判断首页",
-            "[JumpBack]MGG MAZE gohome_retry"
+            "[JumpBack]MGG MAZE gohome_retry",
+            "MGG MAZE gohome"
         ]
     },
     "MGG MAZE gohome_retry": {
@@ -250,7 +253,8 @@
             "[JumpBack]MGG MAZE 探索_retry",
             "[JumpBack]MGG MAZE 误入抽卡",
             "[JumpBack]maze_buy_over_bug_shop",
-            "MGG MAZE 前总线"
+            "MGG MAZE 前总线",
+            "MGG MAZE 探索"
         ]
     },
     "MGG MAZE 探索_retry": {
@@ -320,7 +324,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "MGG MAZE 跳过战斗"
         ]
     },
     "MGG 战斗中": {
@@ -349,7 +354,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "MGG 离开"
         ]
     },
     "MGG 继续": {
@@ -371,7 +377,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "MGG 继续"
         ]
     },
     "__buy_but_max": {
@@ -419,7 +426,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE BUY xbar1"
+            "MGG MAZE BUY xbar1",
+            "__buy_max_reinforce"
         ]
     },
     "__buy_unit": {
@@ -445,7 +453,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE BUY xbar1"
+            "MGG MAZE BUY xbar1",
+            "__buy_unit"
         ]
     },
     "__buy_素材不足": {
@@ -491,7 +500,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE BUY xbar1"
+            "MGG MAZE BUY xbar1",
+            "__buy_部分投入"
         ]
     },
     "__click_art_en": {
@@ -724,9 +734,9 @@
         "next": [
             "EnterMazePrepare",
             "mgg_maze_over_confirm",
-            "__maze_reward_over",
             "[JumpBack]maze_buy_over_bug_shop",
-            "[JumpBack]MAZE前清除弹窗"
+            "[JumpBack]MAZE前清除弹窗",
+            "__maze_reward_over"
         ]
     },
     "exercise_click_battle": {
@@ -750,7 +760,8 @@
         "post_wait_freezes": 600,
         "next": [
             "[JumpBack]exercise_click_battle_retry",
-            "演习战斗前中转"
+            "演习战斗前中转",
+            "exercise_click_battle"
         ]
     },
     "exercise_click_battle_retry": {
@@ -930,9 +941,9 @@
             }
         },
         "next": [
-            "mgg_maze_over_confirm",
             "EnterMazePrepare",
-            "[JumpBack]MAZE前清除弹窗"
+            "[JumpBack]MAZE前清除弹窗",
+            "mgg_maze_over_confirm"
         ]
     },
     "mgg_maze_prepare": {
@@ -964,7 +975,8 @@
             "[JumpBack]MGG MAZE 误入抽卡",
             "[JumpBack]maze_buy_over_bug_shop",
             "MGG MAZE 探索",
-            "[JumpBack]mgg_maze_prepare_retry"
+            "[JumpBack]mgg_maze_prepare_retry",
+            "mgg_maze_prepare"
         ]
     },
     "mgg_maze_prepare_retry": {
@@ -1010,7 +1022,8 @@
         "next": [
             "演习无剩余次数",
             "[JumpBack]演习 popup result",
-            "[JumpBack]exercise_click_prepare"
+            "[JumpBack]exercise_click_prepare",
+            "quest_click_exercise"
         ]
     },
     "判断矿为零": {
@@ -1105,7 +1118,8 @@
         "post_delay": 500,
         "next": [
             "[JumpBack]演习战斗点继续_重试",
-            "战术演习结束"
+            "战术演习结束",
+            "演习战斗点继续"
         ]
     },
     "演习战斗点继续_重试": {
@@ -1157,7 +1171,8 @@
         },
         "next": [
             "login_判断首页",
-            "[JumpBack]演习返回首页_重试"
+            "[JumpBack]演习返回首页_重试",
+            "演习返回首页"
         ]
     },
     "演习返回首页_重试": {
@@ -1195,7 +1210,8 @@
             "type": "Click"
         },
         "next": [
-            "MGG MAZE 后总线"
+            "MGG MAZE 后总线",
+            "选择路线"
         ]
     },
     "选择路线_战斗": {
@@ -1217,7 +1233,8 @@
             "type": "Click"
         },
         "next": [
-            "选择路线"
+            "选择路线",
+            "选择路线_战斗"
         ]
     },
     "pad_mgg_maze_prepare_retry": {

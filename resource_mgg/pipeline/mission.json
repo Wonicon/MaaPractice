@@ -31,7 +31,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "click_mission_rewards_ok"
+            "click_mission_rewards_ok",
+            "click_accept_all_mission"
         ]
     },
     "click_mission": {
@@ -48,8 +49,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "click_mission",
-            "before_accept_mission_rewards"
+            "before_accept_mission_rewards",
+            "click_mission"
         ]
     },
     "click_mission_rewards_ok": {
@@ -66,7 +67,8 @@
         },
         "next": [
             "click_to_weekly",
-            "click_right_top_go_home"
+            "click_right_top_go_home",
+            "click_mission_rewards_ok"
         ]
     },
     "click_to_weekly": {

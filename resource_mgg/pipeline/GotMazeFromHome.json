@@ -37,7 +37,8 @@
         },
         "post_delay": 500,
         "next": [
-            "GoMazeMerge"
+            "GoMazeMerge",
+            "GoMaze"
         ]
     },
     "GoMazeMerge": {
@@ -69,7 +70,8 @@
         },
         "post_delay": 500,
         "next": [
-            "GoMazeMerge"
+            "GoMazeMerge",
+            "GoMaze_OCR"
         ]
     },
     "GoMaze识别界面": {
@@ -115,7 +117,10 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "next": [
+            "GomazeRewardPopOk"
+        ]
     },
     "SelectNormalArea": {
         "recognition": {
