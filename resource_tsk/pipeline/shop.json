@@ -38,8 +38,8 @@
             "type": "Click"
         },
         "next": [
-            "GoToShop",
-            "BuyFree"
+            "BuyFree",
+            "GoToShop"
         ]
     },
     "StartShop": {
@@ -56,8 +56,8 @@
         },
         "post_delay": 800,
         "next": [
-            "StartShop",
-            "GoToShop"
+            "GoToShop",
+            "StartShop"
         ]
     },
     "ClickBuyConfirmOK": {
@@ -81,9 +81,9 @@
             }
         },
         "next": [
-            "ClickBuyConfirmOK",
             "CheckInShopAndClickHome",
-            "[JumpBack]ClickGoBack"
+            "[JumpBack]ClickGoBack",
+            "ClickBuyConfirmOK"
         ]
     },
     "CheckInShopAndClickHome": {

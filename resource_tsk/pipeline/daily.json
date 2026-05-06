@@ -89,7 +89,8 @@
             }
         },
         "next": [
-            "BackToQuest"
+            "BackToQuest",
+            "ClickExerciseRewards"
         ]
     },
     "ClickQuestBattleRoll": {
@@ -192,7 +193,8 @@
         },
         "post_delay": 3000,
         "next": [
-            "ClickExerciseRewards"
+            "ClickExerciseRewards",
+            "ConfirmExerciseSkip"
         ]
     },
     "ConfirmQuestScene": {
@@ -279,7 +281,8 @@
             "type": "Click"
         },
         "next": [
-            "SkipExerciseOk"
+            "SkipExerciseOk",
+            "SelectUnlimitQuestType"
         ]
     },
     "SkipBattleRoll": {
@@ -356,7 +359,8 @@
             "type": "Click"
         },
         "next": [
-            "SelectUnlimitQuestType"
+            "SelectUnlimitQuestType",
+            "SkipExercise"
         ]
     },
     "SkipExerciseOk": {
@@ -381,7 +385,8 @@
             "type": "Click"
         },
         "next": [
-            "ConfirmExerciseSkip"
+            "ConfirmExerciseSkip",
+            "SkipExerciseOk"
         ]
     },
     "StartDaily": {

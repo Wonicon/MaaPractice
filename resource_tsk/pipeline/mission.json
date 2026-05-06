@@ -23,8 +23,8 @@
             "[JumpBack]MissionClosePop",
             "[JumpBack]MissionAllRecv",
             "[JumpBack]ClickWeekly",
-            "ClickMission",
-            "BackToHome"
+            "BackToHome",
+            "ClickMission"
         ]
     },
     "MissionAllRecv": {
@@ -101,8 +101,8 @@
             "type": "Click"
         },
         "next": [
-            "BackToHome",
-            "CheckHome"
+            "CheckHome",
+            "BackToHome"
         ]
     }
 }

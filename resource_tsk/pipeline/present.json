@@ -96,8 +96,8 @@
         },
         "next": [
             "InPresentWindow",
-            "StartPresent",
-            "[JumpBack]Loading"
+            "[JumpBack]Loading",
+            "StartPresent"
         ]
     }
 }
