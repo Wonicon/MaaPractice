@@ -1,12 +1,12 @@
 {
     "interface_version": 2,
-    "name": "MaaTechcronoss",
+    "name": "MaaNotServiceRegion",
     "description": "这是一个使用 MaaFramework 创建的新项目。",
     "contact": "",
     "license": "",
     "welcome": "首次使用！欢迎使用 MAA!",
-    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
-    "version": "v0.0.2",
+    "github": "",
+    "version": "v0.0.3",
     "resource": [
         {
             "name": "MGG",
