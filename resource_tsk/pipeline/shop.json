@@ -80,8 +80,8 @@
                 ]
             }
         },
-        "repeat": 3,
         "next": [
+            "ClickBuyConfirmOK",
             "CheckInShopAndClickHome",
             "[JumpBack]ClickGoBack"
         ]
