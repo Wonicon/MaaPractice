@@ -10,7 +10,10 @@
         },
         "next": [
             "FS01 点商店"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_home，等待通过"
+        }
     },
     "FS 关闭窗口": {
         "recognition": {
@@ -42,7 +45,10 @@
         "next": [
             "FS 返回主页",
             "FS 关闭窗口"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_shop_title，点击右上"
+        }
     },
     "FS 结束任务": {
         "recognition": {
@@ -55,6 +61,9 @@
         },
         "action": {
             "type": "StopTask"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_tickets，停止任务"
         }
     },
     "FS 返回主页": {
@@ -87,7 +96,10 @@
         "next": [
             "FS 结束任务",
             "FS 返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_shop_go_home，点击左下"
+        }
     },
     "FS01 点商店": {
         "recognition": {
@@ -104,7 +116,10 @@
         "next": [
             "FS02 点商品",
             "FS01 点商店"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop，点击目标"
+        }
     },
     "FS02 点商品": {
         "recognition": {
@@ -122,7 +137,10 @@
             "FS03 点石头",
             "FS02 点商品",
             "FreeStoneNotFound"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_goods，点击目标"
+        }
     },
     "FS03 点石头": {
         "recognition": {
@@ -147,7 +165,10 @@
         "next": [
             "FS04 买",
             "FS03 点石头"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_goods_freeStone，点击左下"
+        }
     },
     "FS04 买": {
         "recognition": {
@@ -164,7 +185,10 @@
         "next": [
             "FS05 OK",
             "FS04 买"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_goods_freeStone_buy，点击目标"
+        }
     },
     "FS05 OK": {
         "recognition": {
@@ -181,7 +205,10 @@
         "next": [
             "FS 关闭窗口",
             "FS05 OK"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_ok，点击目标"
+        }
     },
     "FreeStoneNotFound": {
         "focus": {
@@ -214,7 +241,10 @@
         "next": [
             "取消出击窗口",
             "入场券不足"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_ticket_not_enough，点击下方"
+        }
     },
     "关闭领票": {
         "recognition": {
@@ -231,7 +261,10 @@
         "next": [
             "点击任务",
             "关闭领票"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_tickets_close，点击目标"
+        }
     },
     "取消出击窗口": {
         "recognition": {
@@ -256,7 +289,10 @@
         "next": [
             "点击返回",
             "取消出击窗口"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_prepare，点击左下"
+        }
     },
     "取消强化结果弹窗": {
         "recognition": {
@@ -281,7 +317,10 @@
         "next": [
             "取消出击窗口",
             "取消强化结果弹窗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_skip_result，点击左下"
+        }
     },
     "增加次数": {
         "recognition": {
@@ -306,7 +345,10 @@
         "next": [
             "点击强化跳过",
             "增加次数"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_skip，点击右下"
+        }
     },
     "强化任务中转": {
         "recognition": {
@@ -329,7 +371,10 @@
             "[JumpBack]点击上限解放",
             "[JumpBack]点击技能",
             "强化返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到特征目标，等待通过"
+        }
     },
     "强化返回主页": {
         "recognition": {
@@ -352,7 +397,10 @@
         "next": [
             "结束强化",
             "强化返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_go_home，点击左下"
+        }
     },
     "点击上限解放": {
         "max_hit": 1,
@@ -377,7 +425,10 @@
         },
         "next": [
             "选择通过的任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_limit，点击右上"
+        }
     },
     "点击任务": {
         "recognition": {
@@ -394,7 +445,10 @@
         "next": [
             "点击强化任务",
             "点击任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest，点击目标"
+        }
     },
     "点击好感": {
         "max_hit": 1,
@@ -419,7 +473,10 @@
         },
         "next": [
             "选择通过的任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_love，点击左上"
+        }
     },
     "点击强化任务": {
         "recognition": {
@@ -436,7 +493,10 @@
         "next": [
             "强化任务中转",
             "点击强化任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce，点击目标"
+        }
     },
     "点击强化跳过": {
         "recognition": {
@@ -454,7 +514,10 @@
             "确认强化跳过",
             "入场券不足",
             "点击强化跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_skip，点击目标"
+        }
     },
     "点击技能": {
         "max_hit": 1,
@@ -479,7 +542,10 @@
         },
         "next": [
             "选择通过的任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_skill，点击右侧"
+        }
     },
     "点击等级": {
         "max_hit": 1,
@@ -505,7 +571,10 @@
         "next": [
             "选择通过的任务",
             "[JumpBack]点击等级_副本1"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_level，点击左侧"
+        }
     },
     "点击等级_副本1": {
         "max_hit": 1,
@@ -527,6 +596,9 @@
                     43
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_level，点击左侧"
         }
     },
     "点击返回": {
@@ -552,7 +624,10 @@
         "next": [
             "确认强化任务主页",
             "点击返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_passed，点击左下"
+        }
     },
     "确认强化跳过": {
         "recognition": {
@@ -577,7 +652,10 @@
         "next": [
             "取消强化结果弹窗",
             "确认强化跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_skip，点击右下"
+        }
     },
     "确认领票": {
         "recognition": {
@@ -594,7 +672,10 @@
         "next": [
             "领票OK",
             "确认领票"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_tickets_accept，点击目标"
+        }
     },
     "结束强化": {
         "recognition": {
@@ -613,6 +694,9 @@
         },
         "action": {
             "type": "StopTask"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_stone_mark，停止任务"
         }
     },
     "选择通过的任务": {
@@ -636,7 +720,10 @@
         "next": [
             "增加次数",
             "选择通过的任务"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_passed，点击目标"
+        }
     },
     "领票": {
         "recognition": {
@@ -653,7 +740,10 @@
         "next": [
             "确认领票",
             "领票"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_tickets，点击目标"
+        }
     },
     "领票OK": {
         "recognition": {
@@ -670,7 +760,10 @@
         "next": [
             "关闭领票",
             "领票OK"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_popup_expedition_accept_ok，点击目标"
+        }
     },
     "领票回家": {
         "recognition": {
@@ -687,7 +780,10 @@
         "next": [
             "领票确认home",
             "领票回家"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_expedition_home，点击目标"
+        }
     },
     "领票确认home": {
         "recognition": {
@@ -701,7 +797,10 @@
         "next": [
             "领票",
             "领票回家"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_home，等待通过"
+        }
     },
     "确认强化任务主页": {
         "recognition": {
@@ -717,6 +816,9 @@
                     "reinforce_home.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到reinforce_home，等待通过"
         }
     }
 }

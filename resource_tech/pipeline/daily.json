@@ -15,7 +15,10 @@
         "next": [
             "点击远征",
             "E 远征 点击城镇"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tec_town，点击目标"
+        }
     },
     "全部接收": {
         "recognition": {
@@ -43,7 +46,10 @@
         "next": [
             "确认",
             "全部接收"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tec_expedition_accept_all，点击右下"
+        }
     },
     "再度远征": {
         "recognition": {
@@ -60,7 +66,10 @@
         "next": [
             "确认远征中",
             "再度远征"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_expedition_again，点击目标"
+        }
     },
     "点击远征": {
         "recognition": {
@@ -78,7 +87,10 @@
             "点击远征",
             "全部接收",
             "返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tec_expedition，点击目标"
+        }
     },
     "确认": {
         "recognition": {
@@ -96,7 +108,10 @@
         "next": [
             "再度远征",
             "确认"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_popup_expedition_accept_ok，点击目标"
+        }
     },
     "确认home": {
         "recognition": {
@@ -109,6 +124,9 @@
         },
         "action": {
             "type": "StopTask"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_home，停止任务"
         }
     },
     "确认远征中": {
@@ -122,7 +140,10 @@
         },
         "next": [
             "返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_expedition_working，等待通过"
+        }
     },
     "返回主页": {
         "recognition": {
@@ -143,6 +164,9 @@
         "next": [
             "确认home",
             "返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tech_expedition_home，点击目标"
+        }
     }
 }

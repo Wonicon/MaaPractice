@@ -21,7 +21,10 @@
             "祭坛挑战用完",
             "祭坛挑战",
             "SelectOpenBoss"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到开催中，点击下方"
+        }
     },
     "Task主线": {
         "recognition": {
@@ -45,7 +48,10 @@
             "主线收菜弹出",
             "主线收菜",
             "Task主线"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696001539，点击左下"
+        }
     },
     "Task残响": {
         "recognition": {
@@ -62,7 +68,10 @@
         "next": [
             "残响剧场",
             "Task残响"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_spot，点击目标"
+        }
     },
     "Task祭坛": {
         "recognition": {
@@ -79,7 +88,10 @@
         "next": [
             "祭坛",
             "Task祭坛"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_spot，点击目标"
+        }
     },
     "Task竞技场": {
         "recognition": {
@@ -96,7 +108,10 @@
         "next": [
             "竞技场",
             "Task竞技场"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_spot，点击目标"
+        }
     },
     "主线快速战斗": {
         "recognition": {
@@ -113,7 +128,10 @@
         "next": [
             "主线快速战斗2",
             "主线快速战斗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696112847，点击目标"
+        }
     },
     "主线快速战斗2": {
         "recognition": {
@@ -127,7 +145,10 @@
         "next": [
             "主线快速战斗不免费",
             "主线快速战斗免费"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696162428，等待通过"
+        }
     },
     "主线快速战斗不免费": {
         "recognition": {
@@ -146,7 +167,10 @@
         },
         "next": [
             "主线快速战斗关闭"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到30文字，等待通过"
+        }
     },
     "主线快速战斗免费": {
         "recognition": {
@@ -169,7 +193,10 @@
         "next": [
             "主线快速战斗执行",
             "主线快速战斗免费"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到0文字，点击中下偏左"
+        }
     },
     "主线快速战斗关闭": {
         "recognition": {
@@ -200,7 +227,10 @@
         "next": [
             "主线战斗",
             "主线快速战斗关闭"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到高速バトル文字，点击左下"
+        }
     },
     "主线快速战斗执行": {
         "recognition": {
@@ -220,7 +250,10 @@
             "主线快速战斗关闭",
             "主线报酬弹窗",
             "主线战斗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696162428，点击目标"
+        }
     },
     "主线战斗": {
         "action": {
@@ -237,7 +270,10 @@
         "next": [
             "主线战斗挑战",
             "主线战斗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击右下"
+        }
     },
     "主线战斗Loading": {
         "recognition": {
@@ -253,6 +289,9 @@
                     "Loading"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到Loading文字，等待通过"
         }
     },
     "主线战斗_编队界面": {
@@ -295,7 +334,10 @@
         "next": [
             "返回home",
             "主线战斗_编队界面"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到颜色目标，点击左侧"
+        }
     },
     "主线战斗中": {
         "recognition": {
@@ -311,6 +353,9 @@
                     "template_1776693600445.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776693600445，等待通过"
         }
     },
     "主线战斗挑战": {
@@ -337,7 +382,10 @@
             "[JumpBack]主线战斗Loading",
             "剧情",
             "主线战斗挑战"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到挑戦文字，点击右下"
+        }
     },
     "主线战斗返回": {
         "recognition": {
@@ -363,7 +411,10 @@
             "返回home",
             "[JumpBack]返回Loading",
             "主线战斗返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到戻る文字，点击右下"
+        }
     },
     "主线报酬弹窗": {
         "recognition": {
@@ -388,7 +439,10 @@
         "next": [
             "主线报酬弹窗",
             "主线快速战斗关闭"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696327267，点击上方"
+        }
     },
     "主线收菜": {
         "action": {
@@ -459,7 +513,10 @@
         "next": [
             "主线快速战斗",
             "主线收菜弹出报酬弹窗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696327267，点击上方"
+        }
     },
     "主线收菜报酬弹窗": {
         "recognition": {
@@ -484,7 +541,10 @@
         "next": [
             "主线快速战斗",
             "主线收菜报酬弹窗"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696327267，点击上方"
+        }
     },
     "主线收菜无货": {
         "recognition": {
@@ -517,7 +577,10 @@
             "主线收菜有货",
             "主线快速战斗",
             "主线收菜无货"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到アイテムを獲得していません文字，点击下方"
+        }
     },
     "主线收菜有货": {
         "recognition": {
@@ -534,7 +597,10 @@
         "next": [
             "主线收菜报酬弹窗",
             "主线收菜有货"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776696070719，点击目标"
+        }
     },
     "剧情": {
         "recognition": {
@@ -553,7 +619,10 @@
         },
         "next": [
             "展开跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到AUTO文字，等待通过"
+        }
     },
     "展开跳过": {
         "recognition": {
@@ -570,7 +639,10 @@
         "next": [
             "跳过",
             "展开跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776704677401，点击目标"
+        }
     },
     "战斗中": {
         "recognition": {
@@ -586,6 +658,9 @@
                     "template_1776693600445.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776693600445，等待通过"
         }
     },
     "战斗中_副本33_副本50": {
@@ -602,6 +677,9 @@
                     "template_1776693600445.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776693600445，等待通过"
         }
     },
     "战斗返回": {
@@ -626,7 +704,10 @@
         "next": [
             "祭坛挑战",
             "战斗返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到戻文字，点击右下"
+        }
     },
     "残响剧场": {
         "recognition": {
@@ -651,7 +732,10 @@
         "next": [
             "残响剧场2",
             "残响剧场"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到残响剧场，点击中上偏右"
+        }
     },
     "残响剧场2": {
         "recognition": {
@@ -677,7 +761,10 @@
             "残响回数为0",
             "残响剧场3",
             "残响剧场2"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776498582773，点击中上偏左"
+        }
     },
     "残响剧场3": {
         "recognition": {
@@ -696,7 +783,10 @@
         "next": [
             "残响剧场4",
             "残响剧场3"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到残响clear，点击目标"
+        }
     },
     "残响剧场4": {
         "recognition": {
@@ -713,7 +803,10 @@
         "next": [
             "残响剧场5",
             "残响剧场4"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到残响skip，点击目标"
+        }
     },
     "残响剧场5": {
         "recognition": {
@@ -745,7 +838,10 @@
         "next": [
             "残响剧场6",
             "残响剧场5"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到スキップする回数を選択してください。文字，点击右侧"
+        }
     },
     "残响剧场6": {
         "action": {
@@ -762,7 +858,10 @@
         "next": [
             "残响剧场_点击返回",
             "残响剧场6"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击下方"
+        }
     },
     "残响剧场8_取消编队": {
         "recognition": {
@@ -782,7 +881,10 @@
         "next": [
             "残响剧场9_退出剧场",
             "残响剧场8_取消编队"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776693478935，点击目标"
+        }
     },
     "残响剧场9_退出剧场": {
         "recognition": {
@@ -807,7 +909,10 @@
         "next": [
             "返回home",
             "残响剧场9_退出剧场"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776498921625，点击左上"
+        }
     },
     "残响剧场_点击返回": {
         "recognition": {
@@ -829,7 +934,10 @@
             "残响剧场8_取消编队",
             "残响剧场9_退出剧场",
             "残响剧场_点击返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到quest_back，点击目标"
+        }
     },
     "确认主页": {
         "recognition": {
@@ -848,6 +956,9 @@
         },
         "action": {
             "type": "StopTask"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776695483667，停止任务"
         }
     },
     "确认跳过": {
@@ -864,7 +975,10 @@
         },
         "next": [
             "主线战斗返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击中下偏右"
+        }
     },
     "祭坛": {
         "recognition": {
@@ -881,7 +995,10 @@
         "next": [
             "SelectOpenBoss",
             "祭坛"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到祭坛，点击目标"
+        }
     },
     "祭坛取消编队": {
         "recognition": {
@@ -906,7 +1023,10 @@
         "next": [
             "返回home",
             "祭坛取消编队"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776438822944，点击右上"
+        }
     },
     "祭坛挑战": {
         "recognition": {
@@ -933,7 +1053,10 @@
             "祭坛跳过",
             "祭坛挑战2",
             "祭坛挑战"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到挑战，点击右侧"
+        }
     },
     "祭坛挑战2": {
         "recognition": {
@@ -957,7 +1080,10 @@
             "战斗返回",
             "[JumpBack]战斗中",
             "祭坛挑战2"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776437714167，点击右下"
+        }
     },
     "祭坛挑战用完": {
         "recognition": {
@@ -981,7 +1107,10 @@
         "next": [
             "返回home",
             "祭坛挑战用完"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到挑戦回数：0/3文字，点击右侧"
+        }
     },
     "祭坛最大跳过次数": {
         "recognition": {
@@ -1010,7 +1139,10 @@
         "next": [
             "祭坛跳过执行",
             "祭坛最大跳过次数"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776438553778，点击右下"
+        }
     },
     "祭坛结果返回": {
         "recognition": {
@@ -1034,7 +1166,10 @@
         "next": [
             "祭坛取消编队",
             "祭坛结果返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到戻る文字，点击右下"
+        }
     },
     "祭坛跳过": {
         "recognition": {
@@ -1051,7 +1186,10 @@
         "next": [
             "祭坛最大跳过次数",
             "祭坛跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到残响skip，点击目标"
+        }
     },
     "祭坛跳过执行": {
         "recognition": {
@@ -1078,7 +1216,10 @@
         },
         "next": [
             "祭坛结果返回"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776438553778，点击右下"
+        }
     },
     "竞技场": {
         "recognition": {
@@ -1095,7 +1236,10 @@
         "next": [
             "竞技场内部",
             "竞技场"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776700890096，点击目标"
+        }
     },
     "竞技场内部": {
         "recognition": {
@@ -1122,7 +1266,10 @@
             "竞技场没次数",
             "竞技场找对手",
             "竞技场内部"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776700960919，点击右上"
+        }
     },
     "竞技场出击": {
         "recognition": {
@@ -1159,7 +1306,10 @@
             "[JumpBack]战斗中_副本33_副本50",
             "竞技场继续找对手",
             "竞技场出击"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到颜色目标，点击右下"
+        }
     },
     "竞技场找对手": {
         "recognition": {
@@ -1194,7 +1344,10 @@
         "next": [
             "竞技场出击",
             "竞技场找对手"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到颜色目标，点击右侧"
+        }
     },
     "竞技场没次数": {
         "recognition": {
@@ -1225,7 +1378,10 @@
         },
         "next": [
             "返回home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到颜色目标，等待通过"
+        }
     },
     "竞技场继续找对手": {
         "recognition": {
@@ -1250,7 +1406,10 @@
             "竞技场没次数",
             "竞技场找对手",
             "竞技场继续找对手"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到対戦相手選択文字，点击右下"
+        }
     },
     "跳过": {
         "recognition": {
@@ -1274,7 +1433,10 @@
         "next": [
             "确认跳过",
             "跳过"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到スキップ文字，点击右上"
+        }
     },
     "返回Loading": {
         "recognition": {
@@ -1284,6 +1446,9 @@
                     "Loading"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到Loading文字，等待通过"
         }
     },
     "返回home": {
@@ -1301,7 +1466,10 @@
         "next": [
             "确认主页",
             "返回home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home，点击目标"
+        }
     },
     "残响回数为0": {
         "recognition": {
@@ -1320,6 +1488,9 @@
         },
         "next": [
             "残响剧场9_退出剧场"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到0文字，等待通过"
+        }
     }
 }

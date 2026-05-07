@@ -31,7 +31,10 @@
         "next": [
             "check_circle",
             "EnterCircle"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_7days，点击左下"
+        }
     },
     "back_from_gacha": {
         "recognition": {
@@ -49,7 +52,10 @@
         "next": [
             "Circle:mission兑换页_副本2",
             "back_from_gacha"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到gacha_back_arrow，点击目标"
+        }
     },
     "check_circle": {
         "recognition": {
@@ -72,7 +78,10 @@
         "next": [
             "click_circle_mission_inside",
             "check_circle"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle，点击左上"
+        }
     },
     "check_no_accept": {
         "recognition": {
@@ -92,7 +101,10 @@
         "inverse": false,
         "next": [
             "click_accept_all_circle"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到受取文字，等待通过"
+        }
     },
     "circle_close_any_popup": {
         "recognition": {
@@ -111,7 +123,10 @@
         "post_delay": 3000,
         "next": [
             "circle_delay_pad"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到OK文字，点击目标"
+        }
     },
     "circle_close_any_popup_副本27": {
         "recognition": {
@@ -136,7 +151,10 @@
         "next": [
             "circle_close_any_popup_副本27",
             "Circle::点击返回直到进入mission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到OK文字，点击下方"
+        }
     },
     "circle_exchange": {
         "recognition": {
@@ -150,7 +168,10 @@
         },
         "next": [
             "新建节点35"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到交換所でアイテムを1回購入する文字，等待通过"
+        }
     },
     "circle_gacha": {
         "recognition": {
@@ -168,7 +189,10 @@
         },
         "next": [
             "新建节点35_副本28"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到ナールガチを1回引く文字，点击目标"
+        }
     },
     "click_accept_all_circle": {
         "recognition": {
@@ -188,6 +212,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到一括受取文字，点击右下"
         }
     },
     "click_away_gache_ani": {
@@ -202,7 +229,10 @@
                 ]
             }
         },
-        "repeat": 5
+        "repeat": 5,
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击右上"
+        }
     },
     "click_circle_mission_xbar": {
         "pre_delay": 0,
@@ -216,7 +246,10 @@
             "[JumpBack]circle_finish_guard",
             "[JumpBack]click_circle_weekly_mission",
             "click_right_top_go_home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "click_circle_mission_副本26": {
         "recognition": {
@@ -237,7 +270,10 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 2000
+        "post_delay": 2000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_mission，点击右上"
+        }
     },
     "click_circle_mission_inside": {
         "max_hit": 2,
@@ -263,7 +299,10 @@
         "next": [
             "click_circle_mission_xbar",
             "click_circle_mission_inside"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_mission，点击右上"
+        }
     },
     "click_circle_weekly_mission": {
         "max_hit": 1,
@@ -278,7 +317,10 @@
                 ]
             }
         },
-        "repeat": 3
+        "repeat": 3,
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击左侧"
+        }
     },
     "click_right_top_go_home": {
         "recognition": {
@@ -301,7 +343,10 @@
         "next": [
             "login_判断首页",
             "click_right_top_go_home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到top_right_go_home，点击右上"
+        }
     },
     "confirm_circle_gache": {
         "recognition": {
@@ -328,7 +373,10 @@
             "[JumpBack]click_away_gache_ani",
             "[JumpBack]skip_gacha_result",
             "confirm_circle_gache"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到dig_confirm_title，点击右下"
+        }
     },
     "go_gacha_top": {
         "recognition": {
@@ -345,7 +393,10 @@
         "next": [
             "back_from_gacha",
             "go_gacha_top"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到go_gacha_top，点击目标"
+        }
     },
     "skip_gacha_result": {
         "recognition": {
@@ -364,6 +415,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到gacha_skip，点击右上"
         }
     },
     "新建节点35": {
@@ -384,7 +438,10 @@
         "next": [
             "新建节点36",
             "新建节点35"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到挑戦文字，点击目标"
+        }
     },
     "新建节点35_副本28": {
         "recognition": {
@@ -404,7 +461,10 @@
         "next": [
             "新建节点40",
             "新建节点35_副本28"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到挑戦文字，点击目标"
+        }
     },
     "新建节点36": {
         "recognition": {
@@ -429,7 +489,10 @@
         "next": [
             "新建节点37",
             "新建节点36"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_gacha，点击左下"
+        }
     },
     "新建节点37": {
         "recognition": {
@@ -452,7 +515,10 @@
         "next": [
             "新建节点38",
             "新建节点37"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到MAX文字，点击右下"
+        }
     },
     "新建节点38": {
         "recognition": {
@@ -475,7 +541,10 @@
         "next": [
             "circle_close_any_popup_副本27",
             "新建节点38"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到交換文字，点击右下"
+        }
     },
     "Circle::点击返回直到进入mission": {
         "inverse": false,
@@ -493,7 +562,10 @@
         "next": [
             "Circle:mission兑换页",
             "Circle::点击返回直到进入mission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击左上"
+        }
     },
     "新建节点40": {
         "recognition": {
@@ -510,7 +582,10 @@
         "next": [
             "confirm_circle_gache",
             "新建节点40"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_gacha_poll，点击目标"
+        }
     },
     "Circle:mission兑换页": {
         "recognition": {
@@ -520,15 +595,24 @@
                     "circle_mission_bar_mark.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_mission_bar_mark，等待通过"
         }
     },
     "circle_delay_pad": {
         "pre_delay": 0,
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "circle_finish_guard": {
         "doc": "在退出前多扫几次，排在 go home 前面，倒数第二个",
-        "max_hit": 3
+        "max_hit": 3,
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "Circle:mission兑换页_副本2": {
         "recognition": {
@@ -538,6 +622,9 @@
                     "circle_mission_bar_mark.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到circle_mission_bar_mark，等待通过"
         }
     }
 }

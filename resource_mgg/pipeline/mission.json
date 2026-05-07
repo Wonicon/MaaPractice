@@ -2,7 +2,10 @@
     "EnterMission": {
         "next": [
             "click_mission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "before_accept_mission_rewards": {
         "pre_delay": 0,
@@ -11,7 +14,10 @@
             "click_accept_all_mission",
             "click_to_weekly",
             "click_right_top_go_home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "click_accept_all_mission": {
         "recognition": {
@@ -33,7 +39,10 @@
         "next": [
             "click_mission_rewards_ok",
             "click_accept_all_mission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到accept_all，点击目标"
+        }
     },
     "click_mission": {
         "recognition": {
@@ -51,7 +60,10 @@
         "next": [
             "before_accept_mission_rewards",
             "click_mission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到mission，点击目标"
+        }
     },
     "click_mission_rewards_ok": {
         "recognition": {
@@ -69,7 +81,10 @@
             "click_to_weekly",
             "click_right_top_go_home",
             "click_mission_rewards_ok"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+        }
     },
     "click_to_weekly": {
         "max_hit": 1,
@@ -86,6 +101,9 @@
         },
         "next": [
             "before_accept_mission_rewards"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击左侧"
+        }
     }
 }

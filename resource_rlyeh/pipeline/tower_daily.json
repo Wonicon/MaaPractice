@@ -25,7 +25,10 @@
             "[JumpBack]ClickTowerLoading",
             "TowerCheckin",
             "ClickTower"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tower，点击中央"
+        }
     },
     "ClickTowerLoading": {
         "recognition": {
@@ -36,6 +39,9 @@
                     "Loading..."
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到Loading文字，等待通过"
         }
     },
     "Tower": {
@@ -53,7 +59,10 @@
         "next": [
             "ClickTower",
             "Tower"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_spot，点击目标"
+        }
     },
     "TowerCheckin": {
         "recognition": {
@@ -76,7 +85,10 @@
         "next": [
             "TowerDailyNew",
             "返回home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到プリズンタワー文字，等待通过"
+        }
     },
     "TowerDailyNew": {
         "recognition": {
@@ -147,7 +159,10 @@
         "next": [
             "返回home",
             "TowerDailyRewards"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到獲得報酬文字，点击目标"
+        }
     },
     "TowerDailyWindow": {
         "recognition": {
@@ -165,6 +180,9 @@
         "next": [
             "TowerDailyRewards",
             "TowerDailyWindow"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到受取る文字，点击目标"
+        }
     }
 }

@@ -21,7 +21,10 @@
         "next": [
             "ConfirmQuestScene",
             "BackToQuest"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到back，点击左上"
+        }
     },
     "CheckHome": {
         "recognition": {
@@ -41,6 +44,9 @@
                     0.8
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_label，等待通过"
         }
     },
     "ClickBattleRollReward": {
@@ -66,7 +72,10 @@
         "next": [
             "BackToQuest",
             "ClickBattleRollReward"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到rewards，点击下方"
+        }
     },
     "ClickExerciseRewards": {
         "recognition": {
@@ -91,7 +100,10 @@
         "next": [
             "BackToQuest",
             "ClickExerciseRewards"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到rewards，点击下方"
+        }
     },
     "ClickQuestBattleRoll": {
         "max_hit": 1,
@@ -114,7 +126,10 @@
             "SkipBattleRoll",
             "BackToQuest",
             "ClickQuestBattleRoll"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到quest_battle_roll，点击目标"
+        }
     },
     "ClickQuestExercise": {
         "max_hit": 1,
@@ -137,7 +152,10 @@
             "SkipExercise",
             "BackToQuest",
             "ClickQuestExercise"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到quest_exercise，点击目标"
+        }
     },
     "ConfirmBattleRollSkip": {
         "recognition": {
@@ -166,7 +184,10 @@
         "next": [
             "ClickBattleRollReward",
             "ConfirmBattleRollSkip"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
+        }
     },
     "ConfirmExerciseSkip": {
         "recognition": {
@@ -195,7 +216,10 @@
         "next": [
             "ClickExerciseRewards",
             "ConfirmExerciseSkip"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
+        }
     },
     "ConfirmQuestScene": {
         "recognition": {
@@ -208,6 +232,9 @@
                     0.9
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到quest_exercise，等待通过"
         }
     },
     "DailyEnterQuest": {
@@ -231,7 +258,10 @@
             "[JumpBack]ClickQuestExercise",
             "GoHome",
             "DailyEnterQuest"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home_quest，点击目标"
+        }
     },
     "GoHome": {
         "recognition": {
@@ -257,7 +287,10 @@
         "next": [
             "CheckHome",
             "GoHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home，点击左下"
+        }
     },
     "SelectUnlimitQuestType": {
         "recognition": {
@@ -283,7 +316,10 @@
         "next": [
             "SkipExerciseOk",
             "SelectUnlimitQuestType"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到type_fire，点击中下偏左"
+        }
     },
     "SkipBattleRoll": {
         "recognition": {
@@ -309,7 +345,10 @@
         "next": [
             "SkipBattleRollOk",
             "SkipBattleRoll"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        }
     },
     "SkipBattleRollOk": {
         "recognition": {
@@ -335,7 +374,10 @@
         "next": [
             "ConfirmBattleRollSkip",
             "SkipBattleRollOk"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
+        }
     },
     "SkipExercise": {
         "recognition": {
@@ -361,7 +403,10 @@
         "next": [
             "SelectUnlimitQuestType",
             "SkipExercise"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        }
     },
     "SkipExerciseOk": {
         "recognition": {
@@ -387,11 +432,17 @@
         "next": [
             "ConfirmExerciseSkip",
             "SkipExerciseOk"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
+        }
     },
     "StartDaily": {
         "next": [
             "DailyEnterQuest"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     }
 }

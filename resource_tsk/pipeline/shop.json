@@ -23,7 +23,10 @@
         "next": [
             "ClickBuyConfirmOK",
             "BuyFree"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到free_sku，点击中下偏左"
+        }
     },
     "GoToShop": {
         "recognition": {
@@ -40,7 +43,10 @@
         "next": [
             "BuyFree",
             "GoToShop"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到kaimono，点击目标"
+        }
     },
     "StartShop": {
         "recognition": {
@@ -58,7 +64,10 @@
         "next": [
             "GoToShop",
             "StartShop"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop，点击目标"
+        }
     },
     "ClickBuyConfirmOK": {
         "recognition": {
@@ -84,7 +93,10 @@
             "CheckInShopAndClickHome",
             "[JumpBack]ClickGoBack",
             "ClickBuyConfirmOK"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到buy_confirm，点击右下"
+        }
     },
     "CheckInShopAndClickHome": {
         "recognition": {
@@ -109,7 +121,10 @@
         "next": [
             "[Anchor]CheckHome",
             "CheckInShopAndClickHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到kaimono，点击左下"
+        }
     },
     "ClickGoBack": {
         "pre_delay": 500,
@@ -123,6 +138,9 @@
                     23
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，点击左上"
         }
     }
 }

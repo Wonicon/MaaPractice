@@ -15,7 +15,10 @@
         "next": [
             "RecvImportant",
             "Change2ImportantMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到重要メール文字，点击目标"
+        }
     },
     "CheckHome": {
         "recognition": {
@@ -35,7 +38,10 @@
         "post_delay": 0,
         "next": [
             "ClickMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到拠点文字，等待通过"
+        }
     },
     "ClickMail": {
         "recognition": {
@@ -64,7 +70,10 @@
             "ClickMailDelay",
             "RecvNormal",
             "ClickMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到mail，点击右上"
+        }
     },
     "ClickMailDelay": {
         "pre_delay": 1000,
@@ -72,7 +81,10 @@
         "next": [
             "RecvNormal",
             "ClickMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "CloseMail": {
         "recognition": {
@@ -95,7 +107,10 @@
         "next": [
             "CloseMail",
             "CheckHomeAfterMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到close，点击右上"
+        }
     },
     "ErrorPopup": {
         "recognition": {
@@ -117,7 +132,10 @@
                 ]
             }
         },
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到混雑中のため、時間をおいてログインくださ…文字，点击中下偏右"
+        }
     },
     "Login": {
         "pre_delay": 0,
@@ -130,7 +148,10 @@
             "[JumpBack]SoundConfirmPopup",
             "[JumpBack]LoginRewardsPopup",
             "[JumpBack]LoginBonus"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "LoginBonus": {
         "recognition": {
@@ -144,7 +165,10 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到日目文字，点击目标"
+        }
     },
     "LoginConnecting...": {
         "recognition": {
@@ -158,7 +182,10 @@
                 ]
             }
         },
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到Connecting...文字，等待通过"
+        }
     },
     "LoginRewardsPopup": {
         "recognition": {
@@ -179,6 +206,9 @@
                     41
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到rewards_title，点击上方"
         }
     },
     "RecvImportant": {
@@ -199,7 +229,10 @@
             "[JumpBack]RecvNormalResult",
             "RecvImportantDelay",
             "RecvImportant"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到一括受取文字，点击目标"
+        }
     },
     "RecvImportantDelay": {
         "pre_delay": 1000,
@@ -207,7 +240,10 @@
         "next": [
             "[JumpBack]RecvNormalResult",
             "CloseMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "RecvNormal": {
         "max_hit": 3,
@@ -227,7 +263,10 @@
             "[JumpBack]RecvNormalResult",
             "RecvNormalDelay",
             "RecvNormal"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到一括受取文字，点击目标"
+        }
     },
     "RecvNormalDelay": {
         "pre_delay": 1000,
@@ -235,7 +274,10 @@
         "next": [
             "[JumpBack]RecvNormalResult",
             "Change2ImportantMail"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "RecvNormalResult": {
         "recognition": {
@@ -257,7 +299,10 @@
                 ]
             }
         },
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到獲得報酬文字，点击目标"
+        }
     },
     "SoundConfirmPopup": {
         "recognition": {
@@ -279,7 +324,10 @@
                 ]
             }
         },
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到音量にはご注意ください文字，点击中下偏左"
+        }
     },
     "TitleScreen": {
         "recognition": {
@@ -292,6 +340,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到tap_to_start，点击目标"
         }
     },
     "CheckHomeAfterMail": {
@@ -309,6 +360,9 @@
                 ]
             }
         },
-        "post_delay": 0
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到拠点文字，等待通过"
+        }
     }
 }

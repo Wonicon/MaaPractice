@@ -18,7 +18,10 @@
             "FreeStonePackMonthly",
             "ClickMonthTab",
             "返回home"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_montly_tab，点击目标"
+        }
     },
     "ClickPackTab": {
         "recognition": {
@@ -39,7 +42,10 @@
             "FreeStonePack",
             "ClickPackTab",
             "ClickWeekTab"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_pack_tab，点击目标"
+        }
     },
     "ClickWeekTab": {
         "recognition": {
@@ -60,7 +66,10 @@
             "FreeStonePackWeekly",
             "ClickWeekTab",
             "ClickMonthTab"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_weekly_tab，点击目标"
+        }
     },
     "FreeShopGoHome": {
         "recognition": {
@@ -77,7 +86,10 @@
         "next": [
             "返回home",
             "FreeShopGoHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home，点击目标"
+        }
     },
     "FreeStonePack": {
         "recognition": {
@@ -117,7 +129,10 @@
             "[JumpBack]ShopExchange",
             "[JumpBack]ShopCheckReward",
             "ClickWeekTab"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到free_stone_pack，点击左侧"
+        }
     },
     "FreeStonePackMonthly": {
         "recognition": {
@@ -156,7 +171,10 @@
             "[JumpBack]ShopCheckReward",
             "FreeStonePackMonthly",
             "FreeShopGoHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到free_stone_montly，点击左侧"
+        }
     },
     "FreeStonePackWeekly": {
         "recognition": {
@@ -195,7 +213,10 @@
             "[JumpBack]ShopCheckReward",
             "ClickMonthTab",
             "FreeStonePackWeekly"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到free_stone_weekly，点击左侧"
+        }
     },
     "ShopCheckReward": {
         "recognition": {
@@ -229,7 +250,10 @@
             }
         },
         "repeat": 3,
-        "post_delay": 400
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop_reward_title，点击上方"
+        }
     },
     "ShopExchange": {
         "recognition": {
@@ -255,7 +279,10 @@
             "type": "Click"
         },
         "repeat": 3,
-        "post_delay": 400
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到exchange，点击右下"
+        }
     },
     "StartFreeStone": {
         "recognition": {
@@ -284,6 +311,9 @@
         "next": [
             "ClickPackTab",
             "StartFreeStone"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop，点击右下"
+        }
     }
 }

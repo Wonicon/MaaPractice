@@ -4,7 +4,10 @@
         "post_delay": 0,
         "next": [
             "ClickMission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "ClickMission": {
         "recognition": {
@@ -25,7 +28,10 @@
             "[JumpBack]ClickWeekly",
             "BackToHome",
             "ClickMission"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到mission，点击目标"
+        }
     },
     "MissionAllRecv": {
         "recognition": {
@@ -48,6 +54,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到mission_all_recv，点击右下"
         }
     },
     "MissionClosePop": {
@@ -67,6 +76,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到close，点击下方"
         }
     },
     "ClickWeekly": {
@@ -80,6 +92,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到weekly，点击目标"
         }
     },
     "BackToHome": {
@@ -103,6 +118,9 @@
         "next": [
             "CheckHome",
             "BackToHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到back，点击左上"
+        }
     }
 }

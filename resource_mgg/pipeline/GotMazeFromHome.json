@@ -15,7 +15,10 @@
             "GoMaze",
             "GoMaze_OCR",
             "EnterGoMaze"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776271976991，点击目标"
+        }
     },
     "GoMaze": {
         "recognition": {
@@ -39,7 +42,10 @@
         "next": [
             "GoMazeMerge",
             "GoMaze"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到maze，点击右上"
+        }
     },
     "GoMazeMerge": {
         "pre_delay": 0,
@@ -48,7 +54,10 @@
             "[JumpBack]GomazeRewardPop",
             "[JumpBack]SelectNormalArea",
             "GoMaze识别界面"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        }
     },
     "GoMaze_OCR": {
         "recognition": {
@@ -72,7 +81,10 @@
         "next": [
             "GoMazeMerge",
             "GoMaze_OCR"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到メイズ探索文字，点击右上"
+        }
     },
     "GoMaze识别界面": {
         "recognition": {
@@ -91,6 +103,9 @@
         },
         "action": {
             "type": "StopTask"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到RANKING文字，停止任务"
         }
     },
     "GomazeRewardPop": {
@@ -104,7 +119,10 @@
         },
         "next": [
             "GomazeRewardPopOk"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到dig_confirm_title，等待通过"
+        }
     },
     "GomazeRewardPopOk": {
         "recognition": {
@@ -120,7 +138,10 @@
         },
         "next": [
             "GomazeRewardPopOk"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+        }
     },
     "SelectNormalArea": {
         "recognition": {
@@ -133,6 +154,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到maze_normal_area，点击目标"
         }
     }
 }
