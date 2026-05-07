@@ -1,19 +1,4 @@
 {
-    "$__mpe_config_领票强化": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1777693153265,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\reinforce.json",
-            "savedViewport": {
-                "x": -310,
-                "y": -130,
-                "zoom": 0.38
-            },
-            "filename": "领票强化",
-            "version": "v1.5.0"
-        }
-    },
     "Entry_freeStone": {
         "recognition": {
             "type": "TemplateMatch",
@@ -25,13 +10,7 @@
         },
         "next": [
             "FS01 点商店"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 58,
-                "y": 905
-            }
-        }
+        ]
     },
     "FS 关闭窗口": {
         "recognition": {
@@ -63,13 +42,7 @@
         "next": [
             "FS 返回主页",
             "FS 关闭窗口"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1367,
-                "y": 1796
-            }
-        }
+        ]
     },
     "FS 结束任务": {
         "recognition": {
@@ -82,12 +55,6 @@
         },
         "action": {
             "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1983,
-                "y": 1980
-            }
         }
     },
     "FS 返回主页": {
@@ -120,13 +87,7 @@
         "next": [
             "FS 结束任务",
             "FS 返回主页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1677,
-                "y": 1913
-            }
-        }
+        ]
     },
     "FS01 点商店": {
         "recognition": {
@@ -143,13 +104,7 @@
         "next": [
             "FS02 点商品",
             "FS01 点商店"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 403,
-                "y": 913
-            }
-        }
+        ]
     },
     "FS02 点商品": {
         "recognition": {
@@ -165,14 +120,9 @@
         },
         "next": [
             "FS03 点石头",
-            "FS02 点商品"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 767,
-                "y": 996
-            }
-        }
+            "FS02 点商品",
+            "FreeStoneNotFound"
+        ]
     },
     "FS03 点石头": {
         "recognition": {
@@ -197,13 +147,7 @@
         "next": [
             "FS04 买",
             "FS03 点石头"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1087,
-                "y": 1047
-            }
-        }
+        ]
     },
     "FS04 买": {
         "recognition": {
@@ -220,13 +164,7 @@
         "next": [
             "FS05 OK",
             "FS04 买"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1405,
-                "y": 1215
-            }
-        }
+        ]
     },
     "FS05 OK": {
         "recognition": {
@@ -243,13 +181,7 @@
         "next": [
             "FS 关闭窗口",
             "FS05 OK"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1370,
-                "y": 1469
-            }
-        }
+        ]
     },
     "入场券不足": {
         "recognition": {
@@ -274,13 +206,7 @@
         "next": [
             "取消出击窗口",
             "入场券不足"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3243,
-                "y": 1101
-            }
-        }
+        ]
     },
     "关闭领票": {
         "recognition": {
@@ -297,13 +223,7 @@
         "next": [
             "点击任务",
             "关闭领票"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1292,
-                "y": 234
-            }
-        }
+        ]
     },
     "取消出击窗口": {
         "recognition": {
@@ -328,13 +248,7 @@
         "next": [
             "点击返回",
             "取消出击窗口"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3834,
-                "y": 1027
-            }
-        }
+        ]
     },
     "取消强化结果弹窗": {
         "recognition": {
@@ -359,13 +273,7 @@
         "next": [
             "取消出击窗口",
             "取消强化结果弹窗"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3538,
-                "y": 821
-            }
-        }
+        ]
     },
     "增加次数": {
         "recognition": {
@@ -390,13 +298,7 @@
         "next": [
             "点击强化跳过",
             "增加次数"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2639,
-                "y": 749
-            }
-        }
+        ]
     },
     "强化任务中转": {
         "recognition": {
@@ -419,13 +321,7 @@
             "[JumpBack]点击上限解放",
             "[JumpBack]点击技能",
             "强化返回主页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1545,
-                "y": 808
-            }
-        }
+        ]
     },
     "强化返回主页": {
         "recognition": {
@@ -448,13 +344,7 @@
         "next": [
             "结束强化",
             "强化返回主页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1952,
-                "y": 1612
-            }
-        }
+        ]
     },
     "点击上限解放": {
         "max_hit": 1,
@@ -479,13 +369,7 @@
         },
         "next": [
             "选择通过的任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1946,
-                "y": 1006
-            }
-        }
+        ]
     },
     "点击任务": {
         "recognition": {
@@ -502,13 +386,7 @@
         "next": [
             "点击强化任务",
             "点击任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1612,
-                "y": 234
-            }
-        }
+        ]
     },
     "点击好感": {
         "max_hit": 1,
@@ -533,13 +411,7 @@
         },
         "next": [
             "选择通过的任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2047,
-                "y": 699
-            }
-        }
+        ]
     },
     "点击强化任务": {
         "recognition": {
@@ -556,13 +428,7 @@
         "next": [
             "强化任务中转",
             "点击强化任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1918,
-                "y": 177
-            }
-        }
+        ]
     },
     "点击强化跳过": {
         "recognition": {
@@ -580,13 +446,7 @@
             "确认强化跳过",
             "入场券不足",
             "点击强化跳过"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2899,
-                "y": 900
-            }
-        }
+        ]
     },
     "点击技能": {
         "max_hit": 1,
@@ -611,13 +471,7 @@
         },
         "next": [
             "选择通过的任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1952,
-                "y": 1299
-            }
-        }
+        ]
     },
     "点击等级": {
         "max_hit": 1,
@@ -643,13 +497,7 @@
         "next": [
             "选择通过的任务",
             "[JumpBack]点击等级_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2106,
-                "y": 371
-            }
-        }
+        ]
     },
     "点击等级_副本1": {
         "max_hit": 1,
@@ -671,12 +519,6 @@
                     43
                 ]
             }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2482,
-                "y": 363
-            }
         }
     },
     "点击返回": {
@@ -697,12 +539,6 @@
                     41,
                     49
                 ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 4224,
-                "y": 1225
             }
         },
         "next": [
@@ -732,13 +568,7 @@
         "next": [
             "取消强化结果弹窗",
             "确认强化跳过"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3218,
-                "y": 808
-            }
-        }
+        ]
     },
     "确认领票": {
         "recognition": {
@@ -755,13 +585,7 @@
         "next": [
             "领票OK",
             "确认领票"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 234
-            }
-        }
+        ]
     },
     "结束强化": {
         "recognition": {
@@ -780,12 +604,6 @@
         },
         "action": {
             "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2460,
-                "y": 1620
-            }
         }
     },
     "选择通过的任务": {
@@ -809,13 +627,7 @@
         "next": [
             "增加次数",
             "选择通过的任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2424,
-                "y": 1052
-            }
-        }
+        ]
     },
     "领票": {
         "recognition": {
@@ -832,13 +644,7 @@
         "next": [
             "确认领票",
             "领票"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 234
-            }
-        }
+        ]
     },
     "领票OK": {
         "recognition": {
@@ -855,13 +661,7 @@
         "next": [
             "关闭领票",
             "领票OK"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 234
-            }
-        }
+        ]
     },
     "领票回家": {
         "recognition": {
@@ -878,13 +678,7 @@
         "next": [
             "领票确认home",
             "领票回家"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 42,
-                "y": -69
-            }
-        }
+        ]
     },
     "领票确认home": {
         "recognition": {
@@ -898,12 +692,14 @@
         "next": [
             "领票",
             "领票回家"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 52,
-                "y": 249
-            }
-        }
+        ]
+    },
+    "FreeStoneNotFound": {
+        "focus": {
+            "Node.Recognition.Succeeded": "没有找到免费石头"
+        },
+        "next": [
+            "FS 关闭窗口"
+        ]
     }
 }
