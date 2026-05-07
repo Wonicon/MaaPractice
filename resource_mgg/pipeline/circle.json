@@ -45,9 +45,10 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
-            "back_from_gacha",
-            "click_circle_weekly_mission"
+            "Circle:mission兑换页_副本2",
+            "back_from_gacha"
         ]
     },
     "check_circle": {
@@ -69,7 +70,7 @@
             "type": "Click"
         },
         "next": [
-            "click_circle_mission_副本3",
+            "click_circle_mission_inside",
             "check_circle"
         ]
     },
@@ -106,7 +107,11 @@
         "pre_delay": 0,
         "action": {
             "type": "Click"
-        }
+        },
+        "post_delay": 3000,
+        "next": [
+            "circle_delay_pad"
+        ]
     },
     "circle_close_any_popup_副本27": {
         "recognition": {
@@ -129,8 +134,8 @@
             "type": "Click"
         },
         "next": [
-            "新建节点39",
-            "circle_close_any_popup_副本27"
+            "circle_close_any_popup_副本27",
+            "Circle::点击返回直到进入mission"
         ]
     },
     "circle_exchange": {
@@ -142,9 +147,6 @@
                     "サークル交換所でアイテムを1回購入する"
                 ]
             }
-        },
-        "action": {
-            "type": "Click"
         },
         "next": [
             "新建节点35"
@@ -168,10 +170,6 @@
             "新建节点35_副本28"
         ]
     },
-    "circle_reward_ani_skip": {
-        "pre_delay": 0,
-        "post_delay": 0
-    },
     "click_accept_all_circle": {
         "recognition": {
             "type": "OCR",
@@ -190,12 +188,7 @@
         },
         "action": {
             "type": "Click"
-        },
-        "post_delay": 5000,
-        "next": [
-            "circle_reward_ani_skip",
-            "click_accept_all_circle"
-        ]
+        }
     },
     "click_away_gache_ani": {
         "action": {
@@ -220,6 +213,8 @@
             "[JumpBack]circle_exchange",
             "[JumpBack]circle_gacha",
             "[JumpBack]click_circle_mission_副本26",
+            "[JumpBack]circle_finish_guard",
+            "[JumpBack]click_circle_weekly_mission",
             "click_right_top_go_home"
         ]
     },
@@ -244,7 +239,7 @@
         },
         "post_delay": 2000
     },
-    "click_circle_mission_副本3": {
+    "click_circle_mission_inside": {
         "max_hit": 2,
         "recognition": {
             "type": "TemplateMatch",
@@ -267,10 +262,11 @@
         "post_delay": 2000,
         "next": [
             "click_circle_mission_xbar",
-            "click_circle_mission_副本3"
+            "click_circle_mission_inside"
         ]
     },
     "click_circle_weekly_mission": {
+        "max_hit": 1,
         "action": {
             "type": "Click",
             "param": {
@@ -281,7 +277,8 @@
                     24
                 ]
             }
-        }
+        },
+        "repeat": 3
     },
     "click_right_top_go_home": {
         "recognition": {
@@ -480,16 +477,8 @@
             "新建节点38"
         ]
     },
-    "新建节点39": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "item_detail.png"
-                ]
-            }
-        },
-        "inverse": true,
+    "Circle::点击返回直到进入mission": {
+        "inverse": false,
         "action": {
             "type": "Click",
             "param": {
@@ -502,7 +491,8 @@
             }
         },
         "next": [
-            "新建节点39"
+            "Circle:mission兑换页",
+            "Circle::点击返回直到进入mission"
         ]
     },
     "新建节点40": {
@@ -521,5 +511,33 @@
             "confirm_circle_gache",
             "新建节点40"
         ]
+    },
+    "Circle:mission兑换页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "circle_mission_bar_mark.png"
+                ]
+            }
+        }
+    },
+    "circle_delay_pad": {
+        "pre_delay": 0,
+        "post_delay": 0
+    },
+    "circle_finish_guard": {
+        "doc": "在退出前多扫几次，排在 go home 前面，倒数第二个",
+        "max_hit": 3
+    },
+    "Circle:mission兑换页_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "circle_mission_bar_mark.png"
+                ]
+            }
+        }
     }
 }
