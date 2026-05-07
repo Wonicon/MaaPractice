@@ -812,28 +812,8 @@
         },
         "next": [
             "exercise_click_battle",
-            "[JumpBack]exercise_click_prepare_retry"
+            "exercise_click_prepare"
         ]
-    },
-    "exercise_click_prepare_retry": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1056,
-                    534,
-                    217,
-                    86
-                ],
-                "template": [
-                    "template_1776270181505.png"
-                ]
-            }
-        },
-        "pre_wait_freezes": 500,
-        "action": {
-            "type": "Click"
-        }
     },
     "exercise_in_battle": {
         "recognition": {
@@ -1006,6 +986,10 @@
             "pad_mgg_maze_prepare_retry"
         ]
     },
+    "pad_mgg_maze_prepare_retry": {
+        "pre_delay": 0,
+        "post_delay": 0
+    },
     "quest_click_exercise": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1146,6 +1130,12 @@
         "recognition": {
             "type": "OCR",
             "param": {
+                "roi": [
+                    1068,
+                    525,
+                    195,
+                    49
+                ],
                 "expected": [
                     "本日あと0回"
                 ]
@@ -1236,9 +1226,5 @@
             "选择路线",
             "选择路线_战斗"
         ]
-    },
-    "pad_mgg_maze_prepare_retry": {
-        "pre_delay": 0,
-        "post_delay": 0
     }
 }

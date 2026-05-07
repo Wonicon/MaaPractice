@@ -53,6 +53,30 @@
             "E 采掘 点击"
         ]
     },
+    "FlashSaleAfterDig": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "flash_sale.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1230,
+                    34,
+                    15,
+                    16
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "指挥官升级"
+        }
+    },
     "click_top_right_go_home": {
         "recognition": {
             "type": "TemplateMatch",
@@ -546,7 +570,8 @@
         },
         "post_delay": 800,
         "next": [
-            "课外活动出发确认"
+            "课外活动出发确认",
+            "确认课外活动窗口"
         ]
     },
     "课外活动收菜": {
@@ -588,7 +613,8 @@
         },
         "post_delay": 800,
         "next": [
-            "课外活动收菜确认"
+            "课外活动收菜确认",
+            "确认课外活动窗口"
         ]
     },
     "采掘任务结束": {
@@ -731,28 +757,20 @@
             "采掘确认"
         ]
     },
-    "FlashSaleAfterDig": {
+    "确认课外活动窗口": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    462,
+                    3,
+                    357,
+                    127
+                ],
                 "template": [
-                    "flash_sale.png"
+                    "outdoor_activity.png"
                 ]
             }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1230,
-                    34,
-                    15,
-                    16
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "指挥官升级"
         }
     }
 }
