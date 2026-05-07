@@ -1,80 +1,4 @@
 {
-    "StartLogin": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "criware.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    410,
-                    194,
-                    473,
-                    239
-                ]
-            }
-        },
-        "next": [
-            "LoginXbar",
-            "StartLogin"
-        ]
-    },
-    "CloseLoginBonusReward": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    462,
-                    179,
-                    376,
-                    89
-                ],
-                "expected": [
-                    "イテムを獲得しました",
-                    "アイテムを獲得しました",
-                    "獲得しました"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
-    },
-    "LoginXbar": {
-        "pre_delay": 0,
-        "post_delay": 0,
-        "next": [
-            "[JumpBack]CloseLoginBonusReward",
-            "[JumpBack]CloseLoginBonusPanel",
-            "[JumpBack]CloseFlashSale",
-            "[JumpBack]ConfirmHome",
-            "ConfirmHomeStop"
-        ]
-    },
-    "CloseLoginBonusPanel": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    28,
-                    308,
-                    834,
-                    312
-                ],
-                "expected": [
-                    "日目"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
-    },
     "CloseFlashSale": {
         "recognition": {
             "type": "TemplateMatch",
@@ -95,6 +19,46 @@
                     17
                 ]
             }
+        }
+    },
+    "CloseLoginBonusPanel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    28,
+                    308,
+                    834,
+                    312
+                ],
+                "expected": [
+                    "日目"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "CloseLoginBonusReward": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    462,
+                    179,
+                    376,
+                    89
+                ],
+                "expected": [
+                    "イテムを獲得しました",
+                    "アイテムを獲得しました",
+                    "獲得しました"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
         }
     },
     "ConfirmHome": {
@@ -125,6 +89,103 @@
                 ],
                 "green_mask": true
             }
+        }
+    },
+    "StartLogin": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "[JumpBack]CheckStartScreen",
+            "[JumpBack]LoginCloseAnything",
+            "[JumpBack]CloseLoginBonusReward",
+            "[JumpBack]LoginUpdateNews",
+            "[JumpBack]CloseLoginBonusPanel",
+            "[JumpBack]CloseFlashSale",
+            "[JumpBack]ConfirmHome",
+            "ConfirmHomeStop"
+        ]
+    },
+    "CheckStartScreen": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "criware.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    410,
+                    194,
+                    473,
+                    239
+                ]
+            }
+        }
+    },
+    "LoginCloseAnything": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "login_update_news_close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "LoginUpdateNews": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "login_update_news.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "LoginCloseUpdateNews",
+            "[JumpBack]LoginNextUpdateNews"
+        ]
+    },
+    "LoginNextUpdateNews": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "login_update_news_next.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "LoginCloseUpdateNews": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "login_update_news_close.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
         }
     }
 }
