@@ -75,7 +75,7 @@
         "post_delay": 0,
         "next": [
             "TowerDailyNew",
-            "返回spot"
+            "返回home"
         ]
     },
     "TowerDailyNew": {
@@ -145,7 +145,7 @@
             }
         },
         "next": [
-            "返回spot",
+            "返回home",
             "TowerDailyRewards"
         ]
     },

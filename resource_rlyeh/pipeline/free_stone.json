@@ -1,4 +1,262 @@
 {
+    "ClickMonthTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_montly_tab.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePackMonthly",
+            "ClickMonthTab",
+            "返回home"
+        ]
+    },
+    "ClickPackTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_pack_tab.png"
+                ],
+                "threshold": [
+                    0.92
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePack",
+            "ClickPackTab",
+            "ClickWeekTab"
+        ]
+    },
+    "ClickWeekTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_weekly_tab.png"
+                ],
+                "threshold": [
+                    0.92
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePackWeekly",
+            "ClickWeekTab",
+            "ClickMonthTab"
+        ]
+    },
+    "FreeShopGoHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回home",
+            "FreeShopGoHome"
+        ]
+    },
+    "FreeStonePack": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_pack.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "repeat": 3,
+        "post_delay": 400,
+        "next": [
+            "FreeStonePack",
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "ClickWeekTab"
+        ]
+    },
+    "FreeStonePackMonthly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_montly.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "post_delay": 400,
+        "next": [
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "FreeStonePackMonthly",
+            "FreeShopGoHome"
+        ]
+    },
+    "FreeStonePackWeekly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_weekly.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "post_delay": 400,
+        "next": [
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "ClickMonthTab",
+            "FreeStonePackWeekly"
+        ]
+    },
+    "ShopCheckReward": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    472,
+                    152,
+                    330,
+                    89
+                ],
+                "template": [
+                    "shop_reward_title.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    604,
+                    35,
+                    79,
+                    6
+                ]
+            }
+        },
+        "repeat": 3,
+        "post_delay": 400
+    },
+    "ShopExchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    615,
+                    495,
+                    230,
+                    90
+                ],
+                "template": [
+                    "exchange.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "post_delay": 400
+    },
     "StartFreeStone": {
         "recognition": {
             "type": "TemplateMatch",
@@ -19,60 +277,13 @@
             }
         },
         "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
         "post_delay": 400,
         "next": [
-            "FreeStonePack",
-            "[JumpBack]ClickPackTab",
+            "ClickPackTab",
             "StartFreeStone"
         ]
-    },
-    "FreeStonePack": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    280,
-                    128,
-                    230,
-                    312
-                ],
-                "template": [
-                    "free_stone_pack.png"
-                ],
-                "method": 10001,
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    355,
-                    393,
-                    79,
-                    10
-                ]
-            }
-        },
-        "post_delay": 400,
-        "next": [
-            "FreeStonePack"
-        ]
-    },
-    "ClickPackTab": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    72,
-                    282,
-                    116,
-                    29
-                ]
-            }
-        }
     }
 }

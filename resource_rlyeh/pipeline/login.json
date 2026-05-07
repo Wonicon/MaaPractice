@@ -131,6 +131,20 @@
             "[JumpBack]LoginBonus"
         ]
     },
+    "LoginBonus": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "日目"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0
+    },
     "LoginConnecting...": {
         "recognition": {
             "type": "OCR",
@@ -144,6 +158,27 @@
             }
         },
         "post_delay": 0
+    },
+    "LoginRewardsPopup": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "rewards_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    546,
+                    65,
+                    122,
+                    41
+                ]
+            }
+        }
     },
     "RecvImportant": {
         "max_hit": 3,
@@ -232,37 +267,18 @@
                 ]
             }
         },
-        "post_delay": 0,
-        "next": [
-            "SoundConfirmPopup_ClickOK"
-        ]
-    },
-    "SoundConfirmPopup_ClickOK": {
-        "recognition": {
-            "type": "ColorMatch",
+        "action": {
+            "type": "Click",
             "param": {
-                "lower": [
-                    [
-                        104,
-                        37,
-                        49
-                    ]
-                ],
-                "upper": [
-                    [
-                        125,
-                        51,
-                        62
-                    ]
+                "target": [
+                    526,
+                    428,
+                    55,
+                    10
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "SoundConfirmPopup_ClickOK"
-        ]
+        "post_delay": 0
     },
     "TitleScreen": {
         "recognition": {
@@ -276,40 +292,5 @@
         "action": {
             "type": "Click"
         }
-    },
-    "LoginRewardsPopup": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "rewards_title.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    546,
-                    65,
-                    122,
-                    41
-                ]
-            }
-        }
-    },
-    "LoginBonus": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "日目"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 0
     }
 }
