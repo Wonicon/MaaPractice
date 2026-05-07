@@ -1,19 +1,4 @@
 {
-    "$__mpe_config_新建Pipeline8": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1776960132351,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_rlyeh\\pipeline\\mission.json",
-            "savedViewport": {
-                "x": -941,
-                "y": 124,
-                "zoom": 0.7
-            },
-            "filename": "新建Pipeline8",
-            "version": "v1.4.2"
-        }
-    },
     "CheckMissionWindow": {
         "recognition": {
             "type": "OCR",
@@ -33,163 +18,7 @@
         "post_delay": 0,
         "next": [
             "CheckRecvMission"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 689,
-                "y": 400
-            }
-        }
-    },
-    "ClickAllRecv": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    908,
-                    542,
-                    262,
-                    159
-                ],
-                "lower": [
-                    [
-                        93,
-                        38,
-                        49
-                    ]
-                ],
-                "upper": [
-                    [
-                        164,
-                        56,
-                        74
-                    ]
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "MissionResult",
-            "ClickAllRecv"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1358,
-                "y": 304
-            }
-        }
-    },
-    "Mission": {
-        "pre_delay": 0,
-        "post_delay": 0,
-        "next": [
-            "MissionIcon",
-            "MissionLabel"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 330
-            }
-        }
-    },
-    "MissionIcon": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1150,
-                    12,
-                    124,
-                    144
-                ],
-                "template": [
-                    "mission.png"
-                ],
-                "method": 3,
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "CheckMissionWindow",
-            "MissionIconDelay",
-            "MissionIcon"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 312,
-                "y": 643
-            }
-        }
-    },
-    "MissionLabel": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1154,
-                    52,
-                    106,
-                    111
-                ],
-                "expected": [
-                    "ミッション"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "CheckMissionWindow",
-            "MissionIconDelay",
-            "MissionLabel"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 339,
-                "y": 371
-            }
-        }
-    },
-    "MissionResult": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "獲得報酬"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -2,
-                    -48,
-                    10,
-                    -11
-                ]
-            }
-        },
-        "next": [
-            "MissionRecvPrise",
-            "MissionResult"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1631,
-                "y": -8
-            }
-        }
+        ]
     },
     "CheckRecvMission": {
         "recognition": {
@@ -225,13 +54,101 @@
         "next": [
             "ClickAllRecv",
             "CheckRecvMission"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 988,
-                "y": 332
+        ]
+    },
+    "ClickAllRecv": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    908,
+                    542,
+                    262,
+                    159
+                ],
+                "lower": [
+                    [
+                        93,
+                        38,
+                        49
+                    ]
+                ],
+                "upper": [
+                    [
+                        164,
+                        56,
+                        74
+                    ]
+                ]
             }
-        }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionResult",
+            "ClickAllRecv"
+        ]
+    },
+    "Mission": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "MissionIcon",
+            "MissionLabel"
+        ]
+    },
+    "MissionClose": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1080,
+                    11,
+                    101,
+                    149
+                ],
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionClose",
+            "CheckHomeAfterMail"
+        ]
+    },
+    "MissionIcon": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1150,
+                    12,
+                    124,
+                    144
+                ],
+                "template": [
+                    "mission.png"
+                ],
+                "method": 3,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "CheckMissionWindow",
+            "MissionIconDelay",
+            "MissionIcon"
+        ]
     },
     "MissionIconDelay": {
         "pre_delay": 1000,
@@ -239,13 +156,31 @@
             "CheckMissionWindow",
             "MissionLabel",
             "MissionIcon"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 688,
-                "y": 750
+        ]
+    },
+    "MissionLabel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1154,
+                    52,
+                    106,
+                    111
+                ],
+                "expected": [
+                    "ミッション"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "CheckMissionWindow",
+            "MissionIconDelay",
+            "MissionLabel"
+        ]
     },
     "MissionRecvPrise": {
         "recognition": {
@@ -270,13 +205,32 @@
         "next": [
             "PriseResult",
             "MissionRecvPrise"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1930,
-                "y": 336
+        ]
+    },
+    "MissionResult": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "獲得報酬"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -2,
+                    -48,
+                    10,
+                    -11
+                ]
+            }
+        },
+        "next": [
+            "MissionRecvPrise",
+            "MissionResult"
+        ]
     },
     "PriseResult": {
         "recognition": {
@@ -301,40 +255,6 @@
         "next": [
             "MissionClose",
             "PriseResult"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2229,
-                "y": 237
-            }
-        }
-    },
-    "MissionClose": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1080,
-                    11,
-                    101,
-                    149
-                ],
-                "template": [
-                    "close.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2628,
-                "y": 249
-            }
-        },
-        "next": [
-            "MissionClose"
         ]
     }
 }
