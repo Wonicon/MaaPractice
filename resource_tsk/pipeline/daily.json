@@ -1,30 +1,39 @@
 {
-    "BackToQuest": {
+    "BackToQuestFromExercise": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    4,
-                    3,
-                    117,
-                    73
+                    1017,
+                    227,
+                    209,
+                    81
                 ],
                 "template": [
-                    "back.png"
+                    "daily_skip_finish.png"
                 ]
             }
         },
         "action": {
-            "type": "Click"
+            "type": "LongPress",
+            "param": {
+                "target": [
+                    26,
+                    27,
+                    26,
+                    23
+                ],
+                "duration": 200
+            }
         },
         "post_delay": 1000,
-        "next": [
-            "ConfirmQuestScene",
-            "BackToQuest"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到back，点击左上"
-        }
+        },
+        "next": [
+            "ClickQuestBattleRoll",
+            "BackToQuestFromExercise"
+        ]
     },
     "CheckHome": {
         "recognition": {
@@ -69,13 +78,13 @@
                 ]
             }
         },
-        "next": [
-            "BackToQuest",
-            "ClickBattleRollReward"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到rewards，点击下方"
-        }
+        },
+        "next": [
+            "BackToQuestFromBattleRoll",
+            "ClickBattleRollReward"
+        ]
     },
     "ClickExerciseRewards": {
         "recognition": {
@@ -97,16 +106,15 @@
                 ]
             }
         },
-        "next": [
-            "BackToQuest",
-            "ClickExerciseRewards"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到rewards，点击下方"
-        }
+        },
+        "next": [
+            "BackToQuestFromExercise",
+            "ClickExerciseRewards"
+        ]
     },
     "ClickQuestBattleRoll": {
-        "max_hit": 1,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -121,18 +129,16 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
-        "next": [
-            "SkipBattleRoll",
-            "BackToQuest",
-            "ClickQuestBattleRoll"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到quest_battle_roll，点击目标"
-        }
+        },
+        "next": [
+            "SkipBattleRoll",
+            "AlreadySkipBattleRoll",
+            "ClickQuestBattleRoll"
+        ]
     },
     "ClickQuestExercise": {
-        "max_hit": 1,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -148,14 +154,14 @@
             "type": "Click"
         },
         "post_delay": 1000,
-        "next": [
-            "SkipExercise",
-            "BackToQuest",
-            "ClickQuestExercise"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到quest_exercise，点击目标"
-        }
+        },
+        "next": [
+            "SkipExercise",
+            "AlreadySkipExercise",
+            "ClickQuestExercise"
+        ]
     },
     "ConfirmBattleRollSkip": {
         "recognition": {
@@ -181,13 +187,13 @@
             }
         },
         "post_delay": 3000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
+        },
         "next": [
             "ClickBattleRollReward",
             "ConfirmBattleRollSkip"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
-        }
+        ]
     },
     "ConfirmExerciseSkip": {
         "recognition": {
@@ -213,29 +219,13 @@
             }
         },
         "post_delay": 3000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
+        },
         "next": [
             "ClickExerciseRewards",
             "ConfirmExerciseSkip"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_confirm，点击右下"
-        }
-    },
-    "ConfirmQuestScene": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "quest_exercise.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到quest_exercise，等待通过"
-        }
+        ]
     },
     "DailyEnterQuest": {
         "recognition": {
@@ -253,15 +243,13 @@
             "type": "Click"
         },
         "post_delay": 1000,
-        "next": [
-            "[JumpBack]ClickQuestBattleRoll",
-            "[JumpBack]ClickQuestExercise",
-            "GoHome",
-            "DailyEnterQuest"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到home_quest，点击目标"
-        }
+        },
+        "next": [
+            "ClickQuestExercise",
+            "DailyEnterQuest"
+        ]
     },
     "GoHome": {
         "recognition": {
@@ -284,13 +272,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到home，点击左下"
+        },
         "next": [
             "CheckHome",
             "GoHome"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到home，点击左下"
-        }
+        ]
     },
     "SelectUnlimitQuestType": {
         "recognition": {
@@ -313,13 +301,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到type_fire，点击中下偏左"
+        },
         "next": [
             "SkipExerciseOk",
             "SelectUnlimitQuestType"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到type_fire，点击中下偏左"
-        }
+        ]
     },
     "SkipBattleRoll": {
         "recognition": {
@@ -342,13 +330,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        },
         "next": [
             "SkipBattleRollOk",
             "SkipBattleRoll"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
-        }
+        ]
     },
     "SkipBattleRollOk": {
         "recognition": {
@@ -371,13 +359,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
+        },
         "next": [
             "ConfirmBattleRollSkip",
             "SkipBattleRollOk"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
-        }
+        ]
     },
     "SkipExercise": {
         "recognition": {
@@ -400,13 +388,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        },
         "next": [
             "SelectUnlimitQuestType",
             "SkipExercise"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
-        }
+        ]
     },
     "SkipExerciseOk": {
         "recognition": {
@@ -429,20 +417,106 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
+        },
         "next": [
             "ConfirmExerciseSkip",
             "SkipExerciseOk"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到skip_ok，点击右下"
-        }
+        ]
     },
     "StartDaily": {
-        "next": [
-            "DailyEnterQuest"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "直接命中，等待通过"
-        }
+        },
+        "next": [
+            "DailyEnterQuest"
+        ]
+    },
+    "AlreadySkipExercise": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1014,
+                    226,
+                    190,
+                    70
+                ],
+                "template": [
+                    "daily_skip_finish.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        },
+        "next": [
+            "BackToQuestFromExercise"
+        ]
+    },
+    "BackToQuestFromBattleRoll": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1017,
+                    227,
+                    209,
+                    81
+                ],
+                "template": [
+                    "daily_skip_finish.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "LongPress",
+            "param": {
+                "target": [
+                    26,
+                    27,
+                    26,
+                    23
+                ],
+                "duration": 200
+            }
+        },
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到back，点击左上"
+        },
+        "next": [
+            "BackToQuestFromBattleRoll",
+            "GoHome"
+        ]
+    },
+    "AlreadySkipBattleRoll": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1014,
+                    226,
+                    190,
+                    70
+                ],
+                "template": [
+                    "daily_skip_finish.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到skip_possible，点击右上"
+        },
+        "next": [
+            "BackToQuestFromBattleRoll"
+        ]
     }
 }

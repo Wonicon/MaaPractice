@@ -20,83 +20,13 @@
             }
         },
         "post_delay": 800,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到free_sku，点击中下偏左"
+        },
         "next": [
             "ClickBuyConfirmOK",
             "BuyFree"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到free_sku，点击中下偏左"
-        }
-    },
-    "GoToShop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "kaimono.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "BuyFree",
-            "GoToShop"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到kaimono，点击目标"
-        }
-    },
-    "StartShop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "shop.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 800,
-        "next": [
-            "GoToShop",
-            "StartShop"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到shop，点击目标"
-        }
-    },
-    "ClickBuyConfirmOK": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "buy_confirm.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    738,
-                    598,
-                    95,
-                    32
-                ]
-            }
-        },
-        "next": [
-            "CheckInShopAndClickHome",
-            "[JumpBack]ClickGoBack",
-            "ClickBuyConfirmOK"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到buy_confirm，点击右下"
-        }
+        ]
     },
     "CheckInShopAndClickHome": {
         "recognition": {
@@ -118,13 +48,43 @@
                 ]
             }
         },
-        "next": [
-            "[Anchor]CheckHome",
-            "CheckInShopAndClickHome"
-        ],
+        "post_delay": 3000,
         "focus": {
             "Node.Recognition.Succeeded": "识别到kaimono，点击左下"
-        }
+        },
+        "next": [
+            "CheckInShopAndClickHome",
+            "CheckHome"
+        ]
+    },
+    "ClickBuyConfirmOK": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "buy_confirm.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    738,
+                    598,
+                    95,
+                    32
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到buy_confirm，点击右下"
+        },
+        "next": [
+            "CheckInShopAndClickHome",
+            "[JumpBack]ClickGoBack",
+            "ClickBuyConfirmOK"
+        ]
     },
     "ClickGoBack": {
         "pre_delay": 500,
@@ -142,5 +102,65 @@
         "focus": {
             "Node.Recognition.Succeeded": "直接命中，点击左上"
         }
+    },
+    "GoToShop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "kaimono.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到kaimono，点击目标"
+        },
+        "next": [
+            "BuyFree",
+            "GoToShop",
+            "ValidGoodsButFreeNotFound"
+        ]
+    },
+    "StartShop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到shop，点击目标"
+        },
+        "next": [
+            "GoToShop",
+            "StartShop"
+        ]
+    },
+    "ValidGoodsButFreeNotFound": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "buy_times.png"
+                ]
+            }
+        },
+        "post_delay": 800,
+        "focus": {
+            "Node.Recognition.Succeeded": "在有效商品列表里没有发现免费石头"
+        },
+        "next": [
+            "CheckInShopAndClickHome",
+            "[JumpBack]ClickGoBack"
+        ]
     }
 }
