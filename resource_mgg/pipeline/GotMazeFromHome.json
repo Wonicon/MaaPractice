@@ -12,7 +12,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776271976991，点击目标"
+            "Node.Recognition.Succeeded": "EnterGoMaze: 识别到template_1776271976991，点击目标"
         },
         "next": [
             "GoMaze",
@@ -40,7 +40,7 @@
         },
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到maze，点击右上"
+            "Node.Recognition.Succeeded": "GoMaze: 识别到maze，点击右上"
         },
         "next": [
             "GoMazeMerge",
@@ -51,7 +51,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "GoMazeMerge: 直接命中，等待通过"
         },
         "next": [
             "[JumpBack]GomazeRewardPop",
@@ -79,7 +79,7 @@
         },
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到メイズ探索文字，点击右上"
+            "Node.Recognition.Succeeded": "GoMaze_OCR: 识别到メイズ探索文字，点击右上"
         },
         "next": [
             "GoMazeMerge",
@@ -105,7 +105,7 @@
             "type": "StopTask"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到RANKING文字，停止任务"
+            "Node.Recognition.Succeeded": "GoMaze识别界面: 识别到RANKING文字，停止任务"
         }
     },
     "GomazeRewardPop": {
@@ -118,7 +118,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_confirm_title，等待通过"
+            "Node.Recognition.Succeeded": "GomazeRewardPop: 识别到dig_confirm_title，等待通过"
         },
         "next": [
             "GomazeRewardPopOk"
@@ -137,7 +137,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+            "Node.Recognition.Succeeded": "GomazeRewardPopOk: 识别到activity_ok，点击目标"
         }
     },
     "SelectNormalArea": {
@@ -153,7 +153,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到maze_normal_area，点击目标"
+            "Node.Recognition.Succeeded": "SelectNormalArea: 识别到maze_normal_area，点击目标"
         }
     }
 }

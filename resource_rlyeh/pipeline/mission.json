@@ -20,7 +20,7 @@
             "CheckRecvMission"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到ミッション文字，等待通过"
+            "Node.Recognition.Succeeded": "CheckMissionWindow: 识别到ミッション文字，等待通过"
         }
     },
     "CheckRecvMission": {
@@ -59,7 +59,7 @@
             "CheckRecvMission"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到颜色目标，点击右侧"
+            "Node.Recognition.Succeeded": "CheckRecvMission: 识别到颜色目标，点击右侧"
         }
     },
     "ClickAllRecv": {
@@ -97,7 +97,7 @@
             "ClickAllRecv"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到颜色目标，点击右下"
+            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到颜色目标，点击右下"
         }
     },
     "Mission": {
@@ -108,7 +108,7 @@
             "MissionLabel"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "Mission: 直接命中，等待通过"
         }
     },
     "MissionClose": {
@@ -134,7 +134,7 @@
             "CheckHomeAfterMail"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到close，点击右上"
+            "Node.Recognition.Succeeded": "MissionClose: 识别到close，点击右上"
         }
     },
     "MissionIcon": {
@@ -165,7 +165,7 @@
             "MissionIcon"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission，点击右上"
+            "Node.Recognition.Succeeded": "MissionIcon: 识别到mission，点击右上"
         }
     },
     "MissionIconDelay": {
@@ -176,7 +176,7 @@
             "MissionIcon"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "MissionIconDelay: 直接命中，等待通过"
         }
     },
     "MissionLabel": {
@@ -203,7 +203,7 @@
             "MissionLabel"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到ミッション文字，点击右上"
+            "Node.Recognition.Succeeded": "MissionLabel: 识别到ミッション文字，点击右上"
         }
     },
     "MissionRecvPrise": {
@@ -231,7 +231,7 @@
             "MissionRecvPrise"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission_prise，点击目标"
+            "Node.Recognition.Succeeded": "MissionRecvPrise: 识别到mission_prise，点击目标"
         }
     },
     "MissionResult": {
@@ -259,7 +259,7 @@
             "MissionResult"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到獲得報酬文字，点击目标"
+            "Node.Recognition.Succeeded": "MissionResult: 识别到獲得報酬文字，点击目标"
         }
     },
     "PriseResult": {
@@ -287,7 +287,7 @@
             "PriseResult"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到獲得報酬文字，点击目标"
+            "Node.Recognition.Succeeded": "PriseResult: 识别到獲得報酬文字，点击目标"
         }
     }
 }

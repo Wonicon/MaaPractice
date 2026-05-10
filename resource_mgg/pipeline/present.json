@@ -20,7 +20,7 @@
             "present点击一起收取_色彩"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到accept_all，点击目标"
+            "Node.Recognition.Succeeded": "present点击一起收取_色彩: 识别到accept_all，点击目标"
         }
     },
     "present点击世界": {
@@ -55,7 +55,7 @@
             "present点击世界"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到プレゼントBOX文字，点击左侧"
+            "Node.Recognition.Succeeded": "present点击世界: 识别到プレゼントBOX文字，点击左侧"
         }
     },
     "present点击礼物": {
@@ -91,7 +91,7 @@
             "present点击礼物"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_present，点击右上"
+            "Node.Recognition.Succeeded": "present点击礼物: 识别到home_present，点击右上"
         }
     },
     "present确认清空": {
@@ -126,7 +126,7 @@
             "present确认清空"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到受取可能なプレゼントがありません文字，点击左上"
+            "Node.Recognition.Succeeded": "present确认清空: 识别到受取可能なプレゼントがありません文字，点击左上"
         }
     },
     "present确认结果": {
@@ -152,7 +152,7 @@
             "present确认结果"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_ok，点击下方"
+            "Node.Recognition.Succeeded": "present确认结果: 识别到activity_ok，点击下方"
         }
     },
     "消除可能的弹窗": {
@@ -168,7 +168,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到閉じる文字，点击目标"
+            "Node.Recognition.Succeeded": "消除可能的弹窗: 识别到閉じる文字，点击目标"
         }
     }
 }

@@ -20,7 +20,7 @@
             "FriendAllSend"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到all_send，点击目标"
+            "Node.Recognition.Succeeded": "FriendAllSend: 识别到all_send，点击目标"
         }
     },
     "StartFriend": {
@@ -49,7 +49,7 @@
             "StartFriend"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到friend，点击右下"
+            "Node.Recognition.Succeeded": "StartFriend: 识别到friend，点击右下"
         }
     },
     "FrirendClose": {
@@ -69,7 +69,7 @@
             "FrirendClose"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击右上"
+            "Node.Recognition.Succeeded": "FrirendClose: 直接命中，点击右上"
         }
     },
     "EndFriend": {
@@ -92,7 +92,7 @@
             "type": "StopTask"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到friend，停止任务"
+            "Node.Recognition.Succeeded": "EndFriend: 识别到friend，停止任务"
         }
     }
 }

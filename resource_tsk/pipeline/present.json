@@ -22,7 +22,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到present_all_recv，点击右下"
+            "Node.Recognition.Succeeded": "ClickPresentAllRecv: 识别到present_all_recv，点击右下"
         }
     },
     "InPresentWindow": {
@@ -50,7 +50,7 @@
             "CheckHome"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到present_window，等待通过"
+            "Node.Recognition.Succeeded": "InPresentWindow: 识别到present_window，等待通过"
         }
     },
     "Loading": {
@@ -65,7 +65,7 @@
         },
         "post_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到loading，等待通过"
+            "Node.Recognition.Succeeded": "Loading: 识别到loading，等待通过"
         }
     },
     "PresentClosePop": {
@@ -81,7 +81,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到close，点击目标"
+            "Node.Recognition.Succeeded": "PresentClosePop: 识别到close，点击目标"
         }
     },
     "StartPresent": {
@@ -112,7 +112,7 @@
             "StartPresent"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到present，点击右下"
+            "Node.Recognition.Succeeded": "StartPresent: 识别到present，点击右下"
         }
     }
 }

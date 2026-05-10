@@ -24,7 +24,7 @@
             "check_title_logo"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到title，点击中央"
+            "Node.Recognition.Succeeded": "check_title_logo: 识别到title，点击中央"
         }
     },
     "check_title_text": {
@@ -53,7 +53,7 @@
             "check_title_text"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到ID:タップで表示文字，点击中央"
+            "Node.Recognition.Succeeded": "check_title_text: 识别到ID:タップで表示文字，点击中央"
         }
     },
     "click_login_bonus": {
@@ -86,7 +86,7 @@
         "pre_delay": 0,
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "login_home_post_delay: 直接命中，等待通过"
         }
     },
     "login_title": {
@@ -98,7 +98,7 @@
             "login_判断首页"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "login_title: 直接命中，等待通过"
         }
     },
     "login_title_post": {
@@ -114,7 +114,7 @@
             "login_判断首页"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "login_title_post: 直接命中，等待通过"
         }
     },
     "login_判断首页": {
@@ -152,7 +152,7 @@
             "login_home_post_delay"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击右上"
+            "Node.Recognition.Succeeded": "login任意点击清除通知: 直接命中，点击右上"
         }
     },
     "点击下一个通知": {
@@ -177,7 +177,7 @@
             "login_home_post_delay"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到次へ文字，点击下方"
+            "Node.Recognition.Succeeded": "点击下一个通知: 识别到次へ文字，点击下方"
         }
     },
     "点击关闭通知": {
@@ -202,7 +202,7 @@
             "login_home_post_delay"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到閉じる文字，点击下方"
+            "Node.Recognition.Succeeded": "点击关闭通知: 识别到閉じる文字，点击下方"
         }
     },
     "CloseLoginRewardConfirmWindow": {
@@ -218,7 +218,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+            "Node.Recognition.Succeeded": "CloseLoginRewardConfirmWindow: 识别到activity_ok，点击目标"
         }
     },
     "login_判断首页_确保": {

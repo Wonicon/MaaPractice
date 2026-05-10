@@ -17,7 +17,7 @@
             "E 远征 点击城镇"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tec_town，点击目标"
+            "Node.Recognition.Succeeded": "E 远征 点击城镇: 识别到tec_town，点击目标"
         }
     },
     "全部接收": {
@@ -48,7 +48,7 @@
             "全部接收"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tec_expedition_accept_all，点击右下"
+            "Node.Recognition.Succeeded": "全部接收: 识别到tec_expedition_accept_all，点击右下"
         }
     },
     "再度远征": {
@@ -68,7 +68,7 @@
             "再度远征"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_expedition_again，点击目标"
+            "Node.Recognition.Succeeded": "再度远征: 识别到tech_expedition_again，点击目标"
         }
     },
     "点击远征": {
@@ -89,7 +89,7 @@
             "返回主页"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tec_expedition，点击目标"
+            "Node.Recognition.Succeeded": "点击远征: 识别到tec_expedition，点击目标"
         }
     },
     "确认": {
@@ -110,7 +110,7 @@
             "确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_popup_expedition_accept_ok，点击目标"
+            "Node.Recognition.Succeeded": "确认: 识别到tech_popup_expedition_accept_ok，点击目标"
         }
     },
     "确认home": {
@@ -126,7 +126,7 @@
             "type": "StopTask"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_home，停止任务"
+            "Node.Recognition.Succeeded": "确认home: 识别到tech_home，停止任务"
         }
     },
     "确认远征中": {
@@ -142,7 +142,7 @@
             "返回主页"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_expedition_working，等待通过"
+            "Node.Recognition.Succeeded": "确认远征中: 识别到tech_expedition_working，等待通过"
         }
     },
     "返回主页": {
@@ -166,7 +166,7 @@
             "返回主页"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_expedition_home，点击目标"
+            "Node.Recognition.Succeeded": "返回主页: 识别到tech_expedition_home，点击目标"
         }
     }
 }

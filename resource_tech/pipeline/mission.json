@@ -20,7 +20,7 @@
             "MissionClickWeekly"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_mission，点击目标"
+            "Node.Recognition.Succeeded": "E日常任务: 识别到home_mission，点击目标"
         }
     },
     "MissionClickWeekly": {
@@ -44,7 +44,7 @@
             "MissionClose"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission_weekly，点击目标"
+            "Node.Recognition.Succeeded": "MissionClickWeekly: 识别到mission_weekly，点击目标"
         }
     },
     "MissionClose": {
@@ -65,7 +65,7 @@
             "MissionClose"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "MissionClose: 直接命中，点击左上"
         }
     },
     "MissionDailyAcceptAll": {
@@ -90,7 +90,7 @@
             "MissionDailyAcceptAll"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission_accept_all，点击目标"
+            "Node.Recognition.Succeeded": "MissionDailyAcceptAll: 识别到mission_accept_all，点击目标"
         }
     },
     "MissionDailyRewardsOK": {
@@ -110,7 +110,7 @@
             "MissionDailyRewardsOK"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_ok，点击目标"
+            "Node.Recognition.Succeeded": "MissionDailyRewardsOK: 识别到tech_quest_reinforce_ok，点击目标"
         }
     },
     "MissionWeeklyAcceptAll": {
@@ -135,7 +135,7 @@
             "MissionWeeklyAcceptAll"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission_accept_all，点击目标"
+            "Node.Recognition.Succeeded": "MissionWeeklyAcceptAll: 识别到mission_accept_all，点击目标"
         }
     },
     "MissionWeeklyRewardsOK": {
@@ -155,7 +155,7 @@
             "MissionWeeklyRewardsOK"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到tech_quest_reinforce_ok，点击目标"
+            "Node.Recognition.Succeeded": "MissionWeeklyRewardsOK: 识别到tech_quest_reinforce_ok，点击目标"
         }
     }
 }

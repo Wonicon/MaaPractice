@@ -6,7 +6,7 @@
             "ClickMission"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "StartMission: 直接命中，等待通过"
         }
     },
     "ClickMission": {
@@ -30,7 +30,7 @@
             "ClickMission"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission，点击目标"
+            "Node.Recognition.Succeeded": "ClickMission: 识别到mission，点击目标"
         }
     },
     "MissionAllRecv": {
@@ -56,7 +56,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mission_all_recv，点击右下"
+            "Node.Recognition.Succeeded": "MissionAllRecv: 识别到mission_all_recv，点击右下"
         }
     },
     "MissionClosePop": {
@@ -78,7 +78,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到close，点击下方"
+            "Node.Recognition.Succeeded": "MissionClosePop: 识别到close，点击下方"
         }
     },
     "ClickWeekly": {
@@ -94,7 +94,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到weekly，点击目标"
+            "Node.Recognition.Succeeded": "ClickWeekly: 识别到weekly，点击目标"
         }
     },
     "BackToHome": {
@@ -120,7 +120,7 @@
             "BackToHome"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到back，点击左上"
+            "Node.Recognition.Succeeded": "BackToHome: 识别到back，点击左上"
         }
     }
 }

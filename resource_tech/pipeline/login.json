@@ -21,7 +21,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到flash_sale，点击下方"
+            "Node.Recognition.Succeeded": "CloseFlashSale: 识别到flash_sale，点击下方"
         }
     },
     "CloseLoginBonusPanel": {
@@ -43,7 +43,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到日目文字，点击左下"
+            "Node.Recognition.Succeeded": "CloseLoginBonusPanel: 识别到日目文字，点击左下"
         }
     },
     "CloseLoginBonusReward": {
@@ -67,7 +67,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到イテムを獲得しました文字，点击上方"
+            "Node.Recognition.Succeeded": "CloseLoginBonusReward: 识别到イテムを獲得しました文字，点击上方"
         }
     },
     "ConfirmHome": {
@@ -86,13 +86,13 @@
             "ConfirmHomeDelay"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_sign，等待通过"
+            "Node.Recognition.Succeeded": "ConfirmHome: 识别到home_sign，等待通过"
         }
     },
     "ConfirmHomeDelay": {
         "pre_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "ConfirmHomeDelay: 直接命中，等待通过"
         }
     },
     "ConfirmHomeStop": {
@@ -106,7 +106,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_sign，等待通过"
+            "Node.Recognition.Succeeded": "ConfirmHomeStop: 识别到home_sign，等待通过"
         }
     },
     "StartLogin": {
@@ -123,7 +123,7 @@
             "ConfirmHomeStop"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "StartLogin: 直接命中，等待通过"
         }
     },
     "CheckStartScreen": {
@@ -147,7 +147,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到criware，点击中央"
+            "Node.Recognition.Succeeded": "CheckStartScreen: 识别到criware，点击中央"
         }
     },
     "LoginCloseAnything": {
@@ -163,7 +163,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_update_news_close，点击目标"
+            "Node.Recognition.Succeeded": "LoginCloseAnything: 识别到login_update_news_close，点击目标"
         }
     },
     "LoginUpdateNews": {
@@ -183,7 +183,7 @@
             "[JumpBack]LoginNextUpdateNews"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_update_news，点击目标"
+            "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击目标"
         }
     },
     "LoginNextUpdateNews": {
@@ -202,7 +202,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_update_news_next，点击目标"
+            "Node.Recognition.Succeeded": "LoginNextUpdateNews: 识别到login_update_news_next，点击目标"
         }
     },
     "LoginCloseUpdateNews": {
@@ -221,7 +221,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_update_news_close，点击目标"
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
         }
     }
 }

@@ -12,7 +12,7 @@
         },
         "post_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_info，等待通过"
+            "Node.Recognition.Succeeded": "CheckLoginHome: 识别到home_info，等待通过"
         }
     },
     "CheckLoginHomeStop": {
@@ -29,7 +29,7 @@
             "type": "StopTask"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_info，停止任务"
+            "Node.Recognition.Succeeded": "CheckLoginHomeStop: 识别到home_info，停止任务"
         }
     },
     "ClickLoginBonus": {
@@ -51,7 +51,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_bonus_skip_dark，点击右上"
+            "Node.Recognition.Succeeded": "ClickLoginBonus: 识别到login_bonus_skip_dark，点击右上"
         }
     },
     "ClickLoginScreen": {
@@ -81,7 +81,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到login_data，点击中央"
+            "Node.Recognition.Succeeded": "ClickLoginScreen: 识别到login_data，点击中央"
         }
     },
     "CloseInfo": {
@@ -98,7 +98,7 @@
         },
         "post_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到close，点击目标"
+            "Node.Recognition.Succeeded": "CloseInfo: 识别到close，点击目标"
         }
     },
     "StartLogin": {
@@ -111,7 +111,7 @@
             "CheckLoginHomeStop"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "StartLogin: 直接命中，等待通过"
         }
     }
 }

@@ -20,7 +20,7 @@
             "返回home"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_montly_tab，点击目标"
+            "Node.Recognition.Succeeded": "ClickMonthTab: 识别到shop_montly_tab，点击目标"
         }
     },
     "ClickPackTab": {
@@ -44,7 +44,7 @@
             "ClickWeekTab"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_pack_tab，点击目标"
+            "Node.Recognition.Succeeded": "ClickPackTab: 识别到shop_pack_tab，点击目标"
         }
     },
     "ClickWeekTab": {
@@ -68,7 +68,7 @@
             "ClickMonthTab"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_weekly_tab，点击目标"
+            "Node.Recognition.Succeeded": "ClickWeekTab: 识别到shop_weekly_tab，点击目标"
         }
     },
     "FreeShopGoHome": {
@@ -88,7 +88,7 @@
             "FreeShopGoHome"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home，点击目标"
+            "Node.Recognition.Succeeded": "FreeShopGoHome: 识别到home，点击目标"
         }
     },
     "FreeStonePack": {
@@ -131,7 +131,7 @@
             "ClickWeekTab"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到free_stone_pack，点击左侧"
+            "Node.Recognition.Succeeded": "FreeStonePack: 识别到free_stone_pack，点击左侧"
         }
     },
     "FreeStonePackMonthly": {
@@ -173,7 +173,7 @@
             "FreeShopGoHome"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到free_stone_montly，点击左侧"
+            "Node.Recognition.Succeeded": "FreeStonePackMonthly: 识别到free_stone_montly，点击左侧"
         }
     },
     "FreeStonePackWeekly": {
@@ -215,7 +215,7 @@
             "FreeStonePackWeekly"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到free_stone_weekly，点击左侧"
+            "Node.Recognition.Succeeded": "FreeStonePackWeekly: 识别到free_stone_weekly，点击左侧"
         }
     },
     "ShopCheckReward": {
@@ -252,7 +252,7 @@
         "repeat": 3,
         "post_delay": 400,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_reward_title，点击上方"
+            "Node.Recognition.Succeeded": "ShopCheckReward: 识别到shop_reward_title，点击上方"
         }
     },
     "ShopExchange": {
@@ -281,7 +281,7 @@
         "repeat": 3,
         "post_delay": 400,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到exchange，点击右下"
+            "Node.Recognition.Succeeded": "ShopExchange: 识别到exchange，点击右下"
         }
     },
     "StartFreeStone": {
@@ -313,7 +313,7 @@
             "StartFreeStone"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop，点击右下"
+            "Node.Recognition.Succeeded": "StartFreeStone: 识别到shop，点击右下"
         }
     }
 }

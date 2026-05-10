@@ -12,7 +12,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776271976991，点击目标"
+            "Node.Recognition.Succeeded": "E 演习: 识别到template_1776271976991，点击目标"
         },
         "next": [
             "quest_click_exercise",
@@ -35,7 +35,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到maze_prepare，等待通过"
+            "Node.Recognition.Succeeded": "EnterMazePrepare: 识别到maze_prepare，等待通过"
         },
         "next": [
             "[JumpBack]MAZE前清除弹窗",
@@ -57,7 +57,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到OK文字，点击目标"
+            "Node.Recognition.Succeeded": "MAZE前清除弹窗: 识别到OK文字，点击目标"
         }
     },
     "MGG E 选择事件": {
@@ -84,7 +84,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776268582714，点击右下"
+            "Node.Recognition.Succeeded": "MGG E 选择事件: 识别到template_1776268582714，点击右下"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -112,7 +112,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_select_relic，点击左侧"
+            "Node.Recognition.Succeeded": "MGG E 选择遗物: 识别到mgg_maze_select_relic，点击左侧"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -121,7 +121,7 @@
     },
     "MGG MAZE BUY xbar0": {
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "MGG MAZE BUY xbar0: 直接命中，等待通过"
         },
         "next": [
             "__buy_unit",
@@ -133,7 +133,7 @@
     },
     "MGG MAZE BUY xbar1": {
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "MGG MAZE BUY xbar1: 直接命中，等待通过"
         },
         "next": [
             "判断矿为零",
@@ -163,7 +163,7 @@
         },
         "post_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到最終獲得数文字，点击右下"
+            "Node.Recognition.Succeeded": "MGG MAZE Result: 识别到最終獲得数文字，点击右下"
         },
         "next": [
             "MGG MAZE Stone Shop",
@@ -180,7 +180,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_rewards_shop，等待通过"
+            "Node.Recognition.Succeeded": "MGG MAZE Stone Shop: 识别到mgg_maze_rewards_shop，等待通过"
         },
         "next": [
             "判断矿为零",
@@ -208,7 +208,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home，点击左下"
+            "Node.Recognition.Succeeded": "MGG MAZE gohome: 识别到home，点击左下"
         },
         "next": [
             "login_判断首页",
@@ -236,14 +236,14 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home，点击左下"
+            "Node.Recognition.Succeeded": "MGG MAZE gohome_retry: 识别到home，点击左下"
         }
     },
     "MGG MAZE 前总线": {
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "MGG MAZE 前总线: 直接命中，等待通过"
         },
         "next": [
             "MGG MAZE 跳过战斗",
@@ -259,7 +259,7 @@
     },
     "MGG MAZE 后总线": {
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "MGG MAZE 后总线: 直接命中，等待通过"
         },
         "next": [
             "MGG MAZE 前总线"
@@ -289,7 +289,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到explorer，点击右下"
+            "Node.Recognition.Succeeded": "MGG MAZE 探索: 识别到explorer，点击右下"
         },
         "next": [
             "[JumpBack]MGG MAZE 探索_retry",
@@ -319,7 +319,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到探索文字，点击右下"
+            "Node.Recognition.Succeeded": "MGG MAZE 探索_retry: 识别到探索文字，点击右下"
         }
     },
     "MGG MAZE 误入抽卡": {
@@ -350,7 +350,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到ガチヤ文字，点击左上"
+            "Node.Recognition.Succeeded": "MGG MAZE 误入抽卡: 识别到ガチヤ文字，点击左上"
         }
     },
     "MGG MAZE 跳过战斗": {
@@ -372,7 +372,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_battle_skip，点击右上"
+            "Node.Recognition.Succeeded": "MGG MAZE 跳过战斗: 识别到mgg_battle_skip，点击右上"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -389,7 +389,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_cannot_skip，等待通过"
+            "Node.Recognition.Succeeded": "MGG 战斗中: 识别到mgg_maze_cannot_skip，等待通过"
         },
         "next": [
             "MGG MAZE 后总线"
@@ -408,7 +408,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_leave，点击目标"
+            "Node.Recognition.Succeeded": "MGG 离开: 识别到mgg_maze_leave，点击目标"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -434,7 +434,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_next，点击右下"
+            "Node.Recognition.Succeeded": "MGG 继续: 识别到mgg_maze_next，点击右下"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -460,7 +460,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_buy_but_max，等待通过"
+            "Node.Recognition.Succeeded": "__buy_but_max: 识别到mgg_maze_buy_but_max，等待通过"
         },
         "next": [
             "MGG MAZE BUY xbar1"
@@ -489,7 +489,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到__buy_max_reinforce，点击右侧"
+            "Node.Recognition.Succeeded": "__buy_max_reinforce: 识别到__buy_max_reinforce，点击右侧"
         },
         "next": [
             "MGG MAZE BUY xbar1",
@@ -519,7 +519,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_buy_unit，点击右侧"
+            "Node.Recognition.Succeeded": "__buy_unit: 识别到mgg_maze_buy_unit，点击右侧"
         },
         "next": [
             "MGG MAZE BUY xbar1",
@@ -542,7 +542,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_buy_not_enough，等待通过"
+            "Node.Recognition.Succeeded": "__buy_素材不足: 识别到mgg_maze_buy_not_enough，等待通过"
         },
         "next": [
             "MGG MAZE BUY xbar1"
@@ -572,7 +572,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_buy_non_max，点击右侧"
+            "Node.Recognition.Succeeded": "__buy_部分投入: 识别到mgg_maze_buy_non_max，点击右侧"
         },
         "next": [
             "MGG MAZE BUY xbar1",
@@ -595,7 +595,7 @@
             "NextBuy": "__click_art_rapid"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_art_en: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -617,7 +617,7 @@
             "NextBuy": "__maze_reward_over"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_art_rapid: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -639,7 +639,7 @@
             "NextBuy": "__click_art_en"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左下"
+            "Node.Recognition.Succeeded": "__click_artifact: 直接命中，点击左下"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -661,7 +661,7 @@
             "NextBuy": "__click_artifact"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左侧"
+            "Node.Recognition.Succeeded": "__click_dig: 直接命中，点击左侧"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -683,7 +683,7 @@
             "NextBuy": "__click_skill_2"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_disk: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -705,7 +705,7 @@
             "NextBuy": "__click_type_equip"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_skill_1: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -727,7 +727,7 @@
             "NextBuy": "__click_skill_1"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_skill_2: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -749,7 +749,7 @@
             "NextBuy": "__click_type_equip_en"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左侧"
+            "Node.Recognition.Succeeded": "__click_type_equip: 直接命中，点击左侧"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -771,7 +771,7 @@
             "NextBuy": "__click_type_equip_rapid"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_type_equip_en: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -793,7 +793,7 @@
             "NextBuy": "__click_dig"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "__click_type_equip_rapid: 直接命中，点击左上"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -815,7 +815,7 @@
             "NextBuy": "__click_disk"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击上方"
+            "Node.Recognition.Succeeded": "__click_unit: 直接命中，点击上方"
         },
         "next": [
             "MGG MAZE BUY xbar0"
@@ -840,7 +840,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_over，点击右下"
+            "Node.Recognition.Succeeded": "__maze_reward_over: 识别到mgg_maze_over，点击右下"
         },
         "next": [
             "EnterMazePrepare",
@@ -870,7 +870,7 @@
         },
         "post_wait_freezes": 600,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776270307003，点击右下"
+            "Node.Recognition.Succeeded": "exercise_click_battle: 识别到template_1776270307003，点击右下"
         },
         "next": [
             "[JumpBack]exercise_click_battle_retry",
@@ -898,7 +898,7 @@
         },
         "post_wait_freezes": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776270307003，点击右下"
+            "Node.Recognition.Succeeded": "exercise_click_battle_retry: 识别到template_1776270307003，点击右下"
         },
         "next": [
             "exercise_click_battle_retry_pad"
@@ -908,7 +908,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "exercise_click_battle_retry_pad: 直接命中，等待通过"
         }
     },
     "exercise_click_prepare": {
@@ -931,7 +931,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776270181505，点击右下"
+            "Node.Recognition.Succeeded": "exercise_click_prepare: 识别到template_1776270181505，点击右下"
         },
         "next": [
             "exercise_click_battle",
@@ -949,7 +949,7 @@
         },
         "post_delay": 3000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_cannot_skip，等待通过"
+            "Node.Recognition.Succeeded": "exercise_in_battle: 识别到mgg_maze_cannot_skip，等待通过"
         }
     },
     "exercise_skip_battle": {
@@ -972,7 +972,7 @@
         },
         "post_delay": 3000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_battle_skip，点击右上"
+            "Node.Recognition.Succeeded": "exercise_skip_battle: 识别到mgg_battle_skip，点击右上"
         }
     },
     "maze_buy_over_bug_shop": {
@@ -996,7 +996,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776269842789，点击左上"
+            "Node.Recognition.Succeeded": "maze_buy_over_bug_shop: 识别到template_1776269842789，点击左上"
         }
     },
     "maze_buy_rate": {
@@ -1013,7 +1013,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到購入倍率文字，点击目标"
+            "Node.Recognition.Succeeded": "maze_buy_rate: 识别到購入倍率文字，点击目标"
         }
     },
     "maze_buy_rate_max_check": {
@@ -1032,7 +1032,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到MAX文字，等待通过"
+            "Node.Recognition.Succeeded": "maze_buy_rate_max_check: 识别到MAX文字，等待通过"
         },
         "next": [
             "__click_unit"
@@ -1059,7 +1059,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_over_confirm，点击右下"
+            "Node.Recognition.Succeeded": "mgg_maze_over_confirm: 识别到mgg_maze_over_confirm，点击右下"
         },
         "next": [
             "EnterMazePrepare",
@@ -1093,7 +1093,7 @@
         },
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到maze_prepare，点击右下"
+            "Node.Recognition.Succeeded": "mgg_maze_prepare: 识别到maze_prepare，点击右下"
         },
         "next": [
             "[JumpBack]MGG MAZE 误入抽卡",
@@ -1127,7 +1127,7 @@
         },
         "post_delay": 800,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到maze_prepare，点击右下"
+            "Node.Recognition.Succeeded": "mgg_maze_prepare_retry: 识别到maze_prepare，点击右下"
         },
         "next": [
             "MGG MAZE 探索",
@@ -1149,7 +1149,7 @@
         },
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776270141907，点击目标"
+            "Node.Recognition.Succeeded": "quest_click_exercise: 识别到template_1776270141907，点击目标"
         },
         "next": [
             "演习无剩余次数",
@@ -1174,7 +1174,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到0文字，等待通过"
+            "Node.Recognition.Succeeded": "判断矿为零: 识别到0文字，等待通过"
         },
         "next": [
             "__maze_reward_over"
@@ -1196,7 +1196,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到戦術演習文字，等待通过"
+            "Node.Recognition.Succeeded": "战术演习结束: 识别到戦術演習文字，等待通过"
         }
     },
     "演习 popup result": {
@@ -1226,14 +1226,14 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到前回ランク確定文字，点击上方"
+            "Node.Recognition.Succeeded": "演习 popup result: 识别到前回ランク確定文字，点击上方"
         }
     },
     "演习战斗前中转": {
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "演习战斗前中转: 直接命中，等待通过"
         },
         "next": [
             "[JumpBack]exercise_skip_battle",
@@ -1261,7 +1261,7 @@
         },
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_next，点击右下"
+            "Node.Recognition.Succeeded": "演习战斗点继续: 识别到mgg_maze_next，点击右下"
         },
         "next": [
             "[JumpBack]演习战斗点继续_重试",
@@ -1289,7 +1289,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_next，点击右下"
+            "Node.Recognition.Succeeded": "演习战斗点继续_重试: 识别到mgg_maze_next，点击右下"
         }
     },
     "演习无剩余次数": {
@@ -1310,7 +1310,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到本日あと0回文字，等待通过"
+            "Node.Recognition.Succeeded": "演习无剩余次数: 识别到本日あと0回文字，等待通过"
         },
         "next": [
             "演习返回首页"
@@ -1329,7 +1329,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home，点击目标"
+            "Node.Recognition.Succeeded": "演习返回首页: 识别到home，点击目标"
         },
         "next": [
             "login_判断首页",
@@ -1353,7 +1353,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到目标图像，点击左下"
+            "Node.Recognition.Succeeded": "演习返回首页_重试: 识别到目标图像，点击左下"
         }
     },
     "选择路线": {
@@ -1375,7 +1375,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_route，点击右下"
+            "Node.Recognition.Succeeded": "选择路线: 识别到mgg_maze_route，点击右下"
         },
         "next": [
             "MGG MAZE 后总线",
@@ -1401,7 +1401,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到mgg_maze_route_battle，点击左上"
+            "Node.Recognition.Succeeded": "选择路线_战斗: 识别到mgg_maze_route_battle，点击左上"
         },
         "next": [
             "选择路线",
@@ -1433,6 +1433,9 @@
                     11
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "MazeMissOmakase: 识别到maze_omakese，点击下方"
         }
     }
 }

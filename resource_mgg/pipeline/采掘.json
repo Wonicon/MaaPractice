@@ -17,7 +17,7 @@
             "E 免费石"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop，点击目标"
+            "Node.Recognition.Succeeded": "E 免费石: 识别到shop，点击目标"
         }
     },
     "E 课外活动 任务": {
@@ -38,7 +38,7 @@
             "E 课外活动 任务"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到quest，点击目标"
+            "Node.Recognition.Succeeded": "E 课外活动 任务: 识别到quest，点击目标"
         }
     },
     "E 采掘 点击": {
@@ -59,7 +59,7 @@
             "E 采掘 点击"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击右下"
+            "Node.Recognition.Succeeded": "E 采掘 点击: 直接命中，点击右下"
         }
     },
     "FlashSaleAfterDig": {
@@ -107,7 +107,7 @@
             "click_top_right_go_home"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到top_right_go_home_light'，点击目标"
+            "Node.Recognition.Succeeded": "click_top_right_go_home: 识别到top_right_go_home_light'，点击目标"
         }
     },
     "商店入口": {
@@ -135,7 +135,7 @@
             "商店入口"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_popup_scene，点击中央"
+            "Node.Recognition.Succeeded": "商店入口: 识别到shop_popup_scene，点击中央"
         }
     },
     "指挥官升级1": {
@@ -171,7 +171,7 @@
             "指挥官升级1_副本2"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到levelup，点击目标"
+            "Node.Recognition.Succeeded": "指挥官升级1_副本2: 识别到levelup，点击目标"
         }
     },
     "时短产物确认": {
@@ -205,7 +205,7 @@
             "时短产物确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_quick_result_confirm_title，点击下方"
+            "Node.Recognition.Succeeded": "时短产物确认: 识别到dig_quick_result_confirm_title，点击下方"
         }
     },
     "时短确认": {
@@ -241,7 +241,7 @@
             "时短确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_quick_confirm，点击右下"
+            "Node.Recognition.Succeeded": "时短确认: 识别到dig_quick_confirm，点击右下"
         }
     },
     "每周免费": {
@@ -262,7 +262,7 @@
             "每周免费"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_pack_weekly，点击目标"
+            "Node.Recognition.Succeeded": "每周免费: 识别到shop_pack_weekly，点击目标"
         }
     },
     "每日免费": {
@@ -288,7 +288,7 @@
             "每日免费"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到無料文字，点击左下"
+            "Node.Recognition.Succeeded": "每日免费: 识别到無料文字，点击左下"
         }
     },
     "每日免费_副本9": {
@@ -314,7 +314,7 @@
             "每日免费_副本9"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到無料文字，点击左下"
+            "Node.Recognition.Succeeded": "每日免费_副本9: 识别到無料文字，点击左下"
         }
     },
     "每日免费_副本9_副本13": {
@@ -340,7 +340,7 @@
             "每日免费_副本9_副本13"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到無料文字，点击左下"
+            "Node.Recognition.Succeeded": "每日免费_副本9_副本13: 识别到無料文字，点击左下"
         }
     },
     "每日免费收获确认": {
@@ -368,7 +368,7 @@
             "每日免费收获确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到finish_buy，点击下方"
+            "Node.Recognition.Succeeded": "每日免费收获确认: 识别到finish_buy，点击下方"
         }
     },
     "每日免费收获确认_副本11": {
@@ -396,7 +396,7 @@
             "每日免费收获确认_副本11"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到finish_buy，点击下方"
+            "Node.Recognition.Succeeded": "每日免费收获确认_副本11: 识别到finish_buy，点击下方"
         }
     },
     "每日免费收获确认_副本11_副本15": {
@@ -424,7 +424,7 @@
             "每日免费收获确认_副本11_副本15"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到finish_buy，点击下方"
+            "Node.Recognition.Succeeded": "每日免费收获确认_副本11_副本15: 识别到finish_buy，点击下方"
         }
     },
     "每日免费确认": {
@@ -452,7 +452,7 @@
             "每日免费确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_buy_confirm_title，点击右下"
+            "Node.Recognition.Succeeded": "每日免费确认: 识别到shop_buy_confirm_title，点击右下"
         }
     },
     "每日免费确认_副本10": {
@@ -480,7 +480,7 @@
             "每日免费确认_副本10"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_buy_confirm_title，点击右下"
+            "Node.Recognition.Succeeded": "每日免费确认_副本10: 识别到shop_buy_confirm_title，点击右下"
         }
     },
     "每日免费确认_副本10_副本14": {
@@ -508,7 +508,7 @@
             "每日免费确认_副本10_副本14"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_buy_confirm_title，点击右下"
+            "Node.Recognition.Succeeded": "每日免费确认_副本10_副本14: 识别到shop_buy_confirm_title，点击右下"
         }
     },
     "每月免费": {
@@ -529,7 +529,7 @@
             "每月免费"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_monthly，点击目标"
+            "Node.Recognition.Succeeded": "每月免费: 识别到shop_monthly，点击目标"
         }
     },
     "礼包": {
@@ -550,7 +550,7 @@
             "礼包"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到shop_sale_pack，点击目标"
+            "Node.Recognition.Succeeded": "礼包: 识别到shop_sale_pack，点击目标"
         }
     },
     "课外活动": {
@@ -573,7 +573,7 @@
             "课外活动"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到out_school_act，点击目标"
+            "Node.Recognition.Succeeded": "课外活动: 识别到out_school_act，点击目标"
         }
     },
     "课外活动关闭": {
@@ -594,7 +594,7 @@
             "课外活动关闭"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_close，点击目标"
+            "Node.Recognition.Succeeded": "课外活动关闭: 识别到activity_close，点击目标"
         }
     },
     "课外活动出发": {
@@ -622,7 +622,7 @@
             "课外活动出发确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_go，点击下方"
+            "Node.Recognition.Succeeded": "课外活动出发: 识别到activity_go，点击下方"
         }
     },
     "课外活动出发确认": {
@@ -643,7 +643,7 @@
             "确认课外活动窗口"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+            "Node.Recognition.Succeeded": "课外活动出发确认: 识别到activity_ok，点击目标"
         }
     },
     "课外活动收菜": {
@@ -671,7 +671,7 @@
             "课外活动收菜确认"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_accept，点击右下"
+            "Node.Recognition.Succeeded": "课外活动收菜: 识别到activity_accept，点击右下"
         }
     },
     "课外活动收菜确认": {
@@ -692,7 +692,7 @@
             "确认课外活动窗口"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
+            "Node.Recognition.Succeeded": "课外活动收菜确认: 识别到activity_ok，点击目标"
         }
     },
     "采掘任务结束": {
@@ -702,7 +702,7 @@
         },
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，停止任务"
+            "Node.Recognition.Succeeded": "采掘任务结束: 直接命中，停止任务"
         }
     },
     "采掘弹窗": {
@@ -733,7 +733,7 @@
             "采掘弹窗"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_title，点击右下"
+            "Node.Recognition.Succeeded": "采掘弹窗: 识别到dig_title，点击右下"
         }
     },
     "采掘弹窗 点击时短": {
@@ -761,7 +761,7 @@
             "采掘弹窗 点击时短"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_title，点击右下"
+            "Node.Recognition.Succeeded": "采掘弹窗 点击时短: 识别到dig_title，点击右下"
         }
     },
     "采掘弹窗 避免付费时短": {
@@ -783,7 +783,7 @@
             "采掘弹窗关闭"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到50文字，等待通过"
+            "Node.Recognition.Succeeded": "采掘弹窗 避免付费时短: 识别到50文字，等待通过"
         }
     },
     "采掘弹窗关闭": {
@@ -811,7 +811,7 @@
             "采掘弹窗关闭"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_title，点击右上"
+            "Node.Recognition.Succeeded": "采掘弹窗关闭: 识别到dig_title，点击右上"
         }
     },
     "采掘确认": {
@@ -866,7 +866,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到outdoor_activity，等待通过"
+            "Node.Recognition.Succeeded": "确认课外活动窗口: 识别到outdoor_activity，等待通过"
         }
     }
 }

@@ -26,7 +26,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左上"
+            "Node.Recognition.Succeeded": "Circle::点击返回直到进入mission: 识别到交换所文字，点击左上"
         },
         "next": [
             "Circle:mission兑换页",
@@ -43,7 +43,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_mission_bar_mark，等待通过"
+            "Node.Recognition.Succeeded": "Circle:mission兑换页: 识别到circle_mission_bar_mark，等待通过"
         }
     },
     "Circle:mission兑换页_副本2": {
@@ -56,7 +56,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_mission_bar_mark，等待通过"
+            "Node.Recognition.Succeeded": "Circle:mission兑换页_副本2: 识别到circle_mission_bar_mark，等待通过"
         }
     },
     "EnterCircle": {
@@ -89,7 +89,7 @@
         "post_wait_freezes": 50,
         "post_delay": 100,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到home_7days，点击左下"
+            "Node.Recognition.Succeeded": "EnterCircle: 识别到home_7days，点击左下"
         },
         "next": [
             "check_circle",
@@ -125,7 +125,7 @@
         },
         "post_delay": 1000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到gacha，点击目标"
+            "Node.Recognition.Succeeded": "back_from_gacha: 识别到ガチヤ文字，点击左上"
         },
         "next": [
             "Circle:mission兑换页_副本2",
@@ -151,7 +151,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle，点击左上"
+            "Node.Recognition.Succeeded": "check_circle: 识别到circle，点击左上"
         },
         "next": [
             "click_circle_mission_inside",
@@ -175,7 +175,7 @@
         },
         "inverse": false,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到受取文字，等待通过"
+            "Node.Recognition.Succeeded": "check_no_accept: 识别到受取文字，等待通过"
         },
         "next": [
             "click_accept_all_circle"
@@ -197,7 +197,7 @@
         },
         "post_delay": 3000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到OK文字，点击目标"
+            "Node.Recognition.Succeeded": "circle_close_any_popup: 识别到OK文字，点击目标"
         },
         "next": [
             "circle_delay_pad"
@@ -224,7 +224,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到OK文字，点击下方"
+            "Node.Recognition.Succeeded": "circle_close_any_popup_副本27: 识别到OK文字，点击下方"
         },
         "next": [
             "circle_close_any_popup_副本27",
@@ -235,7 +235,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "circle_delay_pad: 直接命中，等待通过"
         }
     },
     "circle_exchange": {
@@ -249,7 +249,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到交換所でアイテムを1回購入する文字，等待通过"
+            "Node.Recognition.Succeeded": "circle_exchange: 识别到交換所でアイテムを1回購入する文字，等待通过"
         },
         "next": [
             "新建节点35"
@@ -259,7 +259,7 @@
         "doc": "在退出前多扫几次，排在 go home 前面，倒数第二个",
         "max_hit": 3,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "circle_finish_guard: 直接命中，等待通过"
         }
     },
     "circle_gacha": {
@@ -277,7 +277,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到ナールガチを1回引く文字，点击目标"
+            "Node.Recognition.Succeeded": "circle_gacha: 识别到ナールガチを1回引く文字，点击目标"
         },
         "next": [
             "新建节点35_副本28"
@@ -303,7 +303,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到一括受取文字，点击右下"
+            "Node.Recognition.Succeeded": "click_accept_all_circle: 识别到一括受取文字，点击右下"
         }
     },
     "click_away_gache_ani": {
@@ -320,7 +320,7 @@
         },
         "repeat": 5,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击右上"
+            "Node.Recognition.Succeeded": "click_away_gache_ani: 直接命中，点击右上"
         }
     },
     "click_circle_mission_inside": {
@@ -345,7 +345,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_mission，点击右上"
+            "Node.Recognition.Succeeded": "click_circle_mission_inside: 识别到circle_mission，点击右上"
         },
         "next": [
             "click_circle_mission_xbar",
@@ -356,7 +356,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
+            "Node.Recognition.Succeeded": "click_circle_mission_xbar: 直接命中，等待通过"
         },
         "next": [
             "[JumpBack]circle_close_any_popup",
@@ -390,7 +390,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_mission，点击右上"
+            "Node.Recognition.Succeeded": "click_circle_mission_副本26: 识别到circle_mission，点击右上"
         }
     },
     "click_circle_weekly_mission": {
@@ -408,7 +408,7 @@
         },
         "repeat": 3,
         "focus": {
-            "Node.Recognition.Succeeded": "直接命中，点击左侧"
+            "Node.Recognition.Succeeded": "click_circle_weekly_mission: 直接命中，点击左侧"
         }
     },
     "click_right_top_go_home": {
@@ -430,7 +430,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到top_right_go_home，点击右上"
+            "Node.Recognition.Succeeded": "click_right_top_go_home: 识别到top_right_go_home，点击右上"
         },
         "next": [
             "login_判断首页",
@@ -458,7 +458,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到dig_confirm_title，点击右下"
+            "Node.Recognition.Succeeded": "confirm_circle_gache: 识别到dig_confirm_title，点击右下"
         },
         "next": [
             "go_gacha_top",
@@ -480,7 +480,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到go_gacha_top，点击目标"
+            "Node.Recognition.Succeeded": "go_gacha_top: 识别到go_gacha_top，点击目标"
         },
         "next": [
             "go_gacha_top",
@@ -506,7 +506,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到gacha_skip，点击右上"
+            "Node.Recognition.Succeeded": "skip_gacha_result: 识别到gacha_skip，点击右上"
         }
     },
     "新建节点35": {
@@ -525,7 +525,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到挑戦文字，点击目标"
+            "Node.Recognition.Succeeded": "新建节点35: 识别到挑戦文字，点击目标"
         },
         "next": [
             "新建节点36",
@@ -548,7 +548,7 @@
         },
         "post_delay": 2000,
         "focus": {
-            "Node.Recognition.Succeeded": "识别到挑戦文字，点击目标"
+            "Node.Recognition.Succeeded": "新建节点35_副本28: 识别到挑戦文字，点击目标"
         },
         "next": [
             "新建节点40",
@@ -576,7 +576,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_gacha，点击左下"
+            "Node.Recognition.Succeeded": "新建节点36: 识别到circle_gacha，点击左下"
         },
         "next": [
             "新建节点37",
@@ -602,7 +602,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到MAX文字，点击右下"
+            "Node.Recognition.Succeeded": "新建节点37: 识别到MAX文字，点击右下"
         },
         "next": [
             "新建节点38",
@@ -628,7 +628,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到交換文字，点击右下"
+            "Node.Recognition.Succeeded": "新建节点38: 识别到交換文字，点击右下"
         },
         "next": [
             "circle_close_any_popup_副本27",
@@ -648,7 +648,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "识别到circle_gacha_poll，点击目标"
+            "Node.Recognition.Succeeded": "新建节点40: 识别到circle_gacha_poll，点击目标"
         },
         "next": [
             "confirm_circle_gache",
