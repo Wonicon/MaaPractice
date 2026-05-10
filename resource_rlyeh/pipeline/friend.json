@@ -1,4 +1,29 @@
 {
+    "CheckInFriend": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    15,
+                    13,
+                    209,
+                    86
+                ],
+                "template": [
+                    "friend_title.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "CheckInFriend: 识别到friend_title，等待通过"
+        },
+        "next": [
+            "FriendAllSend",
+            "FrirendClose"
+        ]
+    },
     "EndFriend": {
         "recognition": {
             "type": "TemplateMatch",
@@ -42,8 +67,8 @@
             "Node.Recognition.Succeeded": "FriendAllSend: 识别到all_send，点击目标"
         },
         "next": [
-            "FrirendClose",
-            "FriendAllSend"
+            "FriendAllSend",
+            "FrirendClose"
         ]
     },
     "FrirendClose": {
@@ -92,31 +117,6 @@
         "next": [
             "CheckInFriend",
             "StartFriend"
-        ]
-    },
-    "CheckInFriend": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    15,
-                    13,
-                    209,
-                    86
-                ],
-                "template": [
-                    "friend_title.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "post_delay": 400,
-        "focus": {
-            "Node.Recognition.Succeeded": "CheckInFriend: 识别到friend_title，等待通过"
-        },
-        "next": [
-            "FriendAllSend",
-            "FrirendClose"
         ]
     }
 }

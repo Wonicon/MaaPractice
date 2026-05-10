@@ -441,7 +441,8 @@
         },
         "next": [
             "主线报酬弹窗",
-            "主线快速战斗关闭"
+            "主线快速战斗关闭",
+            "主线战斗"
         ]
     },
     "主线收菜": {
@@ -709,32 +710,71 @@
             "战斗返回"
         ]
     },
-    "进入残响剧场放映厅": {
+    "打开残响任务跳过面板": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "残响剧场.png"
+                    "残响skip.png"
                 ]
             }
         },
         "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "打开残响任务跳过面板: 识别到残响skip，点击目标"
+        },
+        "next": [
+            "最大化残响任务跳过次数",
+            "打开残响任务跳过面板"
+        ]
+    },
+    "执行残响任务跳过": {
+        "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    762,
-                    244,
-                    68,
-                    63
+                    564,
+                    474,
+                    151,
+                    43
                 ]
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "进入残响剧场放映厅: 识别到残响剧场，点击中上偏右"
+            "Node.Recognition.Succeeded": "执行残响任务跳过: 直接命中，点击下方"
         },
         "next": [
-            "放映残响剧场",
-            "进入残响剧场放映厅"
+            "残响剧场_点击返回",
+            "执行残响任务跳过"
+        ]
+    },
+    "执行祭坛战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    826,
+                    571,
+                    203,
+                    92
+                ],
+                "template": [
+                    "template_1776437714167.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "执行祭坛战斗: 识别到template_1776437714167，点击右下"
+        },
+        "next": [
+            "战斗返回",
+            "[JumpBack]战斗中",
+            "执行祭坛战斗"
         ]
     },
     "放映残响剧场": {
@@ -764,48 +804,6 @@
             "残响回数为0",
             "选择已完成的残响任务",
             "放映残响剧场"
-        ]
-    },
-    "选择已完成的残响任务": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "残响clear.png"
-                ],
-                "order_by": "Horizontal",
-                "index": -1
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "选择已完成的残响任务: 识别到残响clear，点击目标"
-        },
-        "next": [
-            "打开残响任务跳过面板",
-            "选择已完成的残响任务"
-        ]
-    },
-    "打开残响任务跳过面板": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "残响skip.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "打开残响任务跳过面板: 识别到残响skip，点击目标"
-        },
-        "next": [
-            "最大化残响任务跳过次数",
-            "打开残响任务跳过面板"
         ]
     },
     "最大化残响任务跳过次数": {
@@ -841,26 +839,6 @@
         "next": [
             "执行残响任务跳过",
             "最大化残响任务跳过次数"
-        ]
-    },
-    "执行残响任务跳过": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    564,
-                    474,
-                    151,
-                    43
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "执行残响任务跳过: 直接命中，点击下方"
-        },
-        "next": [
-            "残响剧场_点击返回",
-            "执行残响任务跳过"
         ]
     },
     "残响剧场8_取消编队": {
@@ -1080,33 +1058,6 @@
             "祭坛挑战"
         ]
     },
-    "执行祭坛战斗": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    826,
-                    571,
-                    203,
-                    92
-                ],
-                "template": [
-                    "template_1776437714167.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "执行祭坛战斗: 识别到template_1776437714167，点击右下"
-        },
-        "next": [
-            "战斗返回",
-            "[JumpBack]战斗中",
-            "执行祭坛战斗"
-        ]
-    },
     "祭坛挑战用完": {
         "recognition": {
             "type": "OCR",
@@ -1191,8 +1142,8 @@
             "Node.Recognition.Succeeded": "祭坛结果返回: 识别到戻る文字，点击右下"
         },
         "next": [
-            "祭坛取消编队",
-            "祭坛结果返回"
+            "祭坛结果返回",
+            "祭坛取消编队"
         ]
     },
     "祭坛跳过": {
@@ -1493,6 +1444,56 @@
         "next": [
             "确认主页",
             "返回home"
+        ]
+    },
+    "进入残响剧场放映厅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响剧场.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    762,
+                    244,
+                    68,
+                    63
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "进入残响剧场放映厅: 识别到残响剧场，点击中上偏右"
+        },
+        "next": [
+            "放映残响剧场",
+            "进入残响剧场放映厅"
+        ]
+    },
+    "选择已完成的残响任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "残响clear.png"
+                ],
+                "order_by": "Horizontal",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "选择已完成的残响任务: 识别到残响clear，点击目标"
+        },
+        "next": [
+            "打开残响任务跳过面板",
+            "选择已完成的残响任务"
         ]
     }
 }

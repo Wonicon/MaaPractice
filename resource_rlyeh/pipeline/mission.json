@@ -59,6 +59,9 @@
                 ],
                 "template": [
                     "all_accept.png"
+                ],
+                "threshold": [
+                    0.93
                 ]
             }
         },
