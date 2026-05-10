@@ -1,4 +1,28 @@
 {
+    "CheckStartScreen": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "criware.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    410,
+                    194,
+                    473,
+                    239
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "CheckStartScreen: 识别到criware，点击中央"
+        }
+    },
     "CloseFlashSale": {
         "recognition": {
             "type": "TemplateMatch",
@@ -82,12 +106,12 @@
                 "green_mask": true
             }
         },
-        "next": [
-            "ConfirmHomeDelay"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "ConfirmHome: 识别到home_sign，等待通过"
-        }
+        },
+        "next": [
+            "ConfirmHomeDelay"
+        ]
     },
     "ConfirmHomeDelay": {
         "pre_delay": 1000,
@@ -109,47 +133,6 @@
             "Node.Recognition.Succeeded": "ConfirmHomeStop: 识别到home_sign，等待通过"
         }
     },
-    "StartLogin": {
-        "pre_delay": 0,
-        "post_delay": 0,
-        "next": [
-            "[JumpBack]CheckStartScreen",
-            "[JumpBack]LoginCloseAnything",
-            "[JumpBack]CloseLoginBonusReward",
-            "[JumpBack]LoginUpdateNews",
-            "[JumpBack]CloseLoginBonusPanel",
-            "[JumpBack]CloseFlashSale",
-            "[JumpBack]ConfirmHome",
-            "ConfirmHomeStop"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "StartLogin: 直接命中，等待通过"
-        }
-    },
-    "CheckStartScreen": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "criware.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    410,
-                    194,
-                    473,
-                    239
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "CheckStartScreen: 识别到criware，点击中央"
-        }
-    },
     "LoginCloseAnything": {
         "recognition": {
             "type": "TemplateMatch",
@@ -166,24 +149,23 @@
             "Node.Recognition.Succeeded": "LoginCloseAnything: 识别到login_update_news_close，点击目标"
         }
     },
-    "LoginUpdateNews": {
+    "LoginCloseUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "login_update_news.png"
+                    "login_update_news_close.png"
+                ],
+                "threshold": [
+                    0.95
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "next": [
-            "LoginCloseUpdateNews",
-            "[JumpBack]LoginNextUpdateNews"
-        ],
         "focus": {
-            "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击目标"
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
         }
     },
     "LoginNextUpdateNews": {
@@ -205,15 +187,12 @@
             "Node.Recognition.Succeeded": "LoginNextUpdateNews: 识别到login_update_news_next，点击目标"
         }
     },
-    "LoginCloseUpdateNews": {
+    "LoginUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "login_update_news_close.png"
-                ],
-                "threshold": [
-                    0.95
+                    "login_update_news.png"
                 ]
             }
         },
@@ -221,7 +200,56 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
+            "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击目标"
+        },
+        "next": [
+            "LoginCloseUpdateNews",
+            "[JumpBack]LoginNextUpdateNews"
+        ]
+    },
+    "StartLogin": {
+        "pre_delay": 0,
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "StartLogin: 直接命中，等待通过"
+        },
+        "next": [
+            "[JumpBack]CheckStartScreen",
+            "[JumpBack]LoginCloseAnything",
+            "[JumpBack]CloseLoginBonusReward",
+            "[JumpBack]LoginUpdateNews",
+            "[JumpBack]CloseLoginBonusPanel",
+            "[JumpBack]CloseFlashSale",
+            "[JumpBack]ConfirmHome",
+            "ConfirmHomeStop",
+            "[JumpBack]关闭通知弹窗"
+        ]
+    },
+    "关闭通知弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    571,
+                    75,
+                    142,
+                    57
+                ],
+                "template": [
+                    "info_title.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1137,
+                    93,
+                    16,
+                    16
+                ]
+            }
         }
     }
 }
