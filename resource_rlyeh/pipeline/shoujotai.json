@@ -730,7 +730,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场: 识别到残响剧场，点击中上偏右"
+            "Node.Recognition.Succeeded": "进入残响剧场放映厅: 识别到残响剧场，点击中上偏右"
         },
         "next": [
             "放映残响剧场",
@@ -758,7 +758,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场2: 识别到template_1776498582773，点击中上偏左"
+            "Node.Recognition.Succeeded": "放映残响剧场: 识别到template_1776498582773，点击中上偏左"
         },
         "next": [
             "残响回数为0",
@@ -781,7 +781,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场3: 识别到残响clear，点击目标"
+            "Node.Recognition.Succeeded": "选择已完成的残响任务: 识别到残响clear，点击目标"
         },
         "next": [
             "打开残响任务跳过面板",
@@ -801,7 +801,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场4: 识别到残响skip，点击目标"
+            "Node.Recognition.Succeeded": "打开残响任务跳过面板: 识别到残响skip，点击目标"
         },
         "next": [
             "最大化残响任务跳过次数",
@@ -836,7 +836,7 @@
         },
         "repeat": 5,
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场5: 识别到スキップする回数を選択してください。文字，点击右侧"
+            "Node.Recognition.Succeeded": "最大化残响任务跳过次数: 识别到スキップする回数を選択してください。文字，点击右侧"
         },
         "next": [
             "执行残响任务跳过",
@@ -856,7 +856,7 @@
             }
         },
         "focus": {
-            "Node.Recognition.Succeeded": "残响剧场6: 直接命中，点击下方"
+            "Node.Recognition.Succeeded": "执行残响任务跳过: 直接命中，点击下方"
         },
         "next": [
             "残响剧场_点击返回",
@@ -1099,7 +1099,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "祭坛挑战2: 识别到template_1776437714167，点击右下"
+            "Node.Recognition.Succeeded": "执行祭坛战斗: 识别到template_1776437714167，点击右下"
         },
         "next": [
             "战斗返回",

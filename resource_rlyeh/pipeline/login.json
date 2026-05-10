@@ -391,6 +391,9 @@
                     16
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginItemDetailPopupClose: 识别到login_item，点击下方"
         }
     }
 }

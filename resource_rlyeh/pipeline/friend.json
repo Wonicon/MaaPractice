@@ -112,7 +112,7 @@
         "pre_delay": 0,
         "post_delay": 400,
         "focus": {
-            "Node.Recognition.Succeeded": "StartFriend: 识别到friend，点击右下"
+            "Node.Recognition.Succeeded": "CheckInFriend: 识别到friend_title，等待通过"
         },
         "next": [
             "FriendAllSend",

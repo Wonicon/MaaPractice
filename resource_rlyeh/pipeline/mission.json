@@ -41,7 +41,7 @@
         "pre_delay": 0,
         "post_delay": 0,
         "focus": {
-            "Node.Recognition.Succeeded": "CheckRecvMission: 识别到颜色目标，点击右侧"
+            "Node.Recognition.Succeeded": "CheckRecvMission: 识别到single_blue_accept，等待通过"
         },
         "next": [
             "ClickAllRecv"
@@ -67,7 +67,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到颜色目标，点击右下"
+            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到all_accept，点击右下"
         },
         "next": [
             "MissionResult",
