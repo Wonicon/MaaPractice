@@ -12,13 +12,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "Change2ImportantMail: 识别到重要メール文字，点击目标"
+        },
         "next": [
             "RecvImportant",
             "Change2ImportantMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "Change2ImportantMail: 识别到重要メール文字，点击目标"
-        }
+        ]
     },
     "CheckHome": {
         "recognition": {
@@ -36,11 +36,31 @@
             }
         },
         "post_delay": 0,
-        "next": [
-            "ClickMail"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "CheckHome: 识别到拠点文字，等待通过"
+        },
+        "next": [
+            "ClickMail"
+        ]
+    },
+    "CheckHomeAfterMail": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    57,
+                    640,
+                    162,
+                    60
+                ],
+                "expected": [
+                    "拠点"
+                ]
+            }
+        },
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "CheckHomeAfterMail: 识别到拠点文字，等待通过"
         }
     },
     "ClickMail": {
@@ -65,26 +85,26 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickMail: 识别到mail，点击右上"
+        },
         "next": [
             "[JumpBack]ErrorPopup",
             "ClickMailDelay",
             "RecvNormal",
             "ClickMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "ClickMail: 识别到mail，点击右上"
-        }
+        ]
     },
     "ClickMailDelay": {
         "pre_delay": 1000,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickMailDelay: 直接命中，等待通过"
+        },
         "next": [
             "RecvNormal",
             "ClickMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "ClickMailDelay: 直接命中，等待通过"
-        }
+        ]
     },
     "CloseMail": {
         "recognition": {
@@ -104,13 +124,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "CloseMail: 识别到close，点击右上"
+        },
         "next": [
             "CloseMail",
             "CheckHomeAfterMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "CloseMail: 识别到close，点击右上"
-        }
+        ]
     },
     "ErrorPopup": {
         "recognition": {
@@ -140,6 +160,9 @@
     "Login": {
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "Login: 直接命中，等待通过"
+        },
         "next": [
             "CheckHome",
             "[JumpBack]ErrorPopup",
@@ -147,11 +170,9 @@
             "[JumpBack]TitleScreen",
             "[JumpBack]SoundConfirmPopup",
             "[JumpBack]LoginRewardsPopup",
-            "[JumpBack]LoginBonus"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "Login: 直接命中，等待通过"
-        }
+            "[JumpBack]LoginBonus",
+            "[JumpBack]LoginItemDetailPopupClose"
+        ]
     },
     "LoginBonus": {
         "recognition": {
@@ -225,25 +246,25 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "RecvImportant: 识别到一括受取文字，点击目标"
+        },
         "next": [
             "[JumpBack]RecvNormalResult",
             "RecvImportantDelay",
             "RecvImportant"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "RecvImportant: 识别到一括受取文字，点击目标"
-        }
+        ]
     },
     "RecvImportantDelay": {
         "pre_delay": 1000,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "RecvImportantDelay: 直接命中，等待通过"
+        },
         "next": [
             "[JumpBack]RecvNormalResult",
             "CloseMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "RecvImportantDelay: 直接命中，等待通过"
-        }
+        ]
     },
     "RecvNormal": {
         "max_hit": 3,
@@ -259,25 +280,25 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "RecvNormal: 识别到一括受取文字，点击目标"
+        },
         "next": [
             "[JumpBack]RecvNormalResult",
             "RecvNormalDelay",
             "RecvNormal"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "RecvNormal: 识别到一括受取文字，点击目标"
-        }
+        ]
     },
     "RecvNormalDelay": {
         "pre_delay": 1000,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "RecvNormalDelay: 直接命中，等待通过"
+        },
         "next": [
             "[JumpBack]RecvNormalResult",
             "Change2ImportantMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "RecvNormalDelay: 直接命中，等待通过"
-        }
+        ]
     },
     "RecvNormalResult": {
         "recognition": {
@@ -345,24 +366,31 @@
             "Node.Recognition.Succeeded": "TitleScreen: 识别到tap_to_start，点击目标"
         }
     },
-    "CheckHomeAfterMail": {
+    "LoginItemDetailPopupClose": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    57,
-                    640,
-                    162,
-                    60
+                    523,
+                    155,
+                    228,
+                    89
                 ],
-                "expected": [
-                    "拠点"
+                "template": [
+                    "login_item.png"
                 ]
             }
         },
-        "post_delay": 0,
-        "focus": {
-            "Node.Recognition.Succeeded": "CheckHomeAfterMail: 识别到拠点文字，等待通过"
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    604,
+                    492,
+                    78,
+                    16
+                ]
+            }
         }
     }
 }

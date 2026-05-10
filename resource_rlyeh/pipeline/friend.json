@@ -1,77 +1,4 @@
 {
-    "FriendAllSend": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "all_send.png"
-                ],
-                "method": 10001,
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "FrirendClose",
-            "FriendAllSend"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "FriendAllSend: 识别到all_send，点击目标"
-        }
-    },
-    "StartFriend": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1098,
-                    534,
-                    93,
-                    96
-                ],
-                "template": [
-                    "friend.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 400,
-        "next": [
-            "FriendAllSend",
-            "FrirendClose",
-            "StartFriend"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "StartFriend: 识别到friend，点击右下"
-        }
-    },
-    "FrirendClose": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1201,
-                    51,
-                    14,
-                    13
-                ]
-            }
-        },
-        "next": [
-            "EndFriend",
-            "FrirendClose"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "FrirendClose: 直接命中，点击右上"
-        }
-    },
     "EndFriend": {
         "recognition": {
             "type": "TemplateMatch",
@@ -94,5 +21,102 @@
         "focus": {
             "Node.Recognition.Succeeded": "EndFriend: 识别到friend，停止任务"
         }
+    },
+    "FriendAllSend": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "all_send.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "FriendAllSend: 识别到all_send，点击目标"
+        },
+        "next": [
+            "FrirendClose",
+            "FriendAllSend"
+        ]
+    },
+    "FrirendClose": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    51,
+                    14,
+                    13
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "FrirendClose: 直接命中，点击右上"
+        },
+        "next": [
+            "EndFriend",
+            "FrirendClose"
+        ]
+    },
+    "StartFriend": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1098,
+                    534,
+                    93,
+                    96
+                ],
+                "template": [
+                    "friend.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "StartFriend: 识别到friend，点击右下"
+        },
+        "next": [
+            "CheckInFriend",
+            "StartFriend"
+        ]
+    },
+    "CheckInFriend": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    15,
+                    13,
+                    209,
+                    86
+                ],
+                "template": [
+                    "friend_title.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "StartFriend: 识别到friend，点击右下"
+        },
+        "next": [
+            "FriendAllSend",
+            "FrirendClose"
+        ]
     }
 }

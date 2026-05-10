@@ -16,16 +16,16 @@
         },
         "pre_delay": 0,
         "post_delay": 0,
-        "next": [
-            "CheckRecvMission"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "CheckMissionWindow: 识别到ミッション文字，等待通过"
-        }
+        },
+        "next": [
+            "CheckRecvMission"
+        ]
     },
     "CheckRecvMission": {
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     956,
@@ -33,38 +33,23 @@
                     163,
                     466
                 ],
-                "lower": [
-                    [
-                        52,
-                        85,
-                        93
-                    ]
-                ],
-                "upper": [
-                    [
-                        90,
-                        126,
-                        141
-                    ]
+                "template": [
+                    "single_blue_accept.png"
                 ]
             }
         },
         "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
         "post_delay": 0,
-        "next": [
-            "ClickAllRecv",
-            "CheckRecvMission"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "CheckRecvMission: 识别到颜色目标，点击右侧"
-        }
+        },
+        "next": [
+            "ClickAllRecv"
+        ]
     },
     "ClickAllRecv": {
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     908,
@@ -72,19 +57,8 @@
                     262,
                     159
                 ],
-                "lower": [
-                    [
-                        93,
-                        38,
-                        49
-                    ]
-                ],
-                "upper": [
-                    [
-                        164,
-                        56,
-                        74
-                    ]
+                "template": [
+                    "all_accept.png"
                 ]
             }
         },
@@ -92,24 +66,24 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到颜色目标，点击右下"
+        },
         "next": [
             "MissionResult",
             "ClickAllRecv"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到颜色目标，点击右下"
-        }
+        ]
     },
     "Mission": {
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "Mission: 直接命中，等待通过"
+        },
         "next": [
             "MissionIcon",
             "MissionLabel"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "Mission: 直接命中，等待通过"
-        }
+        ]
     },
     "MissionClose": {
         "recognition": {
@@ -129,13 +103,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionClose: 识别到close，点击右上"
+        },
         "next": [
             "MissionClose",
             "CheckHomeAfterMail"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionClose: 识别到close，点击右上"
-        }
+        ]
     },
     "MissionIcon": {
         "recognition": {
@@ -159,25 +133,25 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionIcon: 识别到mission，点击右上"
+        },
         "next": [
             "CheckMissionWindow",
             "MissionIconDelay",
             "MissionIcon"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionIcon: 识别到mission，点击右上"
-        }
+        ]
     },
     "MissionIconDelay": {
         "pre_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionIconDelay: 直接命中，等待通过"
+        },
         "next": [
             "CheckMissionWindow",
             "MissionLabel",
             "MissionIcon"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionIconDelay: 直接命中，等待通过"
-        }
+        ]
     },
     "MissionLabel": {
         "recognition": {
@@ -197,14 +171,14 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionLabel: 识别到ミッション文字，点击右上"
+        },
         "next": [
             "CheckMissionWindow",
             "MissionIconDelay",
             "MissionLabel"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionLabel: 识别到ミッション文字，点击右上"
-        }
+        ]
     },
     "MissionRecvPrise": {
         "recognition": {
@@ -226,13 +200,13 @@
             "type": "Click"
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionRecvPrise: 识别到mission_prise，点击目标"
+        },
         "next": [
             "PriseResult",
             "MissionRecvPrise"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionRecvPrise: 识别到mission_prise，点击目标"
-        }
+        ]
     },
     "MissionResult": {
         "recognition": {
@@ -254,13 +228,13 @@
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionResult: 识别到獲得報酬文字，点击目标"
+        },
         "next": [
             "MissionRecvPrise",
             "MissionResult"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "MissionResult: 识别到獲得報酬文字，点击目标"
-        }
+        ]
     },
     "PriseResult": {
         "recognition": {
@@ -282,12 +256,12 @@
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "PriseResult: 识别到獲得報酬文字，点击目标"
+        },
         "next": [
             "MissionClose",
             "PriseResult"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "PriseResult: 识别到獲得報酬文字，点击目标"
-        }
+        ]
     }
 }
