@@ -11,14 +11,14 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到template_1776271976991，点击目标"
+        },
         "next": [
             "GoMaze",
             "GoMaze_OCR",
             "EnterGoMaze"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到template_1776271976991，点击目标"
-        }
+        ]
     },
     "GoMaze": {
         "recognition": {
@@ -39,25 +39,25 @@
             "type": "Click"
         },
         "post_delay": 500,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到maze，点击右上"
+        },
         "next": [
             "GoMazeMerge",
             "GoMaze"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到maze，点击右上"
-        }
+        ]
     },
     "GoMazeMerge": {
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "直接命中，等待通过"
+        },
         "next": [
             "[JumpBack]GomazeRewardPop",
             "[JumpBack]SelectNormalArea",
             "GoMaze识别界面"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "直接命中，等待通过"
-        }
+        ]
     },
     "GoMaze_OCR": {
         "recognition": {
@@ -78,13 +78,13 @@
             "type": "Click"
         },
         "post_delay": 500,
+        "focus": {
+            "Node.Recognition.Succeeded": "识别到メイズ探索文字，点击右上"
+        },
         "next": [
             "GoMazeMerge",
             "GoMaze_OCR"
-        ],
-        "focus": {
-            "Node.Recognition.Succeeded": "识别到メイズ探索文字，点击右上"
-        }
+        ]
     },
     "GoMaze识别界面": {
         "recognition": {
@@ -117,12 +117,12 @@
                 ]
             }
         },
-        "next": [
-            "GomazeRewardPopOk"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到dig_confirm_title，等待通过"
-        }
+        },
+        "next": [
+            "GomazeRewardPopOk"
+        ]
     },
     "GomazeRewardPopOk": {
         "recognition": {
@@ -136,9 +136,6 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "GomazeRewardPopOk"
-        ],
         "focus": {
             "Node.Recognition.Succeeded": "识别到activity_ok，点击目标"
         }
