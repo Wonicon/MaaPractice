@@ -149,15 +149,21 @@
             "Node.Recognition.Succeeded": "LoginCloseAnything: 识别到login_update_news_close，点击目标"
         }
     },
-    "LoginNextUpdateNews": {
+    "LoginCloseUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    540,
+                    619,
+                    198,
+                    69
+                ],
                 "template": [
-                    "login_update_news_next.png"
+                    "login_update_news_close.png"
                 ],
                 "threshold": [
-                    0.95
+                    0.9
                 ]
             }
         },
@@ -165,15 +171,41 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "LoginNextUpdateNews: 识别到login_update_news_next，点击目标"
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击下方"
         }
+    },
+    "LoginNextUpdateNewsCheck": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "LoginNextUpdateNews_HSV",
+                    "LoginNextUpdateNews"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginNextUpdateNewsCheck: 识别到组合目标(And)，等待通过"
+        },
+        "next": [
+            "LoginNextUpdateNews"
+        ]
     },
     "LoginUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    387,
+                    628,
+                    508,
+                    60
+                ],
                 "template": [
                     "login_update_news.png"
+                ],
+                "threshold": [
+                    0.4
                 ]
             }
         },
@@ -181,11 +213,11 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击目标"
+            "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击下方"
         },
         "next": [
-            "[JumpBack]LoginNextUpdateNews",
-            "LoginCloseUpdateNewsShape"
+            "[JumpBack]LoginNextUpdateNewsCheck",
+            "LoginCloseUpdateNews_副本5"
         ]
     },
     "StartLogin": {
@@ -236,15 +268,56 @@
             "Node.Recognition.Succeeded": "关闭通知弹窗: 识别到info_title，点击右上"
         }
     },
-    "LoginCloseUpdateNewsShape": {
+    "LoginNextUpdateNews_HSV": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    746,
+                    643,
+                    91,
+                    27
+                ],
+                "method": 40,
+                "lower": [
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "upper": [
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "count": 100
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginNextUpdateNews_HSV: 识别到颜色目标，点击右下"
+        }
+    },
+    "LoginNextUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    715,
+                    621,
+                    176,
+                    71
+                ],
                 "template": [
-                    "login_update_news_close.png"
+                    "login_update_news_next.png"
                 ],
                 "threshold": [
-                    0.99
+                    0.9
                 ]
             }
         },
@@ -252,7 +325,56 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "LoginCloseUpdateNewsShape: 识别到login_update_news_close，点击目标"
+            "Node.Recognition.Succeeded": "LoginNextUpdateNews: 识别到login_update_news_next，点击右下"
         }
+    },
+    "LoginCloseUpdateNews_HSV": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    582,
+                    643,
+                    116,
+                    25
+                ],
+                "method": 40,
+                "lower": [
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "upper": [
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "count": 100
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews_HSV: 识别到颜色目标，等待通过"
+        }
+    },
+    "LoginCloseUpdateNews_副本5": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "LoginCloseUpdateNews",
+                    "LoginCloseUpdateNews_HSV"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews_副本5: 识别到组合目标(And)，等待通过"
+        },
+        "next": [
+            "LoginCloseUpdateNews"
+        ]
     }
 }
