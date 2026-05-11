@@ -252,7 +252,7 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNewsShape: 识别到login_update_news_close，点击目标"
         }
     }
 }

@@ -41,7 +41,7 @@
         },
         "post_delay": 700,
         "focus": {
-            "Node.Recognition.Succeeded": "全部接收: 识别到tec_expedition_accept_all，点击右下"
+            "Node.Recognition.Succeeded": "识别全部接收: 识别到tec_expedition_accept_all，等待通过"
         },
         "next": [
             "全部接收灰色",
@@ -166,7 +166,7 @@
         },
         "post_delay": 700,
         "focus": {
-            "Node.Recognition.Succeeded": "返回主页: 识别到tech_expedition_home，点击目标"
+            "Node.Recognition.Succeeded": "返回主页: 识别到tech_expedition_home，点击左下"
         },
         "next": [
             "确认home",
@@ -204,7 +204,10 @@
         "post_delay": 700,
         "next": [
             "返回主页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "全部接收灰色: 识别到颜色目标，等待通过"
+        }
     },
     "点击全部接收": {
         "recognition": {
@@ -230,7 +233,7 @@
         },
         "post_delay": 700,
         "focus": {
-            "Node.Recognition.Succeeded": "全部接收: 识别到tec_expedition_accept_all，点击右下"
+            "Node.Recognition.Succeeded": "点击全部接收: 识别到tec_expedition_accept_all，点击右下"
         },
         "next": [
             "确认"
