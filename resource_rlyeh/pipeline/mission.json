@@ -1,19 +1,4 @@
 {
-    "$__mpe_config_新建Pipeline8": {
-        "$__mpe_code": {
-            "prefix": "",
-            "lastSyncTime": 1776960132351,
-            "isModifiedExternally": false,
-            "filePath": "C:\\Users\\icon\\Documents\\MaaPractice\\resource_rlyeh\\pipeline\\mission.json",
-            "savedViewport": {
-                "x": -941,
-                "y": 124,
-                "zoom": 0.7
-            },
-            "filename": "新建Pipeline8",
-            "version": "v1.4.2"
-        }
-    },
     "CheckMissionWindow": {
         "recognition": {
             "type": "OCR",
@@ -31,19 +16,40 @@
         },
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "CheckMissionWindow: 识别到ミッション文字，等待通过"
+        },
         "next": [
             "CheckRecvMission"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 689,
-                "y": 400
+        ]
+    },
+    "CheckRecvMission": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    956,
+                    111,
+                    163,
+                    466
+                ],
+                "template": [
+                    "single_blue_accept.png"
+                ]
             }
-        }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "CheckRecvMission: 识别到single_blue_accept，等待通过"
+        },
+        "next": [
+            "ClickAllRecv"
+        ]
     },
     "ClickAllRecv": {
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     908,
@@ -51,19 +57,11 @@
                     262,
                     159
                 ],
-                "lower": [
-                    [
-                        93,
-                        38,
-                        49
-                    ]
+                "template": [
+                    "all_accept.png"
                 ],
-                "upper": [
-                    [
-                        164,
-                        56,
-                        74
-                    ]
+                "threshold": [
+                    0.93
                 ]
             }
         },
@@ -71,30 +69,50 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickAllRecv: 识别到all_accept，点击右下"
+        },
         "next": [
             "MissionResult",
             "ClickAllRecv"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1358,
-                "y": 304
-            }
-        }
+        ]
     },
     "Mission": {
         "pre_delay": 0,
         "post_delay": 0,
+        "focus": {
+            "Node.Recognition.Succeeded": "Mission: 直接命中，等待通过"
+        },
         "next": [
             "MissionIcon",
             "MissionLabel"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 330
+        ]
+    },
+    "MissionClose": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1080,
+                    11,
+                    101,
+                    149
+                ],
+                "template": [
+                    "close.png"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionClose: 识别到close，点击右上"
+        },
+        "next": [
+            "MissionClose",
+            "CheckHomeAfterMail"
+        ]
     },
     "MissionIcon": {
         "recognition": {
@@ -118,17 +136,25 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionIcon: 识别到mission，点击右上"
+        },
         "next": [
             "CheckMissionWindow",
             "MissionIconDelay",
             "MissionIcon"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 312,
-                "y": 643
-            }
-        }
+        ]
+    },
+    "MissionIconDelay": {
+        "pre_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionIconDelay: 直接命中，等待通过"
+        },
+        "next": [
+            "CheckMissionWindow",
+            "MissionLabel",
+            "MissionIcon"
+        ]
     },
     "MissionLabel": {
         "recognition": {
@@ -148,104 +174,14 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionLabel: 识别到ミッション文字，点击右上"
+        },
         "next": [
             "CheckMissionWindow",
             "MissionIconDelay",
             "MissionLabel"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 339,
-                "y": 371
-            }
-        }
-    },
-    "MissionResult": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "獲得報酬"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -2,
-                    -48,
-                    10,
-                    -11
-                ]
-            }
-        },
-        "next": [
-            "MissionRecvPrise",
-            "MissionResult"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1631,
-                "y": -8
-            }
-        }
-    },
-    "CheckRecvMission": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    956,
-                    111,
-                    163,
-                    466
-                ],
-                "lower": [
-                    [
-                        52,
-                        85,
-                        93
-                    ]
-                ],
-                "upper": [
-                    [
-                        90,
-                        126,
-                        141
-                    ]
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 0,
-        "next": [
-            "ClickAllRecv",
-            "CheckRecvMission"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 988,
-                "y": 332
-            }
-        }
-    },
-    "MissionIconDelay": {
-        "pre_delay": 1000,
-        "next": [
-            "CheckMissionWindow",
-            "MissionLabel",
-            "MissionIcon"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 688,
-                "y": 750
-            }
-        }
+        ]
     },
     "MissionRecvPrise": {
         "recognition": {
@@ -267,16 +203,41 @@
             "type": "Click"
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionRecvPrise: 识别到mission_prise，点击目标"
+        },
         "next": [
             "PriseResult",
             "MissionRecvPrise"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1930,
-                "y": 336
+        ]
+    },
+    "MissionResult": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "獲得報酬"
+                ]
             }
-        }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -2,
+                    -48,
+                    10,
+                    -11
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionResult: 识别到獲得報酬文字，点击目标"
+        },
+        "next": [
+            "MissionRecvPrise",
+            "MissionResult"
+        ]
     },
     "PriseResult": {
         "recognition": {
@@ -298,43 +259,12 @@
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "PriseResult: 识别到獲得報酬文字，点击目标"
+        },
         "next": [
             "MissionClose",
             "PriseResult"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2229,
-                "y": 237
-            }
-        }
-    },
-    "MissionClose": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1080,
-                    11,
-                    101,
-                    149
-                ],
-                "template": [
-                    "close.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2628,
-                "y": 249
-            }
-        },
-        "next": [
-            "MissionClose"
         ]
     }
 }

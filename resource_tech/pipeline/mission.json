@@ -1,18 +1,4 @@
 {
-    "$__mpe_config_mission": {
-        "$__mpe_code": {
-            "prefix": "",
-            "filePath": "C:\\Users\\conci\\Downloads\\MaaXXX-win-x86_64-v0.0.2\\resource_tech\\pipeline\\mission.json",
-            "lastSyncTime": 1777696399720,
-            "savedViewport": {
-                "x": -1208,
-                "y": 127,
-                "zoom": 0.86
-            },
-            "filename": "mission",
-            "version": "v1.5.0"
-        }
-    },
     "E日常任务": {
         "recognition": {
             "type": "TemplateMatch",
@@ -30,14 +16,56 @@
         "post_delay": 500,
         "next": [
             "MissionDailyAcceptAll",
-            "MissionClickWeekly",
-            "E日常任务"
+            "E日常任务",
+            "MissionClickWeekly"
         ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 22
+        "focus": {
+            "Node.Recognition.Succeeded": "E日常任务: 识别到home_mission，点击目标"
+        }
+    },
+    "MissionClickWeekly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "mission_weekly.png"
+                ],
+                "threshold": [
+                    0.95
+                ]
             }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MissionWeeklyAcceptAll",
+            "MissionClickWeekly",
+            "MissionClose"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionClickWeekly: 识别到mission_weekly，点击目标"
+        }
+    },
+    "MissionClose": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    79,
+                    214,
+                    40,
+                    62
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "确认home",
+            "MissionClose"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionClose: 直接命中，点击左上"
         }
     },
     "MissionDailyAcceptAll": {
@@ -61,11 +89,8 @@
             "MissionDailyRewardsOK",
             "MissionDailyAcceptAll"
         ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 81
-            }
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionDailyAcceptAll: 识别到mission_accept_all，点击目标"
         }
     },
     "MissionDailyRewardsOK": {
@@ -84,38 +109,8 @@
             "MissionClickWeekly",
             "MissionDailyRewardsOK"
         ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 136
-            }
-        }
-    },
-    "MissionClickWeekly": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "mission_weekly.png"
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "MissionWeeklyAcceptAll",
-            "MissionClose",
-            "MissionClickWeekly"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 96
-            }
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionDailyRewardsOK: 识别到tech_quest_reinforce_ok，点击目标"
         }
     },
     "MissionWeeklyAcceptAll": {
@@ -139,11 +134,8 @@
             "MissionWeeklyRewardsOK",
             "MissionWeeklyAcceptAll"
         ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1292,
-                "y": 73
-            }
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionWeeklyAcceptAll: 识别到mission_accept_all，点击目标"
         }
     },
     "MissionWeeklyRewardsOK": {
@@ -162,43 +154,8 @@
             "MissionClose",
             "MissionWeeklyRewardsOK"
         ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1612,
-                "y": 136
-            }
-        }
-    },
-    "MissionClose": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    79,
-                    214,
-                    40,
-                    62
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "确认home",
-            "MissionClose"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1932,
-                "y": 99
-            }
-        }
-    },
-    "$__mpe_external_确认home_mission": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2252,
-                "y": 168
-            }
+        "focus": {
+            "Node.Recognition.Succeeded": "MissionWeeklyRewardsOK: 识别到tech_quest_reinforce_ok，点击目标"
         }
     }
 }

@@ -22,7 +22,10 @@
         "next": [
             "login_title_post",
             "check_title_logo"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "check_title_logo: 识别到title，点击中央"
+        }
     },
     "check_title_text": {
         "recognition": {
@@ -48,7 +51,10 @@
         "next": [
             "login_title_post",
             "check_title_text"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "check_title_text: 识别到ID:タップで表示文字，点击中央"
+        }
     },
     "click_login_bonus": {
         "recognition": {
@@ -78,7 +84,10 @@
     },
     "login_home_post_delay": {
         "pre_delay": 0,
-        "post_delay": 2000
+        "post_delay": 2000,
+        "focus": {
+            "Node.Recognition.Succeeded": "login_home_post_delay: 直接命中，等待通过"
+        }
     },
     "login_title": {
         "pre_delay": 0,
@@ -87,7 +96,10 @@
             "check_title_logo",
             "check_title_text",
             "login_判断首页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "login_title: 直接命中，等待通过"
+        }
     },
     "login_title_post": {
         "pre_delay": 0,
@@ -100,7 +112,10 @@
             "[JumpBack]login任意点击清除通知",
             "[JumpBack]login_判断首页_确保",
             "login_判断首页"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "login_title_post: 直接命中，等待通过"
+        }
     },
     "login_判断首页": {
         "recognition": {
@@ -135,7 +150,10 @@
         },
         "next": [
             "login_home_post_delay"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "login任意点击清除通知: 直接命中，点击右上"
+        }
     },
     "点击下一个通知": {
         "recognition": {
@@ -157,7 +175,10 @@
         },
         "next": [
             "login_home_post_delay"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "点击下一个通知: 识别到次へ文字，点击下方"
+        }
     },
     "点击关闭通知": {
         "recognition": {
@@ -179,7 +200,10 @@
         },
         "next": [
             "login_home_post_delay"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "点击关闭通知: 识别到閉じる文字，点击下方"
+        }
     },
     "CloseLoginRewardConfirmWindow": {
         "recognition": {
@@ -192,6 +216,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "CloseLoginRewardConfirmWindow: 识别到activity_ok，点击目标"
         }
     },
     "login_判断首页_确保": {

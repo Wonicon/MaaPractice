@@ -4,14 +4,20 @@
             "[JumpBack]RaidRoomWait",
             "[JumpBack]RaidBattleWait",
             "[JumpBack]RaidBattleAgain"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "EndlessRaid: 直接命中，等待通过"
+        }
     },
     "E团本": {
         "pre_delay": 0,
         "post_delay": 0,
         "next": [
             "RaidClickQuest"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "E团本: 直接命中，等待通过"
+        }
     },
     "RaidAddCost": {
         "recognition": {
@@ -43,6 +49,9 @@
                     21
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidAddCost: 识别到raid_cost_20，点击右下"
         }
     },
     "RaidBattleAgain": {
@@ -66,7 +75,10 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidBattleAgain: 识别到battle_again，点击右下"
+        }
     },
     "RaidBattleWait": {
         "recognition": {
@@ -80,7 +92,10 @@
                 ]
             }
         },
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidBattleWait: 识别到raid_battle_stamp，等待通过"
+        }
     },
     "RaidClickChallenge": {
         "recognition": {
@@ -98,7 +113,10 @@
         "next": [
             "RaidClickMatch",
             "RaidClickChallenge"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidClickChallenge: 识别到raid_challenge，点击目标"
+        }
     },
     "RaidClickElement": {
         "recognition": {
@@ -129,7 +147,10 @@
         "next": [
             "RaidSelectRecomend12000",
             "RaidClickElement"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidClickElement: 识别到element_flower，点击左上"
+        }
     },
     "RaidClickMatch": {
         "recognition": {
@@ -152,7 +173,10 @@
             "[JumpBack]RaidBattleWait",
             "RaidGoHome",
             "RaidClickMatch"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidClickMatch: 识别到raid_match，点击目标"
+        }
     },
     "RaidClickQuest": {
         "recognition": {
@@ -169,7 +193,10 @@
         "next": [
             "RaidClickRaid",
             "RaidClickQuest"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidClickQuest: 识别到tech_quest，点击目标"
+        }
     },
     "RaidClickRaid": {
         "recognition": {
@@ -186,7 +213,10 @@
         "next": [
             "RaidClickElement",
             "RaidClickRaid"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidClickRaid: 识别到quest_raid，点击目标"
+        }
     },
     "RaidGoHome": {
         "recognition": {
@@ -207,7 +237,10 @@
         "next": [
             "确认home",
             "RaidGoHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidGoHome: 识别到raid_go_home，点击目标"
+        }
     },
     "RaidRoomWait": {
         "recognition": {
@@ -221,7 +254,10 @@
                 ]
             }
         },
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidRoomWait: 识别到raid_room_stamp，等待通过"
+        }
     },
     "RaidSelectRecomend12000": {
         "recognition": {
@@ -248,6 +284,9 @@
             "[JumpBack]RaidAddCost",
             "RaidClickChallenge",
             "RaidSelectRecomend12000"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "RaidSelectRecomend12000: 识别到raid_recomend_12000，点击左下"
+        }
     }
 }

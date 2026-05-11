@@ -20,6 +20,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickPresentAllRecv: 识别到present_all_recv，点击右下"
         }
     },
     "InPresentWindow": {
@@ -45,7 +48,10 @@
             "[JumpBack]PresentClosePop",
             "[JumpBack]Loading",
             "CheckHome"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "InPresentWindow: 识别到present_window，等待通过"
+        }
     },
     "Loading": {
         "recognition": {
@@ -57,7 +63,10 @@
                 "green_mask": true
             }
         },
-        "post_delay": 1000
+        "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Succeeded": "Loading: 识别到loading，等待通过"
+        }
     },
     "PresentClosePop": {
         "recognition": {
@@ -70,6 +79,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "PresentClosePop: 识别到close，点击目标"
         }
     },
     "StartPresent": {
@@ -98,6 +110,9 @@
             "InPresentWindow",
             "[JumpBack]Loading",
             "StartPresent"
-        ]
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "StartPresent: 识别到present，点击右下"
+        }
     }
 }

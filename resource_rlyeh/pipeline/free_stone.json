@@ -1,4 +1,289 @@
 {
+    "ClickMonthTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_montly_tab.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePackMonthly",
+            "ClickMonthTab",
+            "返回home"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickMonthTab: 识别到shop_montly_tab，点击目标"
+        }
+    },
+    "ClickPackTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_pack_tab.png"
+                ],
+                "threshold": [
+                    0.92
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePack",
+            "ClickPackTab",
+            "ClickWeekTab"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickPackTab: 识别到shop_pack_tab，点击目标"
+        }
+    },
+    "ClickWeekTab": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shop_weekly_tab.png"
+                ],
+                "threshold": [
+                    0.92
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "FreeStonePackWeekly",
+            "ClickWeekTab",
+            "ClickMonthTab"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "ClickWeekTab: 识别到shop_weekly_tab，点击目标"
+        }
+    },
+    "FreeShopGoHome": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回home",
+            "FreeShopGoHome"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "FreeShopGoHome: 识别到home，点击目标"
+        }
+    },
+    "FreeStonePack": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_pack.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "repeat": 3,
+        "post_delay": 400,
+        "next": [
+            "FreeStonePack",
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "ClickWeekTab"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "FreeStonePack: 识别到free_stone_pack，点击左侧"
+        }
+    },
+    "FreeStonePackMonthly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_montly.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "post_delay": 400,
+        "next": [
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "FreeStonePackMonthly",
+            "FreeShopGoHome"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "FreeStonePackMonthly: 识别到free_stone_montly，点击左侧"
+        }
+    },
+    "FreeStonePackWeekly": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    280,
+                    128,
+                    230,
+                    312
+                ],
+                "template": [
+                    "free_stone_weekly.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    355,
+                    393,
+                    79,
+                    10
+                ]
+            }
+        },
+        "post_delay": 400,
+        "next": [
+            "[JumpBack]ShopExchange",
+            "[JumpBack]ShopCheckReward",
+            "ClickMonthTab",
+            "FreeStonePackWeekly"
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "FreeStonePackWeekly: 识别到free_stone_weekly，点击左侧"
+        }
+    },
+    "ShopCheckReward": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    472,
+                    152,
+                    330,
+                    89
+                ],
+                "template": [
+                    "shop_reward_title.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    604,
+                    35,
+                    79,
+                    6
+                ]
+            }
+        },
+        "repeat": 3,
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "ShopCheckReward: 识别到shop_reward_title，点击上方"
+        }
+    },
+    "ShopExchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    615,
+                    495,
+                    230,
+                    90
+                ],
+                "template": [
+                    "exchange.png"
+                ],
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "post_delay": 400,
+        "focus": {
+            "Node.Recognition.Succeeded": "ShopExchange: 识别到exchange，点击右下"
+        }
+    },
     "StartFreeStone": {
         "recognition": {
             "type": "TemplateMatch",
@@ -19,60 +304,16 @@
             }
         },
         "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
         "post_delay": 400,
         "next": [
-            "FreeStonePack",
-            "[JumpBack]ClickPackTab",
+            "ClickPackTab",
             "StartFreeStone"
-        ]
-    },
-    "FreeStonePack": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    280,
-                    128,
-                    230,
-                    312
-                ],
-                "template": [
-                    "free_stone_pack.png"
-                ],
-                "method": 10001,
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    355,
-                    393,
-                    79,
-                    10
-                ]
-            }
-        },
-        "post_delay": 400,
-        "next": [
-            "FreeStonePack"
-        ]
-    },
-    "ClickPackTab": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    72,
-                    282,
-                    116,
-                    29
-                ]
-            }
+        ],
+        "focus": {
+            "Node.Recognition.Succeeded": "StartFreeStone: 识别到shop，点击右下"
         }
     }
 }
