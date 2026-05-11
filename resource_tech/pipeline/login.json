@@ -149,25 +149,6 @@
             "Node.Recognition.Succeeded": "LoginCloseAnything: 识别到login_update_news_close，点击目标"
         }
     },
-    "LoginCloseUpdateNews": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "login_update_news_close.png"
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
-        }
-    },
     "LoginNextUpdateNews": {
         "recognition": {
             "type": "TemplateMatch",
@@ -203,8 +184,8 @@
             "Node.Recognition.Succeeded": "LoginUpdateNews: 识别到login_update_news，点击目标"
         },
         "next": [
-            "LoginCloseUpdateNews",
-            "[JumpBack]LoginNextUpdateNews"
+            "[JumpBack]LoginNextUpdateNews",
+            "LoginCloseUpdateNewsShape"
         ]
     },
     "StartLogin": {
@@ -253,6 +234,25 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "关闭通知弹窗: 识别到info_title，点击右上"
+        }
+    },
+    "LoginCloseUpdateNewsShape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "login_update_news_close.png"
+                ],
+                "threshold": [
+                    0.99
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "LoginCloseUpdateNews: 识别到login_update_news_close，点击目标"
         }
     }
 }
